@@ -1,0 +1,303 @@
+{
+  "country": "KR",
+  "countryName": "대한민국 (South Korea)",
+  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 48,
+  "holidays": [
+    {
+      "name": "신정",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": "새해 첫날"
+    },
+    {
+      "name": "설날",
+      "date": "2024-02-09",
+      "type": "NATIONAL",
+      "description": "음력 새해 (전날)"
+    },
+    {
+      "name": "설날",
+      "date": "2024-02-10",
+      "type": "NATIONAL",
+      "description": "음력 새해"
+    },
+    {
+      "name": "설날",
+      "date": "2024-02-11",
+      "type": "NATIONAL",
+      "description": "음력 새해 (다음날)"
+    },
+    {
+      "name": "삼일절",
+      "date": "2024-03-01",
+      "type": "NATIONAL",
+      "description": "3.1 독립운동 기념일"
+    },
+    {
+      "name": "어린이날",
+      "date": "2024-05-05",
+      "type": "NATIONAL",
+      "description": "어린이날"
+    },
+    {
+      "name": "어린이날 대체공휴일",
+      "date": "2024-05-06",
+      "type": "NATIONAL",
+      "description": "어린이날 대체공휴일"
+    },
+    {
+      "name": "부처님오신날",
+      "date": "2024-05-15",
+      "type": "RELIGIOUS",
+      "description": "석가탄신일"
+    },
+    {
+      "name": "현충일",
+      "date": "2024-06-06",
+      "type": "NATIONAL",
+      "description": "호국영령 추모일"
+    },
+    {
+      "name": "광복절",
+      "date": "2024-08-15",
+      "type": "NATIONAL",
+      "description": "일제강점기 해방 기념일"
+    },
+    {
+      "name": "추석",
+      "date": "2024-09-16",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일 (전날)"
+    },
+    {
+      "name": "추석",
+      "date": "2024-09-17",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일"
+    },
+    {
+      "name": "추석",
+      "date": "2024-09-18",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일 (다음날)"
+    },
+    {
+      "name": "개천절",
+      "date": "2024-10-03",
+      "type": "NATIONAL",
+      "description": "단군 건국 기념일"
+    },
+    {
+      "name": "한글날",
+      "date": "2024-10-09",
+      "type": "NATIONAL",
+      "description": "한글 창제 기념일"
+    },
+    {
+      "name": "크리스마스",
+      "date": "2024-12-25",
+      "type": "NATIONAL",
+      "description": "기독탄신일"
+    },
+    {
+      "name": "신정",
+      "date": "2025-01-01",
+      "type": "NATIONAL",
+      "description": "새해 첫날"
+    },
+    {
+      "name": "설날",
+      "date": "2025-01-28",
+      "type": "NATIONAL",
+      "description": "음력 새해 (전날)"
+    },
+    {
+      "name": "설날",
+      "date": "2025-01-29",
+      "type": "NATIONAL",
+      "description": "음력 새해"
+    },
+    {
+      "name": "설날",
+      "date": "2025-01-30",
+      "type": "NATIONAL",
+      "description": "음력 새해 (다음날)"
+    },
+    {
+      "name": "삼일절",
+      "date": "2025-03-01",
+      "type": "NATIONAL",
+      "description": "3.1 독립운동 기념일"
+    },
+    {
+      "name": "삼일절 대체공휴일",
+      "date": "2025-03-03",
+      "type": "NATIONAL",
+      "description": "삼일절 대체공휴일 (토요일 → 월요일)"
+    },
+    {
+      "name": "어린이날",
+      "date": "2025-05-05",
+      "type": "NATIONAL",
+      "description": "어린이날"
+    },
+    {
+      "name": "부처님오신날",
+      "date": "2025-05-05",
+      "type": "RELIGIOUS",
+      "description": "석가탄신일 (어린이날과 겹침)"
+    },
+    {
+      "name": "현충일",
+      "date": "2025-06-06",
+      "type": "NATIONAL",
+      "description": "호국영령 추모일"
+    },
+    {
+      "name": "광복절",
+      "date": "2025-08-15",
+      "type": "NATIONAL",
+      "description": "일제강점기 해방 기념일"
+    },
+    {
+      "name": "개천절",
+      "date": "2025-10-03",
+      "type": "NATIONAL",
+      "description": "단군 건국 기념일"
+    },
+    {
+      "name": "추석",
+      "date": "2025-10-05",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일 (전날)"
+    },
+    {
+      "name": "추석",
+      "date": "2025-10-06",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일"
+    },
+    {
+      "name": "추석",
+      "date": "2025-10-07",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일 (다음날)"
+    },
+    {
+      "name": "한글날",
+      "date": "2025-10-09",
+      "type": "NATIONAL",
+      "description": "한글 창제 기념일"
+    },
+    {
+      "name": "크리스마스",
+      "date": "2025-12-25",
+      "type": "NATIONAL",
+      "description": "기독탄신일"
+    },
+    {
+      "name": "신정",
+      "date": "2026-01-01",
+      "type": "NATIONAL",
+      "description": "새해 첫날"
+    },
+    {
+      "name": "설날",
+      "date": "2026-02-16",
+      "type": "NATIONAL",
+      "description": "음력 새해 (전날)"
+    },
+    {
+      "name": "설날",
+      "date": "2026-02-17",
+      "type": "NATIONAL",
+      "description": "음력 새해"
+    },
+    {
+      "name": "설날",
+      "date": "2026-02-18",
+      "type": "NATIONAL",
+      "description": "음력 새해 (다음날)"
+    },
+    {
+      "name": "삼일절",
+      "date": "2026-03-01",
+      "type": "NATIONAL",
+      "description": "3.1 독립운동 기념일"
+    },
+    {
+      "name": "삼일절 대체공휴일",
+      "date": "2026-03-02",
+      "type": "NATIONAL",
+      "description": "삼일절 대체공휴일 (일요일 → 월요일)"
+    },
+    {
+      "name": "어린이날",
+      "date": "2026-05-05",
+      "type": "NATIONAL",
+      "description": "어린이날"
+    },
+    {
+      "name": "부처님오신날",
+      "date": "2026-05-24",
+      "type": "RELIGIOUS",
+      "description": "석가탄신일"
+    },
+    {
+      "name": "부처님오신날 대체공휴일",
+      "date": "2026-05-25",
+      "type": "RELIGIOUS",
+      "description": "부처님오신날 대체공휴일 (일요일 → 월요일)"
+    },
+    {
+      "name": "현충일",
+      "date": "2026-06-06",
+      "type": "NATIONAL",
+      "description": "호국영령 추모일"
+    },
+    {
+      "name": "광복절",
+      "date": "2026-08-15",
+      "type": "NATIONAL",
+      "description": "일제강점기 해방 기념일"
+    },
+    {
+      "name": "추석",
+      "date": "2026-09-24",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일 (전날)"
+    },
+    {
+      "name": "추석",
+      "date": "2026-09-25",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일"
+    },
+    {
+      "name": "추석",
+      "date": "2026-09-26",
+      "type": "NATIONAL",
+      "description": "음력 8월 15일 (다음날)"
+    },
+    {
+      "name": "개천절",
+      "date": "2026-10-03",
+      "type": "NATIONAL",
+      "description": "단군 건국 기념일"
+    },
+    {
+      "name": "한글날",
+      "date": "2026-10-09",
+      "type": "NATIONAL",
+      "description": "한글 창제 기념일"
+    },
+    {
+      "name": "크리스마스",
+      "date": "2026-12-25",
+      "type": "NATIONAL",
+      "description": "기독탄신일"
+    }
+  ]
+}

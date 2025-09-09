@@ -1,0 +1,33 @@
+{
+  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "totalCountries": 4,
+  "supportedCountries": ["KR", "US", "JP", "DE"],
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 178,
+  "countries": [
+    {
+      "code": "KR",
+      "name": "대한민국 (South Korea)",
+      "totalHolidays": 48,
+      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json"
+    },
+    {
+      "code": "US",
+      "name": "미국 (United States)",
+      "totalHolidays": 31,
+      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/us.json"
+    },
+    {
+      "code": "JP",
+      "name": "일본 (Japan)",
+      "totalHolidays": 54,
+      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/jp.json"
+    },
+    {
+      "code": "DE",
+      "name": "독일 (Germany)",
+      "totalHolidays": 45,
+      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/de.json"
+    }
+  ]
+}

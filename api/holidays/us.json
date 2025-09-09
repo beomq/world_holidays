@@ -1,0 +1,199 @@
+{
+  "country": "US",
+  "countryName": "미국 (United States)",
+  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026
+  ],
+  "totalHolidays": 31,
+  "holidays": [
+    {
+      "name": "New Year's Day",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": "First day of the year"
+    },
+    {
+      "name": "Martin Luther King Jr. Day",
+      "date": "2024-01-15",
+      "type": "NATIONAL",
+      "description": "Civil rights leader commemoration"
+    },
+    {
+      "name": "Presidents' Day",
+      "date": "2024-02-19",
+      "type": "NATIONAL",
+      "description": "Washington's Birthday"
+    },
+    {
+      "name": "Memorial Day",
+      "date": "2024-05-27",
+      "type": "NATIONAL",
+      "description": "Honoring military personnel who died in service"
+    },
+    {
+      "name": "Independence Day",
+      "date": "2024-07-04",
+      "type": "NATIONAL",
+      "description": "American Independence Day"
+    },
+    {
+      "name": "Labor Day",
+      "date": "2024-09-02",
+      "type": "NATIONAL",
+      "description": "Celebration of workers"
+    },
+    {
+      "name": "Columbus Day",
+      "date": "2024-10-14",
+      "type": "NATIONAL",
+      "description": "Christopher Columbus's arrival in the Americas"
+    },
+    {
+      "name": "Veterans Day",
+      "date": "2024-11-11",
+      "type": "NATIONAL",
+      "description": "Honoring military veterans"
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2024-11-28",
+      "type": "NATIONAL",
+      "description": "Thanksgiving celebration"
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2024-12-25",
+      "type": "NATIONAL",
+      "description": "Christmas celebration"
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2025-01-01",
+      "type": "NATIONAL",
+      "description": "First day of the year"
+    },
+    {
+      "name": "Martin Luther King Jr. Day",
+      "date": "2025-01-20",
+      "type": "NATIONAL",
+      "description": "Civil rights leader commemoration"
+    },
+    {
+      "name": "Presidents' Day",
+      "date": "2025-02-17",
+      "type": "NATIONAL",
+      "description": "Washington's Birthday"
+    },
+    {
+      "name": "Memorial Day",
+      "date": "2025-05-26",
+      "type": "NATIONAL",
+      "description": "Honoring military personnel who died in service"
+    },
+    {
+      "name": "Independence Day",
+      "date": "2025-07-04",
+      "type": "NATIONAL",
+      "description": "American Independence Day"
+    },
+    {
+      "name": "Labor Day",
+      "date": "2025-09-01",
+      "type": "NATIONAL",
+      "description": "Celebration of workers"
+    },
+    {
+      "name": "Columbus Day",
+      "date": "2025-10-13",
+      "type": "NATIONAL",
+      "description": "Christopher Columbus's arrival in the Americas"
+    },
+    {
+      "name": "Veterans Day",
+      "date": "2025-11-11",
+      "type": "NATIONAL",
+      "description": "Honoring military veterans"
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2025-11-27",
+      "type": "NATIONAL",
+      "description": "Thanksgiving celebration"
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2025-12-25",
+      "type": "NATIONAL",
+      "description": "Christmas celebration"
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "type": "NATIONAL",
+      "description": "First day of the year"
+    },
+    {
+      "name": "Martin Luther King Jr. Day",
+      "date": "2026-01-19",
+      "type": "NATIONAL",
+      "description": "Civil rights leader commemoration"
+    },
+    {
+      "name": "Presidents' Day",
+      "date": "2026-02-16",
+      "type": "NATIONAL",
+      "description": "Washington's Birthday"
+    },
+    {
+      "name": "Memorial Day",
+      "date": "2026-05-25",
+      "type": "NATIONAL",
+      "description": "Honoring military personnel who died in service"
+    },
+    {
+      "name": "Independence Day",
+      "date": "2026-07-04",
+      "type": "NATIONAL",
+      "description": "American Independence Day"
+    },
+    {
+      "name": "Independence Day (Observed)",
+      "date": "2026-07-03",
+      "type": "NATIONAL",
+      "description": "Independence Day observed (Saturday → Friday)"
+    },
+    {
+      "name": "Labor Day",
+      "date": "2026-09-07",
+      "type": "NATIONAL",
+      "description": "Celebration of workers"
+    },
+    {
+      "name": "Columbus Day",
+      "date": "2026-10-12",
+      "type": "NATIONAL",
+      "description": "Christopher Columbus's arrival in the Americas"
+    },
+    {
+      "name": "Veterans Day",
+      "date": "2026-11-11",
+      "type": "NATIONAL",
+      "description": "Honoring military veterans"
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2026-11-26",
+      "type": "NATIONAL",
+      "description": "Thanksgiving celebration"
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2026-12-25",
+      "type": "NATIONAL",
+      "description": "Christmas celebration"
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌍 World Holidays API</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .header {
+        text-align: center;
+        color: white;
+        margin-bottom: 3rem;
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h2 {
+        color: #667eea;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.5rem;
+      }
+
+      .endpoints {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .endpoint {
+        background: #f8f9ff;
+        border-radius: 10px;
+        padding: 1.5rem;
+        border-left: 4px solid #667eea;
+      }
+
+      .endpoint h3 {
+        color: #667eea;
+        margin-bottom: 0.5rem;
+      }
+
+      .endpoint code {
+        background: #667eea;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-family: "Monaco", "Menlo", monospace;
+        display: block;
+        margin: 0.5rem 0;
+        word-break: break-all;
+      }
+
+      .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .country-card {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .country-card:hover {
+        transform: scale(1.05);
+      }
+
+      .country-card .flag {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .country-card h3 {
+        margin-bottom: 0.5rem;
+      }
+
+      .example {
+        background: #f8f9ff;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+      }
+
+      .example h4 {
+        color: #667eea;
+        margin-bottom: 0.5rem;
+      }
+
+      .example pre {
+        background: #2d3748;
+        color: #e2e8f0;
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .stat {
+        text-align: center;
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        min-width: 120px;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #667eea;
+      }
+
+      .stat-label {
+        color: #666;
+        margin-top: 0.5rem;
+      }
+
+      .footer {
+        text-align: center;
+        color: white;
+        margin-top: 3rem;
+        opacity: 0.8;
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🌍 World Holidays API</h1>
+        <p>
+          Free holiday data for South Korea, United States, Japan, and Germany
+        </p>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">178</div>
+          <div class="stat-label">Total Holidays</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Years (2024-2026)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">0</div>
+          <div class="stat-label">Cost (Free!)</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🚀 API Endpoints</h2>
+        <div class="endpoints">
+          <div class="endpoint">
+            <h3>📋 Get Countries</h3>
+            <p>Get list of all supported countries</p>
+            <code
+              >GET
+              https://beomq.github.io/world_holidays/api/countries.json</code
+            >
+          </div>
+
+          <div class="endpoint">
+            <h3>🇰🇷 Korea Holidays</h3>
+            <p>Get all Korean holidays (2024-2026)</p>
+            <code
+              >GET
+              https://beomq.github.io/world_holidays/api/holidays/kr.json</code
+            >
+          </div>
+
+          <div class="endpoint">
+            <h3>🇺🇸 US Holidays</h3>
+            <p>Get all US holidays (2024-2026)</p>
+            <code
+              >GET
+              https://beomq.github.io/world_holidays/api/holidays/us.json</code
+            >
+          </div>
+
+          <div class="endpoint">
+            <h3>🇯🇵 Japan Holidays</h3>
+            <p>Get all Japanese holidays (2024-2026)</p>
+            <code
+              >GET
+              https://beomq.github.io/world_holidays/api/holidays/jp.json</code
+            >
+          </div>
+
+          <div class="endpoint">
+            <h3>🇩🇪 Germany Holidays</h3>
+            <p>Get all German holidays (2024-2026)</p>
+            <code
+              >GET
+              https://beomq.github.io/world_holidays/api/holidays/de.json</code
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🏳️ Supported Countries</h2>
+        <div class="countries-grid">
+          <div class="country-card">
+            <div class="flag">🇰🇷</div>
+            <h3>South Korea</h3>
+            <p>Code: KR</p>
+            <p>48 holidays</p>
+          </div>
+          <div class="country-card">
+            <div class="flag">🇺🇸</div>
+            <h3>United States</h3>
+            <p>Code: US</p>
+            <p>31 holidays</p>
+          </div>
+          <div class="country-card">
+            <div class="flag">🇯🇵</div>
+            <h3>Japan</h3>
+            <p>Code: JP</p>
+            <p>54 holidays</p>
+          </div>
+          <div class="country-card">
+            <div class="flag">🇩🇪</div>
+            <h3>Germany</h3>
+            <p>Code: DE</p>
+            <p>45 holidays</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>💻 Usage Examples</h2>
+
+        <div class="example">
+          <h4>📱 Flutter/Dart</h4>
+          <pre><code>import 'package:world_holidays/world_holidays.dart';
+
+final worldHolidays = WorldHolidays();
+final holidays = await worldHolidays.getHolidays('KR');
+print('Found ${holidays.length} Korean holidays');</code></pre>
+        </div>
+
+        <div class="example">
+          <h4>🌐 JavaScript/Web</h4>
+          <pre><code>fetch('https://beomq.github.io/world_holidays/api/holidays/kr.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(`Found ${data.holidays.length} holidays`);
+  });</code></pre>
+        </div>
+
+        <div class="example">
+          <h4>🐍 Python</h4>
+          <pre><code>import requests
+
+url = 'https://beomq.github.io/world_holidays/api/holidays/kr.json'
+response = requests.get(url)
+data = response.json()
+print(f"Found {len(data['holidays'])} holidays")</code></pre>
+        </div>
+
+        <div class="example">
+          <h4>📦 cURL</h4>
+          <pre><code>curl -X GET "https://beomq.github.io/world_holidays/api/countries.json"</code></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>📊 Data Structure</h2>
+        <div class="example">
+          <h4>🏛️ Countries Response</h4>
+          <pre><code>{
+  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "totalCountries": 4,
+  "supportedCountries": ["KR", "US", "JP", "DE"],
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 178,
+  "countries": [
+    {
+      "code": "KR",
+      "name": "대한민국 (South Korea)",
+      "totalHolidays": 48,
+      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json"
+    }
+  ]
+}</code></pre>
+        </div>
+
+        <div class="example">
+          <h4>🎉 Holiday Response</h4>
+          <pre><code>{
+  "country": "KR",
+  "countryName": "대한민국 (South Korea)",
+  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 48,
+  "holidays": [
+    {
+      "name": "신정",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": "새해 첫날"
+    }
+  ]
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🔗 Links</h2>
+        <ul style="list-style: none; padding: 0">
+          <li style="margin: 0.5rem 0">
+            📦
+            <a href="https://pub.dev/packages/world_holidays" target="_blank"
+              >pub.dev Package</a
+            >
+          </li>
+          <li style="margin: 0.5rem 0">
+            💻
+            <a href="https://github.com/beomq/world_holidays" target="_blank"
+              >GitHub Repository</a
+            >
+          </li>
+          <li style="margin: 0.5rem 0">
+            📖
+            <a
+              href="https://github.com/beomq/world_holidays/blob/main/README.md"
+              target="_blank"
+              >Documentation</a
+            >
+          </li>
+          <li style="margin: 0.5rem 0">
+            🐛
+            <a
+              href="https://github.com/beomq/world_holidays/issues"
+              target="_blank"
+              >Report Issues</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <p>
+          Made with 🌍 by
+          <a href="https://github.com/beomq" target="_blank">beomq</a>
+        </p>
+        <p>Free & Open Source • MIT License</p>
+      </div>
+    </div>
+  </body>
+</html>
