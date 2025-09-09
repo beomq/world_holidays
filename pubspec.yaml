@@ -1,5 +1,5 @@
 name: world_holidays
-description: 🌍 A comprehensive Flutter package providing holiday information for multiple countries (2024-2026). Get holidays for South Korea, United States, Japan, and Germany with automatic online updates and offline fallback support.
+description: A comprehensive Flutter package providing holiday information for multiple countries (2024-2026). Get holidays for South Korea, United States, Japan, and Germany with automatic online updates and offline fallback support.
 version: 1.0.0
 homepage: https://beomq.github.io/world_holidays/
 repository: https://github.com/beomq/world_holidays
