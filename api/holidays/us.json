@@ -1,195 +1,324 @@
 {
   "country": "US",
-  "countryName": "미국 (United States)",
-  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "countryName": "United States",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
   "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 31,
+  "totalHolidays": 32,
   "holidays": [
     {
       "name": "New Year's Day",
       "date": "2024-01-01",
       "type": "NATIONAL",
-      "description": "First day of the year"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
     },
     {
       "name": "Martin Luther King Jr. Day",
       "date": "2024-01-15",
       "type": "NATIONAL",
-      "description": "Civil rights leader commemoration"
+      "description": {
+        "en": "Martin Luther King Jr. Day",
+        "ko": "마틴 루터 킹 주니어 기념일"
+      }
     },
     {
       "name": "Presidents' Day",
       "date": "2024-02-19",
       "type": "NATIONAL",
-      "description": "Washington's Birthday"
+      "description": {
+        "en": "Presidents' Day",
+        "ko": "대통령의 날"
+      }
     },
     {
       "name": "Memorial Day",
       "date": "2024-05-27",
       "type": "NATIONAL",
-      "description": "Honoring military personnel who died in service"
+      "description": {
+        "en": "Memorial Day",
+        "ko": "현충일"
+      }
+    },
+    {
+      "name": "Juneteenth",
+      "date": "2024-06-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Juneteenth",
+        "ko": "준틴스"
+      }
     },
     {
       "name": "Independence Day",
       "date": "2024-07-04",
       "type": "NATIONAL",
-      "description": "American Independence Day"
+      "description": {
+        "en": "Independence Day",
+        "ko": "독립기념일"
+      }
     },
     {
       "name": "Labor Day",
       "date": "2024-09-02",
       "type": "NATIONAL",
-      "description": "Celebration of workers"
+      "description": {
+        "en": "Labor Day",
+        "ko": "노동절"
+      }
     },
     {
       "name": "Columbus Day",
       "date": "2024-10-14",
       "type": "NATIONAL",
-      "description": "Christopher Columbus's arrival in the Americas"
+      "description": {
+        "en": "Columbus Day",
+        "ko": "콜럼버스의 날"
+      }
     },
     {
       "name": "Veterans Day",
       "date": "2024-11-11",
       "type": "NATIONAL",
-      "description": "Honoring military veterans"
+      "description": {
+        "en": "Veterans Day",
+        "ko": "재향군인의 날"
+      }
     },
     {
       "name": "Thanksgiving Day",
       "date": "2024-11-28",
       "type": "NATIONAL",
-      "description": "Thanksgiving celebration"
+      "description": {
+        "en": "Thanksgiving Day",
+        "ko": "추수감사절"
+      }
+    },
+    {
+      "name": "Christmas Eve",
+      "date": "2024-12-24",
+      "type": "OBSERVANCE",
+      "description": {
+        "en": "Christmas Eve",
+        "ko": "크리스마스 이브"
+      }
     },
     {
       "name": "Christmas Day",
       "date": "2024-12-25",
       "type": "NATIONAL",
-      "description": "Christmas celebration"
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
     },
     {
       "name": "New Year's Day",
       "date": "2025-01-01",
       "type": "NATIONAL",
-      "description": "First day of the year"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
     },
     {
-      "name": "Martin Luther King Jr. Day",
+      "name": "National Day of Mourning for Jimmy Carter",
+      "date": "2025-01-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day of Mourning for Jimmy Carter",
+        "ko": "지미 카터 추모일"
+      }
+    },
+    {
+      "name": "Martin Luther King Jr. Day / Inauguration Day",
       "date": "2025-01-20",
       "type": "NATIONAL",
-      "description": "Civil rights leader commemoration"
+      "description": {
+        "en": "Martin Luther King Jr. Day / Inauguration Day (DC, MD*, VA*)",
+        "ko": "마틴 루터 킹 주니어 기념일 / 대통령 취임식"
+      }
     },
     {
       "name": "Presidents' Day",
       "date": "2025-02-17",
       "type": "NATIONAL",
-      "description": "Washington's Birthday"
+      "description": {
+        "en": "Presidents' Day",
+        "ko": "대통령의 날"
+      }
     },
     {
       "name": "Memorial Day",
       "date": "2025-05-26",
       "type": "NATIONAL",
-      "description": "Honoring military personnel who died in service"
+      "description": {
+        "en": "Memorial Day",
+        "ko": "현충일"
+      }
+    },
+    {
+      "name": "Juneteenth",
+      "date": "2025-06-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Juneteenth",
+        "ko": "준틴스"
+      }
     },
     {
       "name": "Independence Day",
       "date": "2025-07-04",
       "type": "NATIONAL",
-      "description": "American Independence Day"
+      "description": {
+        "en": "Independence Day",
+        "ko": "독립기념일"
+      }
     },
     {
       "name": "Labor Day",
       "date": "2025-09-01",
       "type": "NATIONAL",
-      "description": "Celebration of workers"
+      "description": {
+        "en": "Labor Day",
+        "ko": "노동절"
+      }
     },
     {
       "name": "Columbus Day",
       "date": "2025-10-13",
       "type": "NATIONAL",
-      "description": "Christopher Columbus's arrival in the Americas"
+      "description": {
+        "en": "Columbus Day",
+        "ko": "콜럼버스의 날"
+      }
     },
     {
       "name": "Veterans Day",
       "date": "2025-11-11",
       "type": "NATIONAL",
-      "description": "Honoring military veterans"
+      "description": {
+        "en": "Veterans Day",
+        "ko": "재향군인의 날"
+      }
     },
     {
       "name": "Thanksgiving Day",
       "date": "2025-11-27",
       "type": "NATIONAL",
-      "description": "Thanksgiving celebration"
+      "description": {
+        "en": "Thanksgiving Day",
+        "ko": "추수감사절"
+      }
     },
     {
       "name": "Christmas Day",
       "date": "2025-12-25",
       "type": "NATIONAL",
-      "description": "Christmas celebration"
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
     },
     {
       "name": "New Year's Day",
       "date": "2026-01-01",
       "type": "NATIONAL",
-      "description": "First day of the year"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
     },
     {
       "name": "Martin Luther King Jr. Day",
       "date": "2026-01-19",
       "type": "NATIONAL",
-      "description": "Civil rights leader commemoration"
+      "description": {
+        "en": "Martin Luther King Jr. Day",
+        "ko": "마틴 루터 킹 주니어 기념일"
+      }
     },
     {
       "name": "Presidents' Day",
       "date": "2026-02-16",
       "type": "NATIONAL",
-      "description": "Washington's Birthday"
+      "description": {
+        "en": "Presidents' Day",
+        "ko": "대통령의 날"
+      }
     },
     {
       "name": "Memorial Day",
       "date": "2026-05-25",
       "type": "NATIONAL",
-      "description": "Honoring military personnel who died in service"
+      "description": {
+        "en": "Memorial Day",
+        "ko": "현충일"
+      }
     },
     {
-      "name": "Independence Day",
-      "date": "2026-07-04",
+      "name": "Juneteenth",
+      "date": "2026-06-19",
       "type": "NATIONAL",
-      "description": "American Independence Day"
+      "description": {
+        "en": "Juneteenth",
+        "ko": "준틴스"
+      }
     },
     {
       "name": "Independence Day (Observed)",
       "date": "2026-07-03",
       "type": "NATIONAL",
-      "description": "Independence Day observed (Saturday → Friday)"
+      "description": {
+        "en": "Independence Day (Observed)",
+        "ko": "독립기념일 대체휴일"
+      }
     },
     {
       "name": "Labor Day",
       "date": "2026-09-07",
       "type": "NATIONAL",
-      "description": "Celebration of workers"
+      "description": {
+        "en": "Labor Day",
+        "ko": "노동절"
+      }
     },
     {
       "name": "Columbus Day",
       "date": "2026-10-12",
       "type": "NATIONAL",
-      "description": "Christopher Columbus's arrival in the Americas"
+      "description": {
+        "en": "Columbus Day",
+        "ko": "콜럼버스의 날"
+      }
     },
     {
       "name": "Veterans Day",
       "date": "2026-11-11",
       "type": "NATIONAL",
-      "description": "Honoring military veterans"
+      "description": {
+        "en": "Veterans Day",
+        "ko": "재향군인의 날"
+      }
     },
     {
       "name": "Thanksgiving Day",
       "date": "2026-11-26",
       "type": "NATIONAL",
-      "description": "Thanksgiving celebration"
+      "description": {
+        "en": "Thanksgiving Day",
+        "ko": "추수감사절"
+      }
     },
     {
       "name": "Christmas Day",
       "date": "2026-12-25",
       "type": "NATIONAL",
-      "description": "Christmas celebration"
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
     }
   ]
 }

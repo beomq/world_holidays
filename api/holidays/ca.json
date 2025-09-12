@@ -1,0 +1,306 @@
+{
+  "country": "CA",
+  "countryName": "Canada",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 36,
+  "holidays": [
+    {
+      "name": "New Year's Day",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2024-03-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "성금요일"
+      }
+    },
+    {
+      "name": "Easter Monday",
+      "date": "2024-04-01",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Easter Monday (NT, NU, QC)",
+        "ko": "부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)"
+      }
+    },
+    {
+      "name": "Victoria Day",
+      "date": "2024-05-20",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Victoria Day (Many regions)",
+        "ko": "빅토리아 데이 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Canada Day",
+      "date": "2024-07-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Canada Day",
+        "ko": "캐나다 데이"
+      }
+    },
+    {
+      "name": "Labour Day",
+      "date": "2024-09-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labour Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "National Day for Truth and Reconciliation",
+      "date": "2024-09-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day for Truth and Reconciliation",
+        "ko": "진실과 화해의 날"
+      }
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2024-10-14",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Thanksgiving Day (Most regions)",
+        "ko": "추수감사절 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Remembrance Day",
+      "date": "2024-11-11",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Remembrance Day (Many regions)",
+        "ko": "현충일 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2024-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "Boxing Day",
+      "date": "2024-12-26",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Boxing Day (Many regions)",
+        "ko": "박싱데이 (대부분 지역)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2025-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2025-04-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "성금요일"
+      }
+    },
+    {
+      "name": "Easter Monday",
+      "date": "2025-04-21",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Easter Monday (NT, NU, QC)",
+        "ko": "부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)"
+      }
+    },
+    {
+      "name": "Victoria Day",
+      "date": "2025-05-19",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Victoria Day (Many regions)",
+        "ko": "빅토리아 데이 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Canada Day",
+      "date": "2025-07-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Canada Day",
+        "ko": "캐나다 데이"
+      }
+    },
+    {
+      "name": "Labour Day",
+      "date": "2025-09-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labour Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "National Day for Truth and Reconciliation",
+      "date": "2025-09-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day for Truth and Reconciliation",
+        "ko": "진실과 화해의 날"
+      }
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2025-10-13",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Thanksgiving Day (Most regions)",
+        "ko": "추수감사절 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Remembrance Day",
+      "date": "2025-11-11",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Remembrance Day (Many regions)",
+        "ko": "현충일 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2025-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "Boxing Day",
+      "date": "2025-12-26",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Boxing Day (Many regions)",
+        "ko": "박싱데이 (대부분 지역)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2026-04-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "성금요일"
+      }
+    },
+    {
+      "name": "Easter Monday",
+      "date": "2026-04-06",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Easter Monday (NT, NU, QC)",
+        "ko": "부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)"
+      }
+    },
+    {
+      "name": "Victoria Day",
+      "date": "2026-05-18",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Victoria Day (Many regions)",
+        "ko": "빅토리아 데이 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Canada Day",
+      "date": "2026-07-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Canada Day",
+        "ko": "캐나다 데이"
+      }
+    },
+    {
+      "name": "Labour Day",
+      "date": "2026-09-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labour Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "National Day for Truth and Reconciliation",
+      "date": "2026-09-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day for Truth and Reconciliation",
+        "ko": "진실과 화해의 날"
+      }
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2026-10-12",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Thanksgiving Day (Most regions)",
+        "ko": "추수감사절 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Remembrance Day",
+      "date": "2026-11-11",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Remembrance Day (Many regions)",
+        "ko": "현충일 (대부분 지역)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2026-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "Boxing Day",
+      "date": "2026-12-26",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Boxing Day (Many regions)",
+        "ko": "박싱데이 (대부분 지역)"
+      }
+    }
+  ]
+}

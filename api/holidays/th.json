@@ -1,0 +1,558 @@
+{
+  "country": "TH",
+  "countryName": "Thailand",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 54,
+  "holidays": [
+    {
+      "name": "New Year's Day",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Makha Bucha (Observed)",
+      "date": "2024-02-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Makha Bucha (Observed)",
+        "ko": "마카 부차 대체휴일"
+      }
+    },
+    {
+      "name": "Chakri Day (Observed)",
+      "date": "2024-04-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chakri Day (Observed)",
+        "ko": "차크리 왕조 기념일 대체휴일"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2024-04-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Songkran",
+      "date": "2024-04-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran (Thai New Year)",
+        "ko": "송크란 (태국 신정)"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2024-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2024-04-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Songkran Observed",
+      "date": "2024-04-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Observed",
+        "ko": "송크란 대체휴일"
+      }
+    },
+    {
+      "name": "Coronation Day (Observed)",
+      "date": "2024-05-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coronation Day (Observed)",
+        "ko": "대관식 기념일 대체휴일"
+      }
+    },
+    {
+      "name": "Royal Ploughing Ceremony Day",
+      "date": "2024-05-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Royal Ploughing Ceremony Day",
+        "ko": "왕실 쟁기질 의식의 날"
+      }
+    },
+    {
+      "name": "Visakha Bucha",
+      "date": "2024-05-22",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Visakha Bucha (Buddha's Birthday)",
+        "ko": "위사카 부차 (부처님 오신 날)"
+      }
+    },
+    {
+      "name": "Queen Suthida's Birthday",
+      "date": "2024-06-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Queen Suthida's Birthday",
+        "ko": "수티다 왕비 생일"
+      }
+    },
+    {
+      "name": "Asalha Bucha (Observed)",
+      "date": "2024-07-22",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Asalha Bucha (Observed)",
+        "ko": "아살하 부차 대체휴일"
+      }
+    },
+    {
+      "name": "King Vajiralongkorn's Birthday (Observed)",
+      "date": "2024-07-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Vajiralongkorn's Birthday (Observed)",
+        "ko": "바지랄롱콘 국왕 생일 대체휴일"
+      }
+    },
+    {
+      "name": "The Queen Mother's Birthday",
+      "date": "2024-08-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "The Queen Mother's Birthday",
+        "ko": "왕대비 생일"
+      }
+    },
+    {
+      "name": "Anniversary of the Death of King Bhumibol (Observed)",
+      "date": "2024-10-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Anniversary of the Death of King Bhumibol (Observed)",
+        "ko": "푸미폰 국왕 서거 기념일 대체휴일"
+      }
+    },
+    {
+      "name": "Chulalongkorn Day",
+      "date": "2024-10-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chulalongkorn Day",
+        "ko": "출라롱콘의 날"
+      }
+    },
+    {
+      "name": "King Bhumibol's Birthday/Father's Day",
+      "date": "2024-12-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Bhumibol's Birthday/Father's Day",
+        "ko": "푸미폰 국왕 생일/아버지의 날"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2024-12-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "헌법의 날"
+      }
+    },
+    {
+      "name": "New Year Special Holiday",
+      "date": "2024-12-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year Special Holiday",
+        "ko": "신정 특별휴일"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2024-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve",
+        "ko": "신정 전야"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2025-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Makha Bucha",
+      "date": "2025-02-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Makha Bucha",
+        "ko": "마카 부차"
+      }
+    },
+    {
+      "name": "Chakri Day (Observed)",
+      "date": "2025-04-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chakri Day (Observed)",
+        "ko": "차크리 왕조 기념일 대체휴일"
+      }
+    },
+    {
+      "name": "Songkran",
+      "date": "2025-04-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran (Thai New Year)",
+        "ko": "송크란 (태국 신정)"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2025-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2025-04-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Songkran Observed",
+      "date": "2025-04-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Observed",
+        "ko": "송크란 대체휴일"
+      }
+    },
+    {
+      "name": "Coronation Day (Observed)",
+      "date": "2025-05-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coronation Day (Observed)",
+        "ko": "대관식 기념일 대체휴일"
+      }
+    },
+    {
+      "name": "Royal Ploughing Ceremony Day",
+      "date": "2025-05-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Royal Ploughing Ceremony Day",
+        "ko": "왕실 쟁기질 의식의 날"
+      }
+    },
+    {
+      "name": "Visakha Bucha (Observed)",
+      "date": "2025-05-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Visakha Bucha (Observed)",
+        "ko": "위사카 부차 대체휴일"
+      }
+    },
+    {
+      "name": "Bridge Public Holiday",
+      "date": "2025-06-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Bridge Public Holiday",
+        "ko": "브릿지 공휴일"
+      }
+    },
+    {
+      "name": "Queen Suthida's Birthday",
+      "date": "2025-06-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Queen Suthida's Birthday",
+        "ko": "수티다 왕비 생일"
+      }
+    },
+    {
+      "name": "Asalha Bucha",
+      "date": "2025-07-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Asalha Bucha",
+        "ko": "아살하 부차"
+      }
+    },
+    {
+      "name": "King Vajiralongkorn's Birthday",
+      "date": "2025-07-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Vajiralongkorn's Birthday",
+        "ko": "바지랄롱콘 국왕 생일"
+      }
+    },
+    {
+      "name": "Bridge Public Holiday",
+      "date": "2025-08-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Bridge Public Holiday",
+        "ko": "브릿지 공휴일"
+      }
+    },
+    {
+      "name": "The Queen Mother's Birthday",
+      "date": "2025-08-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "The Queen Mother's Birthday",
+        "ko": "왕대비 생일"
+      }
+    },
+    {
+      "name": "Anniversary of the Death of King Bhumibol",
+      "date": "2025-10-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Anniversary of the Death of King Bhumibol",
+        "ko": "푸미폰 국왕 서거 기념일"
+      }
+    },
+    {
+      "name": "Chulalongkorn Day",
+      "date": "2025-10-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chulalongkorn Day",
+        "ko": "출라롱콘의 날"
+      }
+    },
+    {
+      "name": "King Bhumibol's Birthday/Father's Day",
+      "date": "2025-12-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Bhumibol's Birthday/Father's Day",
+        "ko": "푸미폰 국왕 생일/아버지의 날"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2025-12-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "헌법의 날"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2025-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve",
+        "ko": "신정 전야"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "New Year Special Holiday",
+      "date": "2026-01-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year Special Holiday",
+        "ko": "신정 특별휴일"
+      }
+    },
+    {
+      "name": "Makha Bucha",
+      "date": "2026-03-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Makha Bucha",
+        "ko": "마카 부차"
+      }
+    },
+    {
+      "name": "Chakri Day",
+      "date": "2026-04-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chakri Day",
+        "ko": "차크리 왕조 기념일"
+      }
+    },
+    {
+      "name": "Songkran",
+      "date": "2026-04-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran (Thai New Year)",
+        "ko": "송크란 (태국 신정)"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2026-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Songkran Holiday",
+      "date": "2026-04-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Holiday",
+        "ko": "송크란 연휴"
+      }
+    },
+    {
+      "name": "Coronation Day",
+      "date": "2026-05-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coronation Day",
+        "ko": "대관식 기념일"
+      }
+    },
+    {
+      "name": "Visakha Bucha (Observed)",
+      "date": "2026-06-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Visakha Bucha (Observed)",
+        "ko": "위사카 부차 대체휴일"
+      }
+    },
+    {
+      "name": "Queen Suthida's Birthday",
+      "date": "2026-06-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Queen Suthida's Birthday",
+        "ko": "수티다 왕비 생일"
+      }
+    },
+    {
+      "name": "King Vajiralongkorn's Birthday",
+      "date": "2026-07-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Vajiralongkorn's Birthday",
+        "ko": "바지랄롱콘 국왕 생일"
+      }
+    },
+    {
+      "name": "Asalha Bucha",
+      "date": "2026-07-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Asalha Bucha",
+        "ko": "아살하 부차"
+      }
+    },
+    {
+      "name": "The Queen Mother's Birthday",
+      "date": "2026-08-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "The Queen Mother's Birthday",
+        "ko": "왕대비 생일"
+      }
+    },
+    {
+      "name": "Anniversary of the Death of King Bhumibol",
+      "date": "2026-10-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Anniversary of the Death of King Bhumibol",
+        "ko": "푸미폰 국왕 서거 기념일"
+      }
+    },
+    {
+      "name": "Chulalongkorn Day",
+      "date": "2026-10-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chulalongkorn Day",
+        "ko": "출라롱콘의 날"
+      }
+    },
+    {
+      "name": "King Bhumibol's Birthday/Father's Day",
+      "date": "2026-12-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Bhumibol's Birthday/Father's Day",
+        "ko": "푸미폰 국왕 생일/아버지의 날"
+      }
+    },
+    {
+      "name": "King Bhumibol's Birthday/Father's Day (Observed)",
+      "date": "2026-12-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "King Bhumibol's Birthday/Father's Day (Observed)",
+        "ko": "푸미폰 국왕 생일/아버지의 날 대체휴일"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2026-12-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "헌법의 날"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2026-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve",
+        "ko": "신정 전야"
+      }
+    }
+  ]
+}

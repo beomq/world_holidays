@@ -11,8 +11,8 @@ class Holiday {
   /// The type of holiday
   final HolidayType type;
 
-  /// Optional description of the holiday
-  final String? description;
+  /// Optional description of the holiday (multilingual)
+  final Map<String, String>? description;
 
   const Holiday({
     required this.name,
@@ -23,11 +23,21 @@ class Holiday {
 
   /// Create Holiday from JSON data
   factory Holiday.fromJson(Map<String, dynamic> json) {
+    Map<String, String>? description;
+    if (json['description'] != null) {
+      if (json['description'] is Map<String, dynamic>) {
+        description = Map<String, String>.from(json['description']);
+      } else if (json['description'] is String) {
+        // Backward compatibility for old format
+        description = {'en': json['description'] as String};
+      }
+    }
+
     return Holiday(
       name: json['name'] as String,
       date: DateTime.parse(json['date'] as String),
       type: HolidayType.fromString(json['type'] as String),
-      description: json['description'] as String?,
+      description: description,
     );
   }
 
@@ -65,6 +75,20 @@ class Holiday {
 
   /// Get formatted date string (YYYY-MM-DD)
   String get dateString => date.toIso8601String().split('T')[0];
+
+  /// Get description in specified language
+  String? getDescription(String language) {
+    if (description == null) return null;
+    return description![language] ??
+        description!['en'] ??
+        description!.values.first;
+  }
+
+  /// Get description in English
+  String? get descriptionEn => getDescription('en');
+
+  /// Get description in Korean
+  String? get descriptionKo => getDescription('ko');
 
   @override
   String toString() {

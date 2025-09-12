@@ -182,28 +182,169 @@
         color: white;
         text-decoration: underline;
       }
+
+      /* Calendar Styles */
+      .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1px;
+        background: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+      }
+
+      .calendar-header {
+        background: #667eea;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+        grid-column: 1 / -1;
+      }
+
+      .calendar-day-header {
+        background: #764ba2;
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .calendar-day {
+        background: white;
+        padding: 0.5rem;
+        min-height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        border: 1px solid transparent;
+      }
+
+      .calendar-day:hover {
+        background: #f0f0f0;
+      }
+
+      .calendar-day.other-month {
+        background: #f8f8f8;
+        color: #ccc;
+      }
+
+      .calendar-day.holiday {
+        background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+        color: white;
+        font-weight: bold;
+      }
+
+      .calendar-day.holiday:hover {
+        background: linear-gradient(135deg, #ff5252, #ff7043);
+      }
+
+      .calendar-day.today {
+        border: 2px solid #667eea;
+        font-weight: bold;
+      }
+
+      .day-number {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .holiday-indicator {
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+      }
+
+      .month-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .month-nav-btn {
+        background: #667eea;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.2s ease;
+      }
+
+      .month-nav-btn:hover {
+        background: #5a67d8;
+      }
+
+      .current-month {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #667eea;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="header">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+          "
+        >
+          <div></div>
+          <div style="display: flex; align-items: center; gap: 1rem">
+            <label
+              for="language-select"
+              style="color: white; font-weight: bold"
+            >
+              🌐 Language:
+            </label>
+            <select
+              id="language-select"
+              style="
+                padding: 0.5rem;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                font-size: 1rem;
+                background: white;
+              "
+            >
+              <option value="en">English</option>
+              <option value="ko">한국어</option>
+            </select>
+          </div>
+        </div>
         <h1>🌍 World Holidays API</h1>
-        <p>
-          Free holiday data for South Korea, United States, Japan, and Germany
+        <p id="header-description">
+          Free holiday data for South Korea, United States, Japan, China,
+          Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan
         </p>
       </div>
 
       <div class="stats">
         <div class="stat">
-          <div class="stat-number">4</div>
+          <div class="stat-number">-</div>
           <div class="stat-label">Countries</div>
         </div>
         <div class="stat">
-          <div class="stat-number">178</div>
+          <div class="stat-number">-</div>
           <div class="stat-label">Total Holidays</div>
         </div>
         <div class="stat">
-          <div class="stat-number">3</div>
+          <div class="stat-number">-</div>
           <div class="stat-label">Years (2024-2026)</div>
         </div>
         <div class="stat">
@@ -215,80 +356,122 @@
       <div class="card">
         <h2>🚀 API Endpoints</h2>
         <div class="endpoints">
-          <div class="endpoint">
-            <h3>📋 Get Countries</h3>
-            <p>Get list of all supported countries</p>
-            <code
-              >GET
-              https://beomq.github.io/world_holidays/api/countries.json</code
-            >
-          </div>
-
-          <div class="endpoint">
-            <h3>🇰🇷 Korea Holidays</h3>
-            <p>Get all Korean holidays (2024-2026)</p>
-            <code
-              >GET
-              https://beomq.github.io/world_holidays/api/holidays/kr.json</code
-            >
-          </div>
-
-          <div class="endpoint">
-            <h3>🇺🇸 US Holidays</h3>
-            <p>Get all US holidays (2024-2026)</p>
-            <code
-              >GET
-              https://beomq.github.io/world_holidays/api/holidays/us.json</code
-            >
-          </div>
-
-          <div class="endpoint">
-            <h3>🇯🇵 Japan Holidays</h3>
-            <p>Get all Japanese holidays (2024-2026)</p>
-            <code
-              >GET
-              https://beomq.github.io/world_holidays/api/holidays/jp.json</code
-            >
-          </div>
-
-          <div class="endpoint">
-            <h3>🇩🇪 Germany Holidays</h3>
-            <p>Get all German holidays (2024-2026)</p>
-            <code
-              >GET
-              https://beomq.github.io/world_holidays/api/holidays/de.json</code
-            >
-          </div>
+          <!-- Endpoints will be loaded dynamically from countries.json -->
         </div>
       </div>
 
       <div class="card">
         <h2>🏳️ Supported Countries</h2>
         <div class="countries-grid">
-          <div class="country-card">
-            <div class="flag">🇰🇷</div>
-            <h3>South Korea</h3>
-            <p>Code: KR</p>
-            <p>48 holidays</p>
+          <!-- Countries will be loaded dynamically from countries.json -->
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>📅 Interactive Holiday Calendar</h2>
+
+        <div style="margin-bottom: 1.5rem">
+          <label
+            for="country-select"
+            style="
+              display: block;
+              margin-bottom: 0.5rem;
+              font-weight: bold;
+              color: #667eea;
+            "
+          >
+            🌍 Select Country:
+          </label>
+          <select
+            id="country-select"
+            style="
+              padding: 0.5rem;
+              border-radius: 5px;
+              border: 1px solid #ddd;
+              font-size: 1rem;
+              width: 200px;
+            "
+          >
+            <!-- Options will be loaded dynamically from countries.json -->
+          </select>
+        </div>
+
+        <div
+          style="
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 1rem;
+            "
+          >
+            <div>
+              <div
+                style="font-size: 1.5rem; font-weight: bold"
+                id="remaining-count"
+              >
+                -
+              </div>
+              <div style="font-size: 0.9rem; opacity: 0.9">
+                Remaining This Year
+              </div>
+            </div>
+            <div>
+              <div
+                style="font-size: 1.5rem; font-weight: bold"
+                id="total-holidays-count"
+              >
+                -
+              </div>
+              <div style="font-size: 0.9rem; opacity: 0.9">
+                Holidays This Year
+              </div>
+            </div>
+            <div>
+              <div
+                style="font-size: 1.5rem; font-weight: bold"
+                id="current-year"
+              >
+                2025
+              </div>
+              <div style="font-size: 0.9rem; opacity: 0.9">Current Year</div>
+            </div>
           </div>
-          <div class="country-card">
-            <div class="flag">🇺🇸</div>
-            <h3>United States</h3>
-            <p>Code: US</p>
-            <p>31 holidays</p>
+        </div>
+
+        <div id="calendar-container">
+          <div
+            id="calendar-loading"
+            style="text-align: center; padding: 2rem; color: #667eea"
+          >
+            📅 Loading calendar...
           </div>
-          <div class="country-card">
-            <div class="flag">🇯🇵</div>
-            <h3>Japan</h3>
-            <p>Code: JP</p>
-            <p>54 holidays</p>
-          </div>
-          <div class="country-card">
-            <div class="flag">🇩🇪</div>
-            <h3>Germany</h3>
-            <p>Code: DE</p>
-            <p>45 holidays</p>
-          </div>
+        </div>
+
+        <div
+          id="holiday-info"
+          style="
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8f9ff;
+            border-radius: 10px;
+            display: none;
+          "
+        >
+          <h4 style="color: #667eea; margin-bottom: 0.5rem">
+            🎉 Holiday Information
+          </h4>
+          <div id="holiday-details"></div>
         </div>
       </div>
 
@@ -334,17 +517,22 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         <div class="example">
           <h4>🏛️ Countries Response</h4>
           <pre><code>{
-  "lastUpdated": "2025-09-09T00:00:00.000Z",
-  "totalCountries": 4,
-  "supportedCountries": ["KR", "US", "JP", "DE"],
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
+  "totalCountries": 10,
+  "supportedCountries": ["KR", "US", "JP", "CN", "VN", "MY", "TH", "CA", "BR", "TW"],
   "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 178,
+  "totalHolidays": 508,
   "countries": [
     {
       "code": "KR",
-      "name": "대한민국 (South Korea)",
-      "totalHolidays": 48,
-      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json"
+      "name": "South Korea",
+      "flag": "🇰🇷",
+      "totalHolidays": 41,
+      "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json",
+      "names": {
+        "en": "South Korea",
+        "ko": "대한민국"
+      }
     }
   ]
 }</code></pre>
@@ -354,16 +542,19 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           <h4>🎉 Holiday Response</h4>
           <pre><code>{
   "country": "KR",
-  "countryName": "대한민국 (South Korea)",
-  "lastUpdated": "2025-09-09T00:00:00.000Z",
+  "countryName": "South Korea",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
   "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 48,
+  "totalHolidays": 41,
   "holidays": [
     {
       "name": "신정",
       "date": "2024-01-01",
       "type": "NATIONAL",
-      "description": "새해 첫날"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "새해 첫날"
+      }
     }
   ]
 }</code></pre>
@@ -412,5 +603,538 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         <p>Free & Open Source • MIT License</p>
       </div>
     </div>
+
+    <script>
+      class HolidayCalendar {
+        constructor() {
+          this.currentDate = new Date();
+          this.currentMonth = this.currentDate.getMonth();
+          this.currentYear = this.currentDate.getFullYear();
+          this.selectedCountry = "kr";
+          this.holidays = [];
+          this.countriesData = null;
+          this.currentLanguage = "en";
+          this.monthNames = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ];
+          this.dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+          // Translations
+          this.translations = {
+            en: {
+              headerDescription:
+                "Free holiday data for South Korea, United States, Japan, China, Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan",
+              countries: "Countries",
+              totalHolidays: "Total Holidays",
+              years: "Years (2024-2026)",
+              cost: "Cost (Free!)",
+              apiEndpoints: "API Endpoints",
+              getCountries: "Get Countries",
+              getCountriesDesc: "Get list of all supported countries",
+              supportedCountries: "Supported Countries",
+              interactiveCalendar: "Interactive Holiday Calendar",
+              selectCountry: "Select Country:",
+              remainingThisYear: "Remaining This Year",
+              holidaysThisYear: "Holidays This Year",
+              currentYear: "Current Year",
+              holidayInformation: "Holiday Information",
+              usageExamples: "Usage Examples",
+              dataStructure: "Data Structure",
+              links: "Links",
+              reportIssues: "Report Issues",
+              madeWith: "Made with",
+              freeOpenSource: "Free & Open Source • MIT License",
+            },
+            ko: {
+              headerDescription:
+                "한국, 미국, 일본, 중국, 베트남, 말레이시아, 태국, 캐나다, 브라질, 대만의 무료 공휴일 데이터",
+              countries: "국가",
+              totalHolidays: "총 공휴일",
+              years: "연도 (2024-2026)",
+              cost: "비용 (무료!)",
+              apiEndpoints: "API 엔드포인트",
+              getCountries: "국가 목록 조회",
+              getCountriesDesc: "지원되는 모든 국가 목록 조회",
+              supportedCountries: "지원 국가",
+              interactiveCalendar: "공휴일 달력",
+              selectCountry: "국가 선택:",
+              remainingThisYear: "올해 남은 휴일",
+              holidaysThisYear: "올해 공휴일",
+              currentYear: "현재 연도",
+              holidayInformation: "공휴일 정보",
+              usageExamples: "사용 예제",
+              dataStructure: "데이터 구조",
+              links: "링크",
+              reportIssues: "이슈 신고",
+              madeWith: "제작",
+              freeOpenSource: "무료 및 오픈소스 • MIT 라이선스",
+            },
+          };
+        }
+
+        async init() {
+          await this.loadCountriesData();
+          await this.loadHolidays();
+          this.updateTopStats();
+          this.updateTranslations();
+          this.render();
+          this.bindEvents();
+          this.updateRemainingHolidays();
+        }
+
+        async loadCountriesData() {
+          try {
+            const response = await fetch(
+              "https://beomq.github.io/world_holidays/api/countries.json"
+            );
+            this.countriesData = await response.json();
+          } catch (error) {
+            console.error("Failed to load countries data:", error);
+            this.countriesData = null;
+          }
+        }
+
+        async loadHolidays() {
+          try {
+            const response = await fetch(
+              `https://beomq.github.io/world_holidays/api/holidays/${this.selectedCountry}.json`
+            );
+            const data = await response.json();
+            this.holidays = data.holidays || [];
+          } catch (error) {
+            console.error("Failed to load holidays:", error);
+            this.holidays = [];
+          }
+        }
+
+        updateTopStats() {
+          if (!this.countriesData) return;
+
+          // Update countries count
+          const countriesStat = document.querySelector(
+            ".stat:nth-child(1) .stat-number"
+          );
+          if (countriesStat) {
+            countriesStat.textContent = this.countriesData.totalCountries;
+          }
+
+          // Update total holidays count
+          const totalHolidaysStat = document.querySelector(
+            ".stat:nth-child(2) .stat-number"
+          );
+          if (totalHolidaysStat) {
+            totalHolidaysStat.textContent = this.countriesData.totalHolidays;
+          }
+
+          // Update supported years
+          const yearsStat = document.querySelector(
+            ".stat:nth-child(3) .stat-number"
+          );
+          if (yearsStat) {
+            yearsStat.textContent = this.countriesData.supportedYears.length;
+          }
+
+          // Update supported countries section
+          this.updateSupportedCountries();
+
+          // Update API endpoints section
+          this.updateApiEndpoints();
+        }
+
+        updateSupportedCountries() {
+          if (!this.countriesData) return;
+
+          // Update country cards
+          const countriesGrid = document.querySelector(".countries-grid");
+          if (countriesGrid) {
+            // Clear existing country cards
+            countriesGrid.innerHTML = "";
+
+            // Create country cards dynamically
+            this.countriesData.countries.forEach((country) => {
+              const countryCard = document.createElement("div");
+              countryCard.className = "country-card";
+              const countryName =
+                country.names && country.names[this.currentLanguage]
+                  ? country.names[this.currentLanguage]
+                  : country.name;
+
+              countryCard.innerHTML = `
+                <div class="flag">${country.flag}</div>
+                <h3>${countryName}</h3>
+                <p>Code: ${country.code}</p>
+                <p>${country.totalHolidays} holidays</p>
+              `;
+              countriesGrid.appendChild(countryCard);
+            });
+          }
+
+          // Update country select dropdown
+          const countrySelect = document.getElementById("country-select");
+          if (countrySelect) {
+            // Clear existing options
+            countrySelect.innerHTML = "";
+
+            // Create options dynamically
+            this.countriesData.countries.forEach((country) => {
+              const option = document.createElement("option");
+              option.value = country.code.toLowerCase();
+              const countryName =
+                country.names && country.names[this.currentLanguage]
+                  ? country.names[this.currentLanguage]
+                  : country.name;
+              option.textContent = `${country.flag} ${countryName}`;
+              countrySelect.appendChild(option);
+            });
+          }
+        }
+
+        updateApiEndpoints() {
+          if (!this.countriesData) return;
+
+          const endpointsContainer = document.querySelector(".endpoints");
+          if (!endpointsContainer) return;
+
+          // Clear existing endpoints
+          endpointsContainer.innerHTML = "";
+
+          // Add countries endpoint first
+          const countriesEndpoint = document.createElement("div");
+          countriesEndpoint.className = "endpoint";
+          countriesEndpoint.innerHTML = `
+            <h3>📋 Get Countries</h3>
+            <p>Get list of all supported countries</p>
+            <code>GET https://beomq.github.io/world_holidays/api/countries.json</code>
+          `;
+          endpointsContainer.appendChild(countriesEndpoint);
+
+          // Add country-specific endpoints
+          this.countriesData.countries.forEach((country) => {
+            const endpoint = document.createElement("div");
+            endpoint.className = "endpoint";
+            const countryName =
+              country.names && country.names[this.currentLanguage]
+                ? country.names[this.currentLanguage]
+                : country.name;
+            endpoint.innerHTML = `
+              <h3>${country.flag} ${countryName} Holidays</h3>
+              <p>Get all ${countryName} holidays (${this.countriesData.supportedYears.join(
+              "-"
+            )})</p>
+              <code>GET https://beomq.github.io/world_holidays/api/holidays/${country.code.toLowerCase()}.json</code>
+            `;
+            endpointsContainer.appendChild(endpoint);
+          });
+        }
+
+        updateTranslations() {
+          const t =
+            this.translations[this.currentLanguage] || this.translations.en;
+
+          // Update header description
+          const headerDesc = document.getElementById("header-description");
+          if (headerDesc) {
+            headerDesc.textContent = t.headerDescription;
+          }
+
+          // Update stat labels
+          const statLabels = document.querySelectorAll(".stat-label");
+          if (statLabels.length >= 4) {
+            statLabels[0].textContent = t.countries;
+            statLabels[1].textContent = t.totalHolidays;
+            statLabels[2].textContent = t.years;
+            statLabels[3].textContent = t.cost;
+          }
+
+          // Update section headers
+          const sectionHeaders = document.querySelectorAll(".card h2");
+          sectionHeaders.forEach((header, index) => {
+            const text = header.textContent;
+            if (text.includes("🚀"))
+              header.textContent = `🚀 ${t.apiEndpoints}`;
+            else if (text.includes("🏳️"))
+              header.textContent = `🏳️ ${t.supportedCountries}`;
+            else if (text.includes("📅"))
+              header.textContent = `📅 ${t.interactiveCalendar}`;
+            else if (text.includes("💻"))
+              header.textContent = `💻 ${t.usageExamples}`;
+            else if (text.includes("📊"))
+              header.textContent = `📊 ${t.dataStructure}`;
+            else if (text.includes("🔗")) header.textContent = `🔗 ${t.links}`;
+          });
+
+          // Update country select label
+          const countrySelectLabel = document.querySelector(
+            'label[for="country-select"]'
+          );
+          if (countrySelectLabel) {
+            countrySelectLabel.textContent = `🌍 ${t.selectCountry}`;
+          }
+
+          // Update calendar stats labels
+          const calendarStats = document.querySelectorAll(
+            '[id="remaining-count"], [id="total-holidays-count"], [id="current-year"]'
+          );
+          if (calendarStats.length >= 3) {
+            const remainingLabel =
+              calendarStats[0].parentElement.querySelector("div:last-child");
+            const totalLabel =
+              calendarStats[1].parentElement.querySelector("div:last-child");
+            const yearLabel =
+              calendarStats[2].parentElement.querySelector("div:last-child");
+
+            if (remainingLabel)
+              remainingLabel.textContent = t.remainingThisYear;
+            if (totalLabel) totalLabel.textContent = t.holidaysThisYear;
+            if (yearLabel) yearLabel.textContent = t.currentYear;
+          }
+
+          // Update holiday info header
+          const holidayInfoHeader = document.querySelector("#holiday-info h4");
+          if (holidayInfoHeader) {
+            holidayInfoHeader.textContent = `🎉 ${t.holidayInformation}`;
+          }
+
+          // Update footer
+          const footer = document.querySelector(".footer p:last-child");
+          if (footer) {
+            footer.textContent = t.freeOpenSource;
+          }
+        }
+
+        updateRemainingHolidays() {
+          const today = new Date();
+          const currentYear = today.getFullYear();
+
+          // Filter holidays for current year only
+          const currentYearHolidays = this.holidays.filter((holiday) => {
+            const holidayDate = new Date(holiday.date);
+            return holidayDate.getFullYear() === currentYear;
+          });
+
+          // Filter remaining holidays for current year
+          const remainingHolidays = currentYearHolidays.filter((holiday) => {
+            const holidayDate = new Date(holiday.date);
+            return holidayDate >= today;
+          });
+
+          // Update remaining holidays count
+          document.getElementById("remaining-count").textContent =
+            remainingHolidays.length;
+
+          // Update total holidays count for current year only
+          document.getElementById("total-holidays-count").textContent =
+            currentYearHolidays.length;
+
+          // Update current year display
+          document.getElementById("current-year").textContent = currentYear;
+        }
+
+        render() {
+          const container = document.getElementById("calendar-container");
+
+          // Create month navigation
+          const nav = document.createElement("div");
+          nav.className = "month-navigation";
+
+          const prevBtn = document.createElement("button");
+          prevBtn.className = "month-nav-btn";
+          prevBtn.textContent = "‹ Previous";
+          prevBtn.addEventListener("click", () => {
+            this.currentMonth--;
+            if (this.currentMonth < 0) {
+              this.currentMonth = 11;
+              this.currentYear--;
+            }
+            this.render();
+          });
+
+          const monthDisplay = document.createElement("div");
+          monthDisplay.className = "current-month";
+          monthDisplay.textContent = `${this.monthNames[this.currentMonth]} ${
+            this.currentYear
+          }`;
+
+          const nextBtn = document.createElement("button");
+          nextBtn.className = "month-nav-btn";
+          nextBtn.textContent = "Next ›";
+          nextBtn.addEventListener("click", () => {
+            this.currentMonth++;
+            if (this.currentMonth > 11) {
+              this.currentMonth = 0;
+              this.currentYear++;
+            }
+            this.render();
+          });
+
+          nav.appendChild(prevBtn);
+          nav.appendChild(monthDisplay);
+          nav.appendChild(nextBtn);
+
+          // Create calendar
+          const calendar = document.createElement("div");
+          calendar.className = "calendar";
+
+          // Add day headers
+          this.dayNames.forEach((day) => {
+            const dayHeader = document.createElement("div");
+            dayHeader.className = "calendar-day-header";
+            dayHeader.textContent = day;
+            calendar.appendChild(dayHeader);
+          });
+
+          // Get first day of month and number of days
+          const firstDay = new Date(
+            this.currentYear,
+            this.currentMonth,
+            1
+          ).getDay();
+          const daysInMonth = new Date(
+            this.currentYear,
+            this.currentMonth + 1,
+            0
+          ).getDate();
+          const daysInPrevMonth = new Date(
+            this.currentYear,
+            this.currentMonth,
+            0
+          ).getDate();
+
+          // Add previous month's trailing days
+          for (let i = firstDay - 1; i >= 0; i--) {
+            const day = daysInPrevMonth - i;
+            const dayElement = this.createDayElement(day, true);
+            calendar.appendChild(dayElement);
+          }
+
+          // Add current month's days
+          for (let day = 1; day <= daysInMonth; day++) {
+            const dayElement = this.createDayElement(day, false);
+            calendar.appendChild(dayElement);
+          }
+
+          // Add next month's leading days
+          const remainingCells = 42 - (firstDay + daysInMonth);
+          for (let day = 1; day <= remainingCells; day++) {
+            const dayElement = this.createDayElement(day, true);
+            calendar.appendChild(dayElement);
+          }
+
+          container.innerHTML = "";
+          container.appendChild(nav);
+          container.appendChild(calendar);
+        }
+
+        createDayElement(day, isOtherMonth) {
+          const dayElement = document.createElement("div");
+          dayElement.className = "calendar-day";
+
+          if (isOtherMonth) {
+            dayElement.classList.add("other-month");
+          }
+
+          const dayNumber = document.createElement("div");
+          dayNumber.className = "day-number";
+          dayNumber.textContent = day;
+
+          const today = new Date();
+          if (
+            !isOtherMonth &&
+            day === today.getDate() &&
+            this.currentMonth === today.getMonth() &&
+            this.currentYear === today.getFullYear()
+          ) {
+            dayElement.classList.add("today");
+          }
+
+          // Check for holidays
+          const dateStr = `${this.currentYear}-${String(
+            this.currentMonth + 1
+          ).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+          const holiday = this.holidays.find((h) => h.date === dateStr);
+
+          if (holiday && !isOtherMonth) {
+            dayElement.classList.add("holiday");
+            const holidayIndicator = document.createElement("div");
+            holidayIndicator.className = "holiday-indicator";
+            holidayIndicator.textContent =
+              holiday.name.length > 10
+                ? holiday.name.substring(0, 8) + "..."
+                : holiday.name;
+            dayElement.appendChild(dayNumber);
+            dayElement.appendChild(holidayIndicator);
+
+            dayElement.addEventListener("click", () => {
+              this.showHolidayInfo(holiday);
+            });
+          } else {
+            dayElement.appendChild(dayNumber);
+          }
+
+          return dayElement;
+        }
+
+        showHolidayInfo(holiday) {
+          const infoDiv = document.getElementById("holiday-info");
+          const detailsDiv = document.getElementById("holiday-details");
+
+          // Handle multilingual description
+          let description = holiday.description;
+          if (typeof description === "object" && description !== null) {
+            description =
+              description[this.currentLanguage] ||
+              description.en ||
+              description.ko ||
+              JSON.stringify(description);
+          }
+
+          detailsDiv.innerHTML = `
+            <strong>${holiday.name}</strong><br>
+            📅 Date: ${holiday.date}<br>
+            🏷️ Type: ${holiday.type}<br>
+            📝 Description: ${description}
+          `;
+
+          infoDiv.style.display = "block";
+        }
+
+        bindEvents() {
+          document
+            .getElementById("country-select")
+            .addEventListener("change", async (e) => {
+              this.selectedCountry = e.target.value;
+              await this.loadHolidays();
+              this.render();
+              this.updateRemainingHolidays();
+            });
+
+          document
+            .getElementById("language-select")
+            .addEventListener("change", (e) => {
+              this.currentLanguage = e.target.value;
+              this.updateTranslations();
+              this.updateSupportedCountries();
+              this.updateApiEndpoints();
+            });
+        }
+      }
+
+      // Initialize calendar when page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        const calendar = new HolidayCalendar();
+        calendar.init();
+      });
+    </script>
   </body>
 </html>

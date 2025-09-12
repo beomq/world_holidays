@@ -1,0 +1,468 @@
+{
+  "country": "BR",
+  "countryName": "Brazil",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 51,
+  "holidays": [
+    {
+      "name": "New Year's Day",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Carnival Monday",
+      "date": "2024-02-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival Monday",
+        "ko": "카니발 월요일"
+      }
+    },
+    {
+      "name": "Carnival Tuesday",
+      "date": "2024-02-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival Tuesday",
+        "ko": "카니발 화요일"
+      }
+    },
+    {
+      "name": "Carnival End",
+      "date": "2024-02-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival end (until 2pm)",
+        "ko": "카니발 종료 (오후 2시까지)"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2024-03-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "성금요일"
+      }
+    },
+    {
+      "name": "Tiradentes Day",
+      "date": "2024-04-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tiradentes Day",
+        "ko": "티라덴테스의 날"
+      }
+    },
+    {
+      "name": "Labor Day / May Day",
+      "date": "2024-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day / May Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "Corpus Christi",
+      "date": "2024-05-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Corpus Christi",
+        "ko": "성체성사절"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2024-09-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "독립기념일"
+      }
+    },
+    {
+      "name": "Our Lady of Aparecida / Children's Day",
+      "date": "2024-10-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Our Lady of Aparecida / Children's Day",
+        "ko": "아파레시다 성모님의 날 / 어린이날"
+      }
+    },
+    {
+      "name": "Public Service Holiday",
+      "date": "2024-10-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Public Service Holiday",
+        "ko": "공무원의 날"
+      }
+    },
+    {
+      "name": "All Souls' Day",
+      "date": "2024-11-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "All Souls' Day",
+        "ko": "모든 영혼의 날"
+      }
+    },
+    {
+      "name": "Republic Proclamation Day",
+      "date": "2024-11-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Proclamation Day",
+        "ko": "공화국 선포일"
+      }
+    },
+    {
+      "name": "Black Awareness Day",
+      "date": "2024-11-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Black Awareness Day",
+        "ko": "흑인 의식의 날"
+      }
+    },
+    {
+      "name": "Christmas Eve",
+      "date": "2024-12-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Eve (from 2pm)",
+        "ko": "크리스마스 이브 (오후 2시부터)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2024-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2024-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve (from 2pm)",
+        "ko": "신정 전야 (오후 2시부터)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2025-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Carnival Monday",
+      "date": "2025-03-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival Monday",
+        "ko": "카니발 월요일"
+      }
+    },
+    {
+      "name": "Carnival Tuesday",
+      "date": "2025-03-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival Tuesday",
+        "ko": "카니발 화요일"
+      }
+    },
+    {
+      "name": "Carnival End",
+      "date": "2025-03-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival end (until 2pm)",
+        "ko": "카니발 종료 (오후 2시까지)"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2025-04-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "성금요일"
+      }
+    },
+    {
+      "name": "Tiradentes Day",
+      "date": "2025-04-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tiradentes Day",
+        "ko": "티라덴테스의 날"
+      }
+    },
+    {
+      "name": "Labor Day / May Day",
+      "date": "2025-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day / May Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "Corpus Christi",
+      "date": "2025-06-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Corpus Christi",
+        "ko": "성체성사절"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2025-09-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "독립기념일"
+      }
+    },
+    {
+      "name": "Our Lady of Aparecida / Children's Day",
+      "date": "2025-10-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Our Lady of Aparecida / Children's Day",
+        "ko": "아파레시다 성모님의 날 / 어린이날"
+      }
+    },
+    {
+      "name": "Public Service Holiday",
+      "date": "2025-10-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Public Service Holiday",
+        "ko": "공무원의 날"
+      }
+    },
+    {
+      "name": "All Souls' Day",
+      "date": "2025-11-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "All Souls' Day",
+        "ko": "모든 영혼의 날"
+      }
+    },
+    {
+      "name": "Republic Proclamation Day",
+      "date": "2025-11-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Proclamation Day",
+        "ko": "공화국 선포일"
+      }
+    },
+    {
+      "name": "Black Awareness Day",
+      "date": "2025-11-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Black Awareness Day",
+        "ko": "흑인 의식의 날"
+      }
+    },
+    {
+      "name": "Christmas Eve",
+      "date": "2025-12-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Eve (from 2pm)",
+        "ko": "크리스마스 이브 (오후 2시부터)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2025-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2025-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve (from 2pm)",
+        "ko": "신정 전야 (오후 2시부터)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
+    },
+    {
+      "name": "Carnival Monday",
+      "date": "2026-02-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival Monday",
+        "ko": "카니발 월요일"
+      }
+    },
+    {
+      "name": "Carnival Tuesday",
+      "date": "2026-02-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival Tuesday",
+        "ko": "카니발 화요일"
+      }
+    },
+    {
+      "name": "Carnival End",
+      "date": "2026-02-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Carnival end (until 2pm)",
+        "ko": "카니발 종료 (오후 2시까지)"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2026-04-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "성금요일"
+      }
+    },
+    {
+      "name": "Tiradentes Day",
+      "date": "2026-04-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tiradentes Day",
+        "ko": "티라덴테스의 날"
+      }
+    },
+    {
+      "name": "Labor Day / May Day",
+      "date": "2026-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day / May Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "Corpus Christi",
+      "date": "2026-06-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Corpus Christi",
+        "ko": "성체성사절"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2026-09-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "독립기념일"
+      }
+    },
+    {
+      "name": "Our Lady of Aparecida / Children's Day",
+      "date": "2026-10-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Our Lady of Aparecida / Children's Day",
+        "ko": "아파레시다 성모님의 날 / 어린이날"
+      }
+    },
+    {
+      "name": "Public Service Holiday",
+      "date": "2026-10-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Public Service Holiday",
+        "ko": "공무원의 날"
+      }
+    },
+    {
+      "name": "All Souls' Day",
+      "date": "2026-11-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "All Souls' Day",
+        "ko": "모든 영혼의 날"
+      }
+    },
+    {
+      "name": "Republic Proclamation Day",
+      "date": "2026-11-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Proclamation Day",
+        "ko": "공화국 선포일"
+      }
+    },
+    {
+      "name": "Black Awareness Day",
+      "date": "2026-11-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Black Awareness Day",
+        "ko": "흑인 의식의 날"
+      }
+    },
+    {
+      "name": "Christmas Eve",
+      "date": "2026-12-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Eve (from 2pm)",
+        "ko": "크리스마스 이브 (오후 2시부터)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2026-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2026-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve (from 2pm)",
+        "ko": "신정 전야 (오후 2시부터)"
+      }
+    }
+  ]
+}

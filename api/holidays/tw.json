@@ -1,0 +1,522 @@
+{
+  "country": "TW",
+  "countryName": "Taiwan",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 58,
+  "holidays": [
+    {
+      "name": "Republic Day",
+      "date": "2024-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Day",
+        "ko": "중화민국 건국기념일"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2024-02-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year's Eve",
+      "date": "2024-02-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Eve",
+        "ko": "설날 전야"
+      }
+    },
+    {
+      "name": "Lunar New Year's Day",
+      "date": "2024-02-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Day",
+        "ko": "설날"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2024-02-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2024-02-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2024-02-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2024-02-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Peace Memorial Day",
+      "date": "2024-02-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Peace Memorial Day",
+        "ko": "평화기념일"
+      }
+    },
+    {
+      "name": "Tomb Sweeping Day / Children's Day",
+      "date": "2024-04-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tomb Sweeping Day / Children's Day",
+        "ko": "청명절 / 어린이날"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2024-04-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2024-04-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2024-04-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
+    },
+    {
+      "name": "Labor Day (Private Sector Only)",
+      "date": "2024-05-01",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Labor Day (Private Sector Only)",
+        "ko": "노동절 (민간부문만)"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival",
+      "date": "2024-06-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival",
+        "ko": "단오절"
+      }
+    },
+    {
+      "name": "Mid-Autumn Festival",
+      "date": "2024-09-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mid-Autumn Festival",
+        "ko": "중추절"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2024-10-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "국경일"
+      }
+    },
+    {
+      "name": "Republic Day",
+      "date": "2025-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Day",
+        "ko": "중화민국 건국기념일"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2025-01-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year's Eve",
+      "date": "2025-01-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Eve",
+        "ko": "설날 전야"
+      }
+    },
+    {
+      "name": "Lunar New Year's Day",
+      "date": "2025-01-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Day",
+        "ko": "설날"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2025-01-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2025-01-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2025-02-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2025-02-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Peace Memorial Day",
+      "date": "2025-02-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Peace Memorial Day",
+        "ko": "평화기념일"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2025-04-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
+    },
+    {
+      "name": "Tomb Sweeping Day / Children's Day",
+      "date": "2025-04-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tomb Sweeping Day / Children's Day",
+        "ko": "청명절 / 어린이날"
+      }
+    },
+    {
+      "name": "Labor Day (Private Sector Only)",
+      "date": "2025-05-01",
+      "type": "REGIONAL",
+      "description": {
+        "en": "Labor Day (Private Sector Only)",
+        "ko": "노동절 (민간부문만)"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival Holiday",
+      "date": "2025-05-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival Holiday",
+        "ko": "단오절 연휴"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival",
+      "date": "2025-05-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival",
+        "ko": "단오절"
+      }
+    },
+    {
+      "name": "Day off for Teachers' Day",
+      "date": "2025-09-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Day off for Teachers' Day",
+        "ko": "스승의 날 대체휴일"
+      }
+    },
+    {
+      "name": "Mid-Autumn Festival",
+      "date": "2025-10-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mid-Autumn Festival",
+        "ko": "중추절"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2025-10-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "국경일"
+      }
+    },
+    {
+      "name": "Day off for Taiwan's Retrocession Day",
+      "date": "2025-10-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Day off for Taiwan's Retrocession Day",
+        "ko": "대만 광복절 대체휴일"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2025-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "헌법기념일"
+      }
+    },
+    {
+      "name": "Republic Day",
+      "date": "2026-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Day",
+        "ko": "중화민국 건국기념일"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year's Eve",
+      "date": "2026-02-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Eve",
+        "ko": "설날 전야"
+      }
+    },
+    {
+      "name": "Lunar New Year's Day",
+      "date": "2026-02-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Day",
+        "ko": "설날"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Lunar New Year Holiday",
+      "date": "2026-02-22",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year Holiday",
+        "ko": "설날 연휴"
+      }
+    },
+    {
+      "name": "Peace Memorial Day (Observed)",
+      "date": "2026-02-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Peace Memorial Day (Observed)",
+        "ko": "평화기념일 대체휴일"
+      }
+    },
+    {
+      "name": "Children's Day (Observed)",
+      "date": "2026-04-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day (Observed)",
+        "ko": "어린이날 대체휴일"
+      }
+    },
+    {
+      "name": "Tomb Sweeping Day",
+      "date": "2026-04-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tomb Sweeping Day",
+        "ko": "청명절"
+      }
+    },
+    {
+      "name": "Tomb Sweeping Day Holiday",
+      "date": "2026-04-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tomb Sweeping Day Holiday",
+        "ko": "청명절 연휴"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2026-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "노동절"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival",
+      "date": "2026-06-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival",
+        "ko": "단오절"
+      }
+    },
+    {
+      "name": "Mid-Autumn Festival",
+      "date": "2026-09-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mid-Autumn Festival",
+        "ko": "중추절"
+      }
+    },
+    {
+      "name": "Teachers' Day",
+      "date": "2026-09-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Teachers' Day",
+        "ko": "스승의 날"
+      }
+    },
+    {
+      "name": "National Day (Observed)",
+      "date": "2026-10-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day (Observed)",
+        "ko": "국경일 대체휴일"
+      }
+    },
+    {
+      "name": "Day off for Taiwan's Retrocession Day",
+      "date": "2026-10-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Day off for Taiwan's Retrocession Day",
+        "ko": "대만 광복절 대체휴일"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2026-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "헌법기념일"
+      }
+    }
+  ]
+}

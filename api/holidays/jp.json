@@ -1,337 +1,522 @@
 {
   "country": "JP",
-  "countryName": "일본 (Japan)",
-  "lastUpdated": "2025-09-09T00:00:00.000Z",
-  "supportedYears": [
-    2024,
-    2025,
-    2026
-  ],
-  "totalHolidays": 54,
+  "countryName": "Japan",
+  "lastUpdated": "2025-09-12T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026],
+  "totalHolidays": 57,
   "holidays": [
     {
-      "name": "元日",
+      "name": "New Year's Day",
       "date": "2024-01-01",
       "type": "NATIONAL",
-      "description": "新年"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
     },
     {
-      "name": "成人の日",
+      "name": "Coming of Age Day",
       "date": "2024-01-08",
       "type": "NATIONAL",
-      "description": "成人を祝う日"
+      "description": {
+        "en": "Coming of Age Day",
+        "ko": "성인의 날"
+      }
     },
     {
-      "name": "建国記念の日",
+      "name": "National Foundation Day",
       "date": "2024-02-11",
       "type": "NATIONAL",
-      "description": "建国をしのび、国を愛する心を養う"
+      "description": {
+        "en": "National Foundation Day",
+        "ko": "건국기념의 날"
+      }
     },
     {
-      "name": "天皇誕生日",
+      "name": "National Foundation Day (Observed)",
+      "date": "2024-02-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Foundation Day (Observed)",
+        "ko": "건국기념의 날 대체휴일"
+      }
+    },
+    {
+      "name": "Emperor's Birthday",
       "date": "2024-02-23",
       "type": "NATIONAL",
-      "description": "天皇の誕生日を祝う"
+      "description": {
+        "en": "Emperor's Birthday",
+        "ko": "천황 생일"
+      }
     },
     {
-      "name": "春分の日",
+      "name": "Spring Equinox",
       "date": "2024-03-20",
       "type": "NATIONAL",
-      "description": "自然をたたえ、生物をいつくしむ"
+      "description": {
+        "en": "Spring Equinox",
+        "ko": "춘분의 날"
+      }
     },
     {
-      "name": "昭和の日",
+      "name": "Shōwa Day",
       "date": "2024-04-29",
       "type": "NATIONAL",
-      "description": "激動の日々を経て、復興を遂げた昭和の時代を顧み、国の将来に思いをいたす"
+      "description": {
+        "en": "Shōwa Day",
+        "ko": "쇼와의 날"
+      }
     },
     {
-      "name": "憲法記念日",
+      "name": "Constitution Memorial Day",
       "date": "2024-05-03",
       "type": "NATIONAL",
-      "description": "日本国憲法の施行を記念し、国の成長を期する"
+      "description": {
+        "en": "Constitution Memorial Day",
+        "ko": "헌법기념일"
+      }
     },
     {
-      "name": "みどりの日",
+      "name": "Greenery Day",
       "date": "2024-05-04",
       "type": "NATIONAL",
-      "description": "自然に親しむとともにその恩恵に感謝し、豊かな心をはぐくむ"
+      "description": {
+        "en": "Greenery Day",
+        "ko": "녹색의 날"
+      }
     },
     {
-      "name": "こどもの日",
+      "name": "Children's Day",
       "date": "2024-05-05",
       "type": "NATIONAL",
-      "description": "こどもの人格を重んじ、こどもの幸福をはかるとともに、母に感謝する"
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
     },
     {
-      "name": "海の日",
+      "name": "Children's Day (Observed)",
+      "date": "2024-05-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day (Observed)",
+        "ko": "어린이날 대체휴일"
+      }
+    },
+    {
+      "name": "Sea Day",
       "date": "2024-07-15",
       "type": "NATIONAL",
-      "description": "海の恩恵に感謝するとともに、海洋国日本の繁栄を願う"
+      "description": {
+        "en": "Sea Day",
+        "ko": "바다의 날"
+      }
     },
     {
-      "name": "山の日",
-      "date": "2024-08-11",
+      "name": "Mountain Day (Observed)",
+      "date": "2024-08-12",
       "type": "NATIONAL",
-      "description": "山に親しむ機会を得て、山の恩恵に感謝する"
+      "description": {
+        "en": "Mountain Day (Observed)",
+        "ko": "산의 날 대체휴일"
+      }
     },
     {
-      "name": "敬老の日",
+      "name": "Respect for the Aged Day",
       "date": "2024-09-16",
       "type": "NATIONAL",
-      "description": "多年にわたり社会につくしてきた老人を敬愛し、長寿を祝う"
+      "description": {
+        "en": "Respect for the Aged Day",
+        "ko": "경로의 날"
+      }
     },
     {
-      "name": "秋分の日",
+      "name": "Autumn Equinox",
       "date": "2024-09-22",
       "type": "NATIONAL",
-      "description": "祖先をうやまい、なくなった人々をしのぶ"
+      "description": {
+        "en": "Autumn Equinox",
+        "ko": "추분의 날"
+      }
     },
     {
-      "name": "スポーツの日",
+      "name": "Autumn Equinox (Observed)",
+      "date": "2024-09-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Autumn Equinox (Observed)",
+        "ko": "추분의 날 대체휴일"
+      }
+    },
+    {
+      "name": "Sports Day",
       "date": "2024-10-14",
       "type": "NATIONAL",
-      "description": "スポーツを楽しみ、他者を尊重する精神を培うとともに、健康で活力ある社会の実現を願う"
+      "description": {
+        "en": "Sports Day",
+        "ko": "체육의 날"
+      }
     },
     {
-      "name": "文化の日",
+      "name": "Culture Day",
       "date": "2024-11-03",
       "type": "NATIONAL",
-      "description": "自由と平和を愛し、文化をすすめる"
+      "description": {
+        "en": "Culture Day",
+        "ko": "문화의 날"
+      }
     },
     {
-      "name": "勤労感謝の日",
+      "name": "Culture Day (Observed)",
+      "date": "2024-11-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Culture Day (Observed)",
+        "ko": "문화의 날 대체휴일"
+      }
+    },
+    {
+      "name": "Labor Thanksgiving Day",
       "date": "2024-11-23",
       "type": "NATIONAL",
-      "description": "勤労をたっとび、生産を祝い、国民たがいに感謝しあう"
+      "description": {
+        "en": "Labor Thanksgiving Day",
+        "ko": "근로감사의 날"
+      }
     },
     {
-      "name": "元日",
+      "name": "New Year's Day",
       "date": "2025-01-01",
       "type": "NATIONAL",
-      "description": "新年"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
     },
     {
-      "name": "成人の日",
+      "name": "Coming of Age Day",
       "date": "2025-01-13",
       "type": "NATIONAL",
-      "description": "成人を祝う日"
+      "description": {
+        "en": "Coming of Age Day",
+        "ko": "성인의 날"
+      }
     },
     {
-      "name": "建国記念の日",
+      "name": "National Foundation Day",
       "date": "2025-02-11",
       "type": "NATIONAL",
-      "description": "建国をしのび、国を愛する心を養う"
+      "description": {
+        "en": "National Foundation Day",
+        "ko": "건국기념의 날"
+      }
     },
     {
-      "name": "天皇誕生日",
+      "name": "Emperor's Birthday",
       "date": "2025-02-23",
       "type": "NATIONAL",
-      "description": "天皇の誕生日を祝う"
+      "description": {
+        "en": "Emperor's Birthday",
+        "ko": "천황 생일"
+      }
     },
     {
-      "name": "天皇誕生日 振替休日",
+      "name": "Emperor's Birthday (Observed)",
       "date": "2025-02-24",
       "type": "NATIONAL",
-      "description": "天皇誕生日 振替休日"
+      "description": {
+        "en": "Emperor's Birthday (Observed)",
+        "ko": "천황 생일 대체휴일"
+      }
     },
     {
-      "name": "春分の日",
+      "name": "Spring Equinox",
       "date": "2025-03-20",
       "type": "NATIONAL",
-      "description": "自然をたたえ、生物をいつくしむ"
+      "description": {
+        "en": "Spring Equinox",
+        "ko": "춘분의 날"
+      }
     },
     {
-      "name": "昭和の日",
+      "name": "Shōwa Day",
       "date": "2025-04-29",
       "type": "NATIONAL",
-      "description": "激動の日々を経て、復興を遂げた昭和の時代を顧み、国の将来に思いをいたす"
+      "description": {
+        "en": "Shōwa Day",
+        "ko": "쇼와의 날"
+      }
     },
     {
-      "name": "憲法記念日",
+      "name": "Constitution Memorial Day",
       "date": "2025-05-03",
       "type": "NATIONAL",
-      "description": "日本国憲法の施行を記念し、国の成長を期する"
+      "description": {
+        "en": "Constitution Memorial Day",
+        "ko": "헌법기념일"
+      }
     },
     {
-      "name": "みどりの日",
+      "name": "Greenery Day",
       "date": "2025-05-04",
       "type": "NATIONAL",
-      "description": "自然に親しむとともにその恩恵に感謝し、豊かな心をはぐくむ"
+      "description": {
+        "en": "Greenery Day",
+        "ko": "녹색의 날"
+      }
     },
     {
-      "name": "こどもの日",
+      "name": "Children's Day",
       "date": "2025-05-05",
       "type": "NATIONAL",
-      "description": "こどもの人格を重んじ、こどもの幸福をはかるとともに、母に感謝する"
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
     },
     {
-      "name": "こどもの日 振替休日",
+      "name": "Greenery Day (Observed)",
       "date": "2025-05-06",
       "type": "NATIONAL",
-      "description": "こどもの日 振替休日"
+      "description": {
+        "en": "Greenery Day (Observed)",
+        "ko": "녹색의 날 대체휴일"
+      }
     },
     {
-      "name": "海の日",
+      "name": "Sea Day",
       "date": "2025-07-21",
       "type": "NATIONAL",
-      "description": "海の恩恵に感謝するとともに、海洋国日本の繁栄を願う"
+      "description": {
+        "en": "Sea Day",
+        "ko": "바다의 날"
+      }
     },
     {
-      "name": "山の日",
+      "name": "Mountain Day",
       "date": "2025-08-11",
       "type": "NATIONAL",
-      "description": "山に親しむ機会を得て、山の恩恵に感謝する"
+      "description": {
+        "en": "Mountain Day",
+        "ko": "산의 날"
+      }
     },
     {
-      "name": "敬老の日",
+      "name": "Respect for the Aged Day",
       "date": "2025-09-15",
       "type": "NATIONAL",
-      "description": "多年にわたり社会につくしてきた老人を敬愛し、長寿を祝う"
+      "description": {
+        "en": "Respect for the Aged Day",
+        "ko": "경로의 날"
+      }
     },
     {
-      "name": "秋分の日",
+      "name": "Autumn Equinox",
       "date": "2025-09-23",
       "type": "NATIONAL",
-      "description": "祖先をうやまい、なくなった人々をしのぶ"
+      "description": {
+        "en": "Autumn Equinox",
+        "ko": "추분의 날"
+      }
     },
     {
-      "name": "スポーツの日",
+      "name": "Sports Day",
       "date": "2025-10-13",
       "type": "NATIONAL",
-      "description": "スポーツを楽しみ、他者を尊重する精神を培うとともに、健康で活力ある社会の実現を願う"
+      "description": {
+        "en": "Sports Day",
+        "ko": "체육의 날"
+      }
     },
     {
-      "name": "文化の日",
+      "name": "Culture Day",
       "date": "2025-11-03",
       "type": "NATIONAL",
-      "description": "自由と平和を愛し、文化をすすめる"
+      "description": {
+        "en": "Culture Day",
+        "ko": "문화의 날"
+      }
     },
     {
-      "name": "文化の日 振替休日",
-      "date": "2025-11-04",
-      "type": "NATIONAL",
-      "description": "文化の日 振替休日"
-    },
-    {
-      "name": "勤労感謝の日",
+      "name": "Labor Thanksgiving Day",
       "date": "2025-11-23",
       "type": "NATIONAL",
-      "description": "勤労をたっとび、生産を祝い、国民たがいに感謝しあう"
+      "description": {
+        "en": "Labor Thanksgiving Day",
+        "ko": "근로감사의 날"
+      }
     },
     {
-      "name": "勤労感謝の日 振替休日",
+      "name": "Labor Thanksgiving Day (Observed)",
       "date": "2025-11-24",
       "type": "NATIONAL",
-      "description": "勤労感謝の日 振替休日"
+      "description": {
+        "en": "Labor Thanksgiving Day (Observed)",
+        "ko": "근로감사의 날 대체휴일"
+      }
     },
     {
-      "name": "元日",
+      "name": "New Year's Day",
       "date": "2026-01-01",
       "type": "NATIONAL",
-      "description": "新年"
+      "description": {
+        "en": "New Year's Day",
+        "ko": "신정"
+      }
     },
     {
-      "name": "成人の日",
+      "name": "Coming of Age Day",
       "date": "2026-01-12",
       "type": "NATIONAL",
-      "description": "成人を祝う日"
+      "description": {
+        "en": "Coming of Age Day",
+        "ko": "성인의 날"
+      }
     },
     {
-      "name": "建国記念の日",
+      "name": "National Foundation Day",
       "date": "2026-02-11",
       "type": "NATIONAL",
-      "description": "建国をしのび、国を愛する心を養う"
+      "description": {
+        "en": "National Foundation Day",
+        "ko": "건국기념의 날"
+      }
     },
     {
-      "name": "天皇誕生日",
+      "name": "Emperor's Birthday",
       "date": "2026-02-23",
       "type": "NATIONAL",
-      "description": "天皇の誕生日を祝う"
+      "description": {
+        "en": "Emperor's Birthday",
+        "ko": "천황 생일"
+      }
     },
     {
-      "name": "春分の日",
+      "name": "Spring Equinox",
       "date": "2026-03-20",
       "type": "NATIONAL",
-      "description": "自然をたたえ、生物をいつくしむ"
+      "description": {
+        "en": "Spring Equinox",
+        "ko": "춘분의 날"
+      }
     },
     {
-      "name": "昭和の日",
+      "name": "Shōwa Day",
       "date": "2026-04-29",
       "type": "NATIONAL",
-      "description": "激動の日々を経て、復興を遂げた昭和の時代を顧み、国の将来に思いをいたす"
+      "description": {
+        "en": "Shōwa Day",
+        "ko": "쇼와의 날"
+      }
     },
     {
-      "name": "憲法記念日",
+      "name": "Constitution Memorial Day",
       "date": "2026-05-03",
       "type": "NATIONAL",
-      "description": "日本国憲法の施行を記念し、国の成長を期する"
+      "description": {
+        "en": "Constitution Memorial Day",
+        "ko": "헌법기념일"
+      }
     },
     {
-      "name": "憲法記念日 振替休日",
+      "name": "Greenery Day",
       "date": "2026-05-04",
       "type": "NATIONAL",
-      "description": "憲法記念日 振替休日 (일요일 → 월요일)"
+      "description": {
+        "en": "Greenery Day",
+        "ko": "녹색의 날"
+      }
     },
     {
-      "name": "みどりの日",
-      "date": "2026-05-04",
-      "type": "NATIONAL",
-      "description": "自然に親しむとともにその恩恵に感謝し、豊かな心をはぐくむ"
-    },
-    {
-      "name": "こどもの日",
+      "name": "Children's Day",
       "date": "2026-05-05",
       "type": "NATIONAL",
-      "description": "こどもの人格を重んじ、こどもの幸福をはかるとともに、母に感謝する"
+      "description": {
+        "en": "Children's Day",
+        "ko": "어린이날"
+      }
     },
     {
-      "name": "こどもの日 振替休日",
+      "name": "Constitution Memorial Day (Observed)",
       "date": "2026-05-06",
       "type": "NATIONAL",
-      "description": "こどもの日 振替休日"
+      "description": {
+        "en": "Constitution Memorial Day (Observed)",
+        "ko": "헌법기념일 대체휴일"
+      }
     },
     {
-      "name": "海の日",
+      "name": "Sea Day",
       "date": "2026-07-20",
       "type": "NATIONAL",
-      "description": "海の恩恵に感謝するとともに、海洋国日本の繁栄を願う"
+      "description": {
+        "en": "Sea Day",
+        "ko": "바다의 날"
+      }
     },
     {
-      "name": "山の日",
+      "name": "Mountain Day",
       "date": "2026-08-11",
       "type": "NATIONAL",
-      "description": "山に親しむ機会を得て、山の恩恵に感謝する"
+      "description": {
+        "en": "Mountain Day",
+        "ko": "산의 날"
+      }
     },
     {
-      "name": "敬老の日",
+      "name": "Respect for the Aged Day",
       "date": "2026-09-21",
       "type": "NATIONAL",
-      "description": "多年にわたり社会につくしてきた老人を敬愛し、長寿を祝う"
+      "description": {
+        "en": "Respect for the Aged Day",
+        "ko": "경로의 날"
+      }
     },
     {
-      "name": "秋分の日",
+      "name": "Bridge Public Holiday",
       "date": "2026-09-22",
       "type": "NATIONAL",
-      "description": "祖先をうやまい、なくなった人々をしのぶ"
+      "description": {
+        "en": "Bridge Public Holiday",
+        "ko": "브릿지 공휴일"
+      }
     },
     {
-      "name": "スポーツの日",
+      "name": "Autumn Equinox",
+      "date": "2026-09-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Autumn Equinox",
+        "ko": "추분의 날"
+      }
+    },
+    {
+      "name": "Sports Day",
       "date": "2026-10-12",
       "type": "NATIONAL",
-      "description": "スポーツを楽しみ、他者를 尊重する精神을 培うとともに、健康で活力ある社会の実現을 願う"
+      "description": {
+        "en": "Sports Day",
+        "ko": "체육의 날"
+      }
     },
     {
-      "name": "文化の日",
+      "name": "Culture Day",
       "date": "2026-11-03",
       "type": "NATIONAL",
-      "description": "自由と平和を愛し、文化をすすめる"
+      "description": {
+        "en": "Culture Day",
+        "ko": "문화의 날"
+      }
     },
     {
-      "name": "勤労感謝の日",
+      "name": "Labor Thanksgiving Day",
       "date": "2026-11-23",
       "type": "NATIONAL",
-      "description": "勤労をたっとび、生産を祝い、国民たがいに感謝しあう"
+      "description": {
+        "en": "Labor Thanksgiving Day",
+        "ko": "근로감사의 날"
+      }
     }
   ]
 }

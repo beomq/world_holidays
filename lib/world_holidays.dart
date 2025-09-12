@@ -24,6 +24,7 @@
 /// // Check if today is a holiday
 /// final isToday = worldHolidays.isTodayHoliday('KR');
 /// ```
+library;
 
 export 'src/world_holidays.dart';
 export 'src/models/holiday.dart';

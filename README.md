@@ -1,6 +1,6 @@
 # 🌍 World Holidays
 
-A comprehensive Flutter package providing holiday information for multiple countries (2024-2026). Get holidays for South Korea, United States, Japan, and Germany with automatic online updates and offline fallback support.
+A comprehensive Flutter package providing holiday information for multiple countries (2024-2026). Get holidays for South Korea, United States, Japan, China, Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan with automatic online updates and offline fallback support.
 
 [![pub package](https://img.shields.io/pub/v/world_holidays.svg)](https://pub.dev/packages/world_holidays)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,7 +11,8 @@ A comprehensive Flutter package providing holiday information for multiple count
 - 🌐 **Always Up-to-Date** - Automatically fetches latest holiday data online
 - 📱 **Offline Fallback** - Works without internet connection using local data
 - 🔄 **Smart Caching** - Efficient data storage and retrieval
-- 🏳️ **Multi-Country** - Support for South Korea, United States, Japan, and Germany
+- 🏳️ **Multi-Country** - Support for 10 countries with 508 total holidays
+- 🌐 **Multilingual** - English and Korean descriptions for all holidays
 - 📅 **3-Year Coverage** - Holiday data for 2024, 2025, and 2026
 - ⚡ **Fast & Lightweight** - Minimal dependencies and optimized performance
 
@@ -19,10 +20,16 @@ A comprehensive Flutter package providing holiday information for multiple count
 
 | Country       | Code | Holidays    | Flag |
 | ------------- | ---- | ----------- | ---- |
-| South Korea   | `KR` | 48 holidays | 🇰🇷   |
-| United States | `US` | 31 holidays | 🇺🇸   |
-| Japan         | `JP` | 54 holidays | 🇯🇵   |
-| Germany       | `DE` | 45 holidays | 🇩🇪   |
+| South Korea   | `KR` | 41 holidays | 🇰🇷   |
+| United States | `US` | 32 holidays | 🇺🇸   |
+| Japan         | `JP` | 57 holidays | 🇯🇵   |
+| China         | `CN` | 72 holidays | 🇨🇳   |
+| Vietnam       | `VN` | 44 holidays | 🇻🇳   |
+| Malaysia      | `MY` | 44 holidays | 🇲🇾   |
+| Thailand      | `TH` | 61 holidays | 🇹🇭   |
+| Canada        | `CA` | 33 holidays | 🇨🇦   |
+| Brazil        | `BR` | 51 holidays | 🇧🇷   |
+| Taiwan        | `TW` | 57 holidays | 🇹🇼   |
 
 ## 📦 Installation
 
@@ -30,7 +37,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  world_holidays: ^1.0.0
+  world_holidays: ^2.0.0
 ```
 
 Then run:
@@ -79,7 +86,9 @@ final holidays2025 = await worldHolidays.getHolidays('KR', year: 2025);
 // Get holidays for different countries
 final usHolidays = await worldHolidays.getHolidays('US');
 final jpHolidays = await worldHolidays.getHolidays('JP');
-final deHolidays = await worldHolidays.getHolidays('DE');
+final cnHolidays = await worldHolidays.getHolidays('CN');
+final thHolidays = await worldHolidays.getHolidays('TH');
+final brHolidays = await worldHolidays.getHolidays('BR');
 ```
 
 ### Manual Data Updates (Optional)
@@ -97,6 +106,7 @@ await worldHolidays.updateHolidays();
 ### 📡 Online vs Offline Usage
 
 **Default Behavior (Online-First):**
+
 ```dart
 // Automatically fetches latest data from GitHub Pages API
 final holidays = await worldHolidays.getHolidays('KR');
@@ -135,12 +145,32 @@ final rangeHolidays = worldHolidays.getHolidaysInRange(
 );
 ```
 
+### Multilingual Support
+
+All holidays now include multilingual descriptions in English and Korean:
+
+```dart
+final holidays = await worldHolidays.getHolidays('KR');
+final holiday = holidays.first;
+
+// Get description in specific language
+print(holiday.getDescription('en')); // "New Year's Day"
+print(holiday.getDescription('ko')); // "신정"
+
+// Convenience getters
+print(holiday.descriptionEn); // "New Year's Day"
+print(holiday.descriptionKo); // "신정"
+
+// Access raw description object
+print(holiday.description); // {"en": "New Year's Day", "ko": "신정"}
+```
+
 ### Utility Methods
 
 ```dart
 // Get supported countries
 final countries = worldHolidays.getSupportedCountries();
-print(countries); // ['KR', 'US', 'JP', 'DE']
+print(countries); // ['BR', 'CA', 'CN', 'JP', 'KR', 'MY', 'TH', 'TW', 'US', 'VN']
 
 // Get supported years
 final years = worldHolidays.getSupportedYears();
@@ -159,16 +189,18 @@ Check out the [example app](example/) for a complete Flutter application demonst
 The package categorizes holidays into different types:
 
 - **NATIONAL** - Official national public holidays
-- **RELIGIOUS** - Religious observances and holidays  
+- **RELIGIOUS** - Religious observances and holidays
 - **REGIONAL** - Regional or state-specific holidays
 - **OBSERVANCE** - Cultural observances and commemorative days
 
 ## 🌐 Data Source
 
 Holiday data is sourced from:
+
 - **GitHub Pages API** - Real-time updates via `https://beomq.github.io/world_holidays/api/`
-- **Local Fallback** - Embedded data for offline usage
+- **Local Fallback** - Embedded data for offline usage (508 holidays across 10 countries)
 - **Official Sources** - Government and cultural organization websites
+- **Multilingual Support** - English and Korean descriptions for all holidays
 
 ## 🔄 Update Strategy
 
