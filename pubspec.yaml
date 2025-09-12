@@ -1,6 +1,6 @@
 name: world_holidays
 description: A comprehensive Flutter package providing holiday information for multiple countries (2024-2026) with offline-first support.
-version: 1.0.0
+version: 2.0.0
 homepage: https://beomq.github.io/world_holidays/
 repository: https://github.com/beomq/world_holidays
 # issue_tracker: https://github.com/beomq/world_holidays/issues
