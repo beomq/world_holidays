@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2025-01-XX
+
+### Fixed
+
+- 🇰🇷 **Updated KR Holidays**: Added missing 2026 holidays (삼일절 대체휴일, 대체휴일, 지방선거, 광복절 대체휴일, 개천절 대체휴일)
+- 📅 **Data Sync**: Synchronized KR holidays data with kr.json API
+
 ## [2.0.0] - 2025-09-12
 
 ### Added
