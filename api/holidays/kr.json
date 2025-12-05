@@ -366,15 +366,6 @@
       }
     },
     {
-      "name": "설날 대체공휴일",
-      "date": "2026-02-19",
-      "type": "NATIONAL",
-      "description": {
-        "en": "Lunar New Year Substitute Holiday",
-        "ko": "설날 대체공휴일"
-      }
-    },
-    {
       "name": "삼일절",
       "date": "2026-03-01",
       "type": "NATIONAL",
@@ -384,12 +375,12 @@
       }
     },
     {
-      "name": "부처님 오신 날",
-      "date": "2026-05-24",
+      "name": "삼일절 대체휴일",
+      "date": "2026-03-02",
       "type": "NATIONAL",
       "description": {
-        "en": "Buddha's Birthday",
-        "ko": "부처님 오신 날"
+        "en": "Independence Movement Day",
+        "ko": "3.1 독립운동 기념일"
       }
     },
     {
@@ -402,12 +393,30 @@
       }
     },
     {
-      "name": "어린이날 대체휴일",
-      "date": "2026-05-06",
+      "name": "부처님 오신 날",
+      "date": "2026-05-24",
       "type": "NATIONAL",
       "description": {
-        "en": "Children's Day Substitute Holiday",
-        "ko": "어린이날 대체휴일"
+        "en": "Buddha's Birthday",
+        "ko": "부처님 오신 날"
+      }
+    },
+    {
+      "name": "대체휴일",
+      "date": "2026-05-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Buddha's Birthday",
+        "ko": "부처님 오신 날"
+      }
+    },
+    {
+      "name": "지방선거",
+      "date": "2026-06-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Local election",
+        "ko": "2026 지방선거"
       }
     },
     {
@@ -422,6 +431,15 @@
     {
       "name": "광복절",
       "date": "2026-08-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Liberation Day",
+        "ko": "광복절"
+      }
+    },
+    {
+      "name": "광복절 대체휴일",
+      "date": "2026-08-17",
       "type": "NATIONAL",
       "description": {
         "en": "Liberation Day",
@@ -456,17 +474,17 @@
       }
     },
     {
-      "name": "추석 대체공휴일",
-      "date": "2026-09-27",
+      "name": "개천절",
+      "date": "2026-10-03",
       "type": "NATIONAL",
       "description": {
-        "en": "Chuseok Substitute Holiday",
-        "ko": "추석 대체공휴일"
+        "en": "National Foundation Day",
+        "ko": "개천절"
       }
     },
     {
-      "name": "개천절",
-      "date": "2026-10-03",
+      "name": "개천절 대체휴일",
+      "date": "2026-10-05",
       "type": "NATIONAL",
       "description": {
         "en": "National Foundation Day",

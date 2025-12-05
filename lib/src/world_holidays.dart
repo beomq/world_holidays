@@ -45,7 +45,10 @@ class WorldHolidays {
         name: 'Carnival End',
         date: DateTime(2024, 02, 14),
         type: HolidayType.national,
-        description: {'en': 'Carnival end (until 2pm)', 'ko': '카니발 종료 (오후 2시까지)'},
+        description: {
+          'en': 'Carnival end (until 2pm)',
+          'ko': '카니발 종료 (오후 2시까지)'
+        },
       ),
       Holiday(
         name: 'Good Friday',
@@ -81,7 +84,10 @@ class WorldHolidays {
         name: 'Our Lady of Aparecida / Children\'s Day',
         date: DateTime(2024, 10, 12),
         type: HolidayType.national,
-        description: {'en': 'Our Lady of Aparecida / Children\'s Day', 'ko': '아파레시다 성모님의 날 / 어린이날'},
+        description: {
+          'en': 'Our Lady of Aparecida / Children\'s Day',
+          'ko': '아파레시다 성모님의 날 / 어린이날'
+        },
       ),
       Holiday(
         name: 'Public Service Holiday',
@@ -111,7 +117,10 @@ class WorldHolidays {
         name: 'Christmas Eve',
         date: DateTime(2024, 12, 24),
         type: HolidayType.national,
-        description: {'en': 'Christmas Eve (from 2pm)', 'ko': '크리스마스 이브 (오후 2시부터)'},
+        description: {
+          'en': 'Christmas Eve (from 2pm)',
+          'ko': '크리스마스 이브 (오후 2시부터)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -123,7 +132,10 @@ class WorldHolidays {
         name: 'New Year\'s Eve',
         date: DateTime(2024, 12, 31),
         type: HolidayType.national,
-        description: {'en': 'New Year\'s Eve (from 2pm)', 'ko': '신정 전야 (오후 2시부터)'},
+        description: {
+          'en': 'New Year\'s Eve (from 2pm)',
+          'ko': '신정 전야 (오후 2시부터)'
+        },
       ),
       Holiday(
         name: 'New Year\'s Day',
@@ -147,7 +159,10 @@ class WorldHolidays {
         name: 'Carnival End',
         date: DateTime(2025, 03, 05),
         type: HolidayType.national,
-        description: {'en': 'Carnival end (until 2pm)', 'ko': '카니발 종료 (오후 2시까지)'},
+        description: {
+          'en': 'Carnival end (until 2pm)',
+          'ko': '카니발 종료 (오후 2시까지)'
+        },
       ),
       Holiday(
         name: 'Good Friday',
@@ -183,7 +198,10 @@ class WorldHolidays {
         name: 'Our Lady of Aparecida / Children\'s Day',
         date: DateTime(2025, 10, 12),
         type: HolidayType.national,
-        description: {'en': 'Our Lady of Aparecida / Children\'s Day', 'ko': '아파레시다 성모님의 날 / 어린이날'},
+        description: {
+          'en': 'Our Lady of Aparecida / Children\'s Day',
+          'ko': '아파레시다 성모님의 날 / 어린이날'
+        },
       ),
       Holiday(
         name: 'Public Service Holiday',
@@ -213,7 +231,10 @@ class WorldHolidays {
         name: 'Christmas Eve',
         date: DateTime(2025, 12, 24),
         type: HolidayType.national,
-        description: {'en': 'Christmas Eve (from 2pm)', 'ko': '크리스마스 이브 (오후 2시부터)'},
+        description: {
+          'en': 'Christmas Eve (from 2pm)',
+          'ko': '크리스마스 이브 (오후 2시부터)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -225,7 +246,10 @@ class WorldHolidays {
         name: 'New Year\'s Eve',
         date: DateTime(2025, 12, 31),
         type: HolidayType.national,
-        description: {'en': 'New Year\'s Eve (from 2pm)', 'ko': '신정 전야 (오후 2시부터)'},
+        description: {
+          'en': 'New Year\'s Eve (from 2pm)',
+          'ko': '신정 전야 (오후 2시부터)'
+        },
       ),
       Holiday(
         name: 'New Year\'s Day',
@@ -249,7 +273,10 @@ class WorldHolidays {
         name: 'Carnival End',
         date: DateTime(2026, 02, 18),
         type: HolidayType.national,
-        description: {'en': 'Carnival end (until 2pm)', 'ko': '카니발 종료 (오후 2시까지)'},
+        description: {
+          'en': 'Carnival end (until 2pm)',
+          'ko': '카니발 종료 (오후 2시까지)'
+        },
       ),
       Holiday(
         name: 'Good Friday',
@@ -285,7 +312,10 @@ class WorldHolidays {
         name: 'Our Lady of Aparecida / Children\'s Day',
         date: DateTime(2026, 10, 12),
         type: HolidayType.national,
-        description: {'en': 'Our Lady of Aparecida / Children\'s Day', 'ko': '아파레시다 성모님의 날 / 어린이날'},
+        description: {
+          'en': 'Our Lady of Aparecida / Children\'s Day',
+          'ko': '아파레시다 성모님의 날 / 어린이날'
+        },
       ),
       Holiday(
         name: 'Public Service Holiday',
@@ -315,7 +345,10 @@ class WorldHolidays {
         name: 'Christmas Eve',
         date: DateTime(2026, 12, 24),
         type: HolidayType.national,
-        description: {'en': 'Christmas Eve (from 2pm)', 'ko': '크리스마스 이브 (오후 2시부터)'},
+        description: {
+          'en': 'Christmas Eve (from 2pm)',
+          'ko': '크리스마스 이브 (오후 2시부터)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -327,7 +360,10 @@ class WorldHolidays {
         name: 'New Year\'s Eve',
         date: DateTime(2026, 12, 31),
         type: HolidayType.national,
-        description: {'en': 'New Year\'s Eve (from 2pm)', 'ko': '신정 전야 (오후 2시부터)'},
+        description: {
+          'en': 'New Year\'s Eve (from 2pm)',
+          'ko': '신정 전야 (오후 2시부터)'
+        },
       ),
     ],
     'CA': [
@@ -347,13 +383,19 @@ class WorldHolidays {
         name: 'Easter Monday',
         date: DateTime(2024, 04, 01),
         type: HolidayType.regional,
-        description: {'en': 'Easter Monday (NT, NU, QC)', 'ko': '부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)'},
+        description: {
+          'en': 'Easter Monday (NT, NU, QC)',
+          'ko': '부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)'
+        },
       ),
       Holiday(
         name: 'Victoria Day',
         date: DateTime(2024, 05, 20),
         type: HolidayType.regional,
-        description: {'en': 'Victoria Day (Many regions)', 'ko': '빅토리아 데이 (대부분 지역)'},
+        description: {
+          'en': 'Victoria Day (Many regions)',
+          'ko': '빅토리아 데이 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Canada Day',
@@ -371,19 +413,28 @@ class WorldHolidays {
         name: 'National Day for Truth and Reconciliation',
         date: DateTime(2024, 09, 30),
         type: HolidayType.national,
-        description: {'en': 'National Day for Truth and Reconciliation', 'ko': '진실과 화해의 날'},
+        description: {
+          'en': 'National Day for Truth and Reconciliation',
+          'ko': '진실과 화해의 날'
+        },
       ),
       Holiday(
         name: 'Thanksgiving Day',
         date: DateTime(2024, 10, 14),
         type: HolidayType.regional,
-        description: {'en': 'Thanksgiving Day (Most regions)', 'ko': '추수감사절 (대부분 지역)'},
+        description: {
+          'en': 'Thanksgiving Day (Most regions)',
+          'ko': '추수감사절 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Remembrance Day',
         date: DateTime(2024, 11, 11),
         type: HolidayType.regional,
-        description: {'en': 'Remembrance Day (Many regions)', 'ko': '현충일 (대부분 지역)'},
+        description: {
+          'en': 'Remembrance Day (Many regions)',
+          'ko': '현충일 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -413,13 +464,19 @@ class WorldHolidays {
         name: 'Easter Monday',
         date: DateTime(2025, 04, 21),
         type: HolidayType.regional,
-        description: {'en': 'Easter Monday (NT, NU, QC)', 'ko': '부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)'},
+        description: {
+          'en': 'Easter Monday (NT, NU, QC)',
+          'ko': '부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)'
+        },
       ),
       Holiday(
         name: 'Victoria Day',
         date: DateTime(2025, 05, 19),
         type: HolidayType.regional,
-        description: {'en': 'Victoria Day (Many regions)', 'ko': '빅토리아 데이 (대부분 지역)'},
+        description: {
+          'en': 'Victoria Day (Many regions)',
+          'ko': '빅토리아 데이 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Canada Day',
@@ -437,19 +494,28 @@ class WorldHolidays {
         name: 'National Day for Truth and Reconciliation',
         date: DateTime(2025, 09, 30),
         type: HolidayType.national,
-        description: {'en': 'National Day for Truth and Reconciliation', 'ko': '진실과 화해의 날'},
+        description: {
+          'en': 'National Day for Truth and Reconciliation',
+          'ko': '진실과 화해의 날'
+        },
       ),
       Holiday(
         name: 'Thanksgiving Day',
         date: DateTime(2025, 10, 13),
         type: HolidayType.regional,
-        description: {'en': 'Thanksgiving Day (Most regions)', 'ko': '추수감사절 (대부분 지역)'},
+        description: {
+          'en': 'Thanksgiving Day (Most regions)',
+          'ko': '추수감사절 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Remembrance Day',
         date: DateTime(2025, 11, 11),
         type: HolidayType.regional,
-        description: {'en': 'Remembrance Day (Many regions)', 'ko': '현충일 (대부분 지역)'},
+        description: {
+          'en': 'Remembrance Day (Many regions)',
+          'ko': '현충일 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -479,13 +545,19 @@ class WorldHolidays {
         name: 'Easter Monday',
         date: DateTime(2026, 04, 06),
         type: HolidayType.regional,
-        description: {'en': 'Easter Monday (NT, NU, QC)', 'ko': '부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)'},
+        description: {
+          'en': 'Easter Monday (NT, NU, QC)',
+          'ko': '부활절 월요일 (노스웨스트 준주, 누나부트, 퀘벡)'
+        },
       ),
       Holiday(
         name: 'Victoria Day',
         date: DateTime(2026, 05, 18),
         type: HolidayType.regional,
-        description: {'en': 'Victoria Day (Many regions)', 'ko': '빅토리아 데이 (대부분 지역)'},
+        description: {
+          'en': 'Victoria Day (Many regions)',
+          'ko': '빅토리아 데이 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Canada Day',
@@ -503,19 +575,28 @@ class WorldHolidays {
         name: 'National Day for Truth and Reconciliation',
         date: DateTime(2026, 09, 30),
         type: HolidayType.national,
-        description: {'en': 'National Day for Truth and Reconciliation', 'ko': '진실과 화해의 날'},
+        description: {
+          'en': 'National Day for Truth and Reconciliation',
+          'ko': '진실과 화해의 날'
+        },
       ),
       Holiday(
         name: 'Thanksgiving Day',
         date: DateTime(2026, 10, 12),
         type: HolidayType.regional,
-        description: {'en': 'Thanksgiving Day (Most regions)', 'ko': '추수감사절 (대부분 지역)'},
+        description: {
+          'en': 'Thanksgiving Day (Most regions)',
+          'ko': '추수감사절 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Remembrance Day',
         date: DateTime(2026, 11, 11),
         type: HolidayType.regional,
-        description: {'en': 'Remembrance Day (Many regions)', 'ko': '현충일 (대부분 지역)'},
+        description: {
+          'en': 'Remembrance Day (Many regions)',
+          'ko': '현충일 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -547,43 +628,64 @@ class WorldHolidays {
         name: 'Chinese New Year',
         date: DateTime(2024, 01, 29),
         type: HolidayType.national,
-        description: {'en': 'Chinese New Year (Spring Festival)', 'ko': '춘절 (중국 신정)'},
+        description: {
+          'en': 'Chinese New Year (Spring Festival)',
+          'ko': '춘절 (중국 신정)'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2024, 01, 30),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2024, 01, 31),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2024, 02, 01),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2024, 02, 02),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2024, 02, 03),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2024, 02, 04),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Qing Ming Jie holiday',
@@ -595,7 +697,10 @@ class WorldHolidays {
         name: 'Qing Ming Jie',
         date: DateTime(2024, 04, 05),
         type: HolidayType.national,
-        description: {'en': 'Qing Ming Jie (Tomb Sweeping Day)', 'ko': '청명절 (성묘의 날)'},
+        description: {
+          'en': 'Qing Ming Jie (Tomb Sweeping Day)',
+          'ko': '청명절 (성묘의 날)'
+        },
       ),
       Holiday(
         name: 'Qing Ming Jie holiday',
@@ -655,43 +760,64 @@ class WorldHolidays {
         name: 'National Day Golden Week Holiday',
         date: DateTime(2024, 10, 02),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2024, 10, 03),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2024, 10, 04),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2024, 10, 05),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday / Mid-Autumn Festival',
         date: DateTime(2024, 10, 06),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday / Mid-Autumn Festival', 'ko': '국경절 황금주간 연휴 / 중추절 (추석)'},
+        description: {
+          'en': 'National Day Golden Week Holiday / Mid-Autumn Festival',
+          'ko': '국경절 황금주간 연휴 / 중추절 (추석)'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2024, 10, 07),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2024, 10, 08),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'New Year\'s Day',
@@ -709,55 +835,82 @@ class WorldHolidays {
         name: 'Chinese New Year',
         date: DateTime(2025, 01, 26),
         type: HolidayType.national,
-        description: {'en': 'Chinese New Year (Spring Festival)', 'ko': '춘절 (중국 신정)'},
+        description: {
+          'en': 'Chinese New Year (Spring Festival)',
+          'ko': '춘절 (중국 신정)'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 01, 27),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 01, 28),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 01, 29),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 01, 30),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 01, 31),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 02, 01),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2025, 02, 02),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Qing Ming Jie',
         date: DateTime(2025, 04, 05),
         type: HolidayType.national,
-        description: {'en': 'Qing Ming Jie (Tomb Sweeping Day)', 'ko': '청명절 (성묘의 날)'},
+        description: {
+          'en': 'Qing Ming Jie (Tomb Sweeping Day)',
+          'ko': '청명절 (성묘의 날)'
+        },
       ),
       Holiday(
         name: 'Qing Ming Jie holiday',
@@ -835,31 +988,46 @@ class WorldHolidays {
         name: 'National Day Golden Week Holiday',
         date: DateTime(2025, 10, 02),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2025, 10, 03),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2025, 10, 04),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2025, 10, 05),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2025, 10, 06),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'New Year\'s Day',
@@ -877,55 +1045,82 @@ class WorldHolidays {
         name: 'Chinese New Year',
         date: DateTime(2026, 01, 10),
         type: HolidayType.national,
-        description: {'en': 'Chinese New Year (Spring Festival)', 'ko': '춘절 (중국 신정)'},
+        description: {
+          'en': 'Chinese New Year (Spring Festival)',
+          'ko': '춘절 (중국 신정)'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 11),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 12),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 13),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 14),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 15),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 16),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Spring Festival Golden Week holiday',
         date: DateTime(2026, 01, 17),
         type: HolidayType.national,
-        description: {'en': 'Spring Festival Golden Week Holiday', 'ko': '춘절 황금주간 연휴'},
+        description: {
+          'en': 'Spring Festival Golden Week Holiday',
+          'ko': '춘절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'Qing Ming Jie',
         date: DateTime(2026, 04, 04),
         type: HolidayType.national,
-        description: {'en': 'Qing Ming Jie (Tomb Sweeping Day)', 'ko': '청명절 (성묘의 날)'},
+        description: {
+          'en': 'Qing Ming Jie (Tomb Sweeping Day)',
+          'ko': '청명절 (성묘의 날)'
+        },
       ),
       Holiday(
         name: 'Qing Ming Jie holiday',
@@ -1015,37 +1210,55 @@ class WorldHolidays {
         name: 'National Day Golden Week Holiday',
         date: DateTime(2026, 10, 02),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2026, 10, 03),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2026, 10, 04),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2026, 10, 05),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2026, 10, 06),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
       Holiday(
         name: 'National Day Golden Week Holiday',
         date: DateTime(2026, 10, 07),
         type: HolidayType.national,
-        description: {'en': 'National Day Golden Week Holiday', 'ko': '국경절 황금주간 연휴'},
+        description: {
+          'en': 'National Day Golden Week Holiday',
+          'ko': '국경절 황금주간 연휴'
+        },
       ),
     ],
     'JP': [
@@ -1071,7 +1284,10 @@ class WorldHolidays {
         name: 'National Foundation Day (Observed)',
         date: DateTime(2024, 02, 12),
         type: HolidayType.national,
-        description: {'en': 'National Foundation Day (Observed)', 'ko': '건국기념의 날 대체휴일'},
+        description: {
+          'en': 'National Foundation Day (Observed)',
+          'ko': '건국기념의 날 대체휴일'
+        },
       ),
       Holiday(
         name: 'Emperor\'s Birthday',
@@ -1197,7 +1413,10 @@ class WorldHolidays {
         name: 'Emperor\'s Birthday (Observed)',
         date: DateTime(2025, 02, 24),
         type: HolidayType.national,
-        description: {'en': 'Emperor\'s Birthday (Observed)', 'ko': '천황 생일 대체휴일'},
+        description: {
+          'en': 'Emperor\'s Birthday (Observed)',
+          'ko': '천황 생일 대체휴일'
+        },
       ),
       Holiday(
         name: 'Spring Equinox',
@@ -1281,7 +1500,10 @@ class WorldHolidays {
         name: 'Labor Thanksgiving Day (Observed)',
         date: DateTime(2025, 11, 24),
         type: HolidayType.national,
-        description: {'en': 'Labor Thanksgiving Day (Observed)', 'ko': '근로감사의 날 대체휴일'},
+        description: {
+          'en': 'Labor Thanksgiving Day (Observed)',
+          'ko': '근로감사의 날 대체휴일'
+        },
       ),
       Holiday(
         name: 'New Year\'s Day',
@@ -1341,7 +1563,10 @@ class WorldHolidays {
         name: 'Constitution Memorial Day (Observed)',
         date: DateTime(2026, 05, 06),
         type: HolidayType.national,
-        description: {'en': 'Constitution Memorial Day (Observed)', 'ko': '헌법기념일 대체휴일'},
+        description: {
+          'en': 'Constitution Memorial Day (Observed)',
+          'ko': '헌법기념일 대체휴일'
+        },
       ),
       Holiday(
         name: 'Sea Day',
@@ -1415,13 +1640,19 @@ class WorldHolidays {
         name: '설날',
         date: DateTime(2024, 02, 11),
         type: HolidayType.national,
-        description: {'en': 'Lunar New Year\'s Day (Second Day)', 'ko': '음력 새해 (다음날)'},
+        description: {
+          'en': 'Lunar New Year\'s Day (Second Day)',
+          'ko': '음력 새해 (다음날)'
+        },
       ),
       Holiday(
         name: '설날 대체공휴일',
         date: DateTime(2024, 02, 12),
         type: HolidayType.national,
-        description: {'en': 'Lunar New Year Substitute Holiday (Sunday → Monday)', 'ko': '설날 대체공휴일 (일요일 → 월요일)'},
+        description: {
+          'en': 'Lunar New Year Substitute Holiday (Sunday → Monday)',
+          'ko': '설날 대체공휴일 (일요일 → 월요일)'
+        },
       ),
       Holiday(
         name: '삼일절',
@@ -1433,7 +1664,10 @@ class WorldHolidays {
         name: '국회의원 선거일',
         date: DateTime(2024, 04, 10),
         type: HolidayType.national,
-        description: {'en': 'National Assembly Election Day', 'ko': '22대 국회의원 선거'},
+        description: {
+          'en': 'National Assembly Election Day',
+          'ko': '22대 국회의원 선거'
+        },
       ),
       Holiday(
         name: '부처님 오신 날',
@@ -1451,7 +1685,10 @@ class WorldHolidays {
         name: '어린이날 대체휴일',
         date: DateTime(2024, 05, 06),
         type: HolidayType.national,
-        description: {'en': 'Children\'s Day Substitute Holiday', 'ko': '어린이날 대체휴일'},
+        description: {
+          'en': 'Children\'s Day Substitute Holiday',
+          'ko': '어린이날 대체휴일'
+        },
       ),
       Holiday(
         name: '현충일',
@@ -1469,7 +1706,10 @@ class WorldHolidays {
         name: '추석',
         date: DateTime(2024, 09, 16),
         type: HolidayType.national,
-        description: {'en': 'Chuseok (Korean Thanksgiving) Eve', 'ko': '추석 (전날)'},
+        description: {
+          'en': 'Chuseok (Korean Thanksgiving) Eve',
+          'ko': '추석 (전날)'
+        },
       ),
       Holiday(
         name: '추석',
@@ -1481,7 +1721,10 @@ class WorldHolidays {
         name: '추석',
         date: DateTime(2024, 09, 18),
         type: HolidayType.national,
-        description: {'en': 'Chuseok (Korean Thanksgiving) Second Day', 'ko': '추석 (다음날)'},
+        description: {
+          'en': 'Chuseok (Korean Thanksgiving) Second Day',
+          'ko': '추석 (다음날)'
+        },
       ),
       Holiday(
         name: '추석 대체공휴일',
@@ -1529,13 +1772,19 @@ class WorldHolidays {
         name: '설날',
         date: DateTime(2025, 01, 30),
         type: HolidayType.national,
-        description: {'en': 'Lunar New Year\'s Day (Second Day)', 'ko': '음력 새해 (다음날)'},
+        description: {
+          'en': 'Lunar New Year\'s Day (Second Day)',
+          'ko': '음력 새해 (다음날)'
+        },
       ),
       Holiday(
         name: '설날 대체공휴일',
         date: DateTime(2025, 01, 31),
         type: HolidayType.national,
-        description: {'en': 'Lunar New Year Substitute Holiday', 'ko': '설날 대체공휴일'},
+        description: {
+          'en': 'Lunar New Year Substitute Holiday',
+          'ko': '설날 대체공휴일'
+        },
       ),
       Holiday(
         name: '삼일절',
@@ -1547,13 +1796,19 @@ class WorldHolidays {
         name: '부처님 오신 날 / 어린이날',
         date: DateTime(2025, 05, 05),
         type: HolidayType.national,
-        description: {'en': 'Buddha\'s Birthday / Children\'s Day', 'ko': '부처님 오신 날 / 어린이날'},
+        description: {
+          'en': 'Buddha\'s Birthday / Children\'s Day',
+          'ko': '부처님 오신 날 / 어린이날'
+        },
       ),
       Holiday(
         name: '어린이날 대체휴일',
         date: DateTime(2025, 05, 06),
         type: HolidayType.national,
-        description: {'en': 'Children\'s Day Substitute Holiday', 'ko': '어린이날 대체휴일'},
+        description: {
+          'en': 'Children\'s Day Substitute Holiday',
+          'ko': '어린이날 대체휴일'
+        },
       ),
       Holiday(
         name: '현충일',
@@ -1571,7 +1826,10 @@ class WorldHolidays {
         name: '추석',
         date: DateTime(2025, 10, 05),
         type: HolidayType.national,
-        description: {'en': 'Chuseok (Korean Thanksgiving) Eve', 'ko': '추석 (전날)'},
+        description: {
+          'en': 'Chuseok (Korean Thanksgiving) Eve',
+          'ko': '추석 (전날)'
+        },
       ),
       Holiday(
         name: '추석',
@@ -1583,7 +1841,10 @@ class WorldHolidays {
         name: '추석',
         date: DateTime(2025, 10, 07),
         type: HolidayType.national,
-        description: {'en': 'Chuseok (Korean Thanksgiving) Second Day', 'ko': '추석 (다음날)'},
+        description: {
+          'en': 'Chuseok (Korean Thanksgiving) Second Day',
+          'ko': '추석 (다음날)'
+        },
       ),
       Holiday(
         name: '추석 대체공휴일',
@@ -1631,13 +1892,10 @@ class WorldHolidays {
         name: '설날',
         date: DateTime(2026, 02, 18),
         type: HolidayType.national,
-        description: {'en': 'Lunar New Year\'s Day (Second Day)', 'ko': '음력 새해 (다음날)'},
-      ),
-      Holiday(
-        name: '설날 대체공휴일',
-        date: DateTime(2026, 02, 19),
-        type: HolidayType.national,
-        description: {'en': 'Lunar New Year Substitute Holiday', 'ko': '설날 대체공휴일'},
+        description: {
+          'en': 'Lunar New Year\'s Day (Second Day)',
+          'ko': '음력 새해 (다음날)'
+        },
       ),
       Holiday(
         name: '삼일절',
@@ -1646,10 +1904,10 @@ class WorldHolidays {
         description: {'en': 'Independence Movement Day', 'ko': '3.1 독립운동 기념일'},
       ),
       Holiday(
-        name: '부처님 오신 날',
-        date: DateTime(2026, 05, 24),
+        name: '삼일절 대체휴일',
+        date: DateTime(2026, 03, 02),
         type: HolidayType.national,
-        description: {'en': 'Buddha\'s Birthday', 'ko': '부처님 오신 날'},
+        description: {'en': 'Independence Movement Day', 'ko': '3.1 독립운동 기념일'},
       ),
       Holiday(
         name: '어린이날',
@@ -1658,10 +1916,22 @@ class WorldHolidays {
         description: {'en': 'Children\'s Day', 'ko': '어린이날'},
       ),
       Holiday(
-        name: '어린이날 대체휴일',
-        date: DateTime(2026, 05, 06),
+        name: '부처님 오신 날',
+        date: DateTime(2026, 05, 24),
         type: HolidayType.national,
-        description: {'en': 'Children\'s Day Substitute Holiday', 'ko': '어린이날 대체휴일'},
+        description: {'en': 'Buddha\'s Birthday', 'ko': '부처님 오신 날'},
+      ),
+      Holiday(
+        name: '대체휴일',
+        date: DateTime(2026, 05, 25),
+        type: HolidayType.national,
+        description: {'en': 'Buddha\'s Birthday', 'ko': '부처님 오신 날'},
+      ),
+      Holiday(
+        name: '지방선거',
+        date: DateTime(2026, 06, 03),
+        type: HolidayType.national,
+        description: {'en': 'Local election', 'ko': '2026 지방선거'},
       ),
       Holiday(
         name: '현충일',
@@ -1676,10 +1946,19 @@ class WorldHolidays {
         description: {'en': 'Liberation Day', 'ko': '광복절'},
       ),
       Holiday(
+        name: '광복절 대체휴일',
+        date: DateTime(2026, 08, 17),
+        type: HolidayType.national,
+        description: {'en': 'Liberation Day', 'ko': '광복절'},
+      ),
+      Holiday(
         name: '추석',
         date: DateTime(2026, 09, 24),
         type: HolidayType.national,
-        description: {'en': 'Chuseok (Korean Thanksgiving) Eve', 'ko': '추석 (전날)'},
+        description: {
+          'en': 'Chuseok (Korean Thanksgiving) Eve',
+          'ko': '추석 (전날)'
+        },
       ),
       Holiday(
         name: '추석',
@@ -1691,17 +1970,20 @@ class WorldHolidays {
         name: '추석',
         date: DateTime(2026, 09, 26),
         type: HolidayType.national,
-        description: {'en': 'Chuseok (Korean Thanksgiving) Second Day', 'ko': '추석 (다음날)'},
-      ),
-      Holiday(
-        name: '추석 대체공휴일',
-        date: DateTime(2026, 09, 27),
-        type: HolidayType.national,
-        description: {'en': 'Chuseok Substitute Holiday', 'ko': '추석 대체공휴일'},
+        description: {
+          'en': 'Chuseok (Korean Thanksgiving) Second Day',
+          'ko': '추석 (다음날)'
+        },
       ),
       Holiday(
         name: '개천절',
         date: DateTime(2026, 10, 03),
+        type: HolidayType.national,
+        description: {'en': 'National Foundation Day', 'ko': '개천절'},
+      ),
+      Holiday(
+        name: '개천절 대체휴일',
+        date: DateTime(2026, 10, 05),
         type: HolidayType.national,
         description: {'en': 'National Foundation Day', 'ko': '개천절'},
       ),
@@ -1729,19 +2011,28 @@ class WorldHolidays {
         name: 'Second Day of Chinese New Year',
         date: DateTime(2024, 02, 11),
         type: HolidayType.national,
-        description: {'en': 'Second Day of Chinese New Year (Most regions)', 'ko': '중국 신정 둘째 날 (대부분 지역)'},
+        description: {
+          'en': 'Second Day of Chinese New Year (Most regions)',
+          'ko': '중국 신정 둘째 날 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Chinese New Year Holiday',
         date: DateTime(2024, 02, 12),
         type: HolidayType.national,
-        description: {'en': 'Chinese New Year Holiday (Many regions)', 'ko': '중국 신정 연휴 (많은 지역)'},
+        description: {
+          'en': 'Chinese New Year Holiday (Many regions)',
+          'ko': '중국 신정 연휴 (많은 지역)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Puasa',
         date: DateTime(2024, 04, 10),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Puasa (Eid al-Fitr)', 'ko': '하리 라야 푸아사 (이드 알 피트르)'},
+        description: {
+          'en': 'Hari Raya Puasa (Eid al-Fitr)',
+          'ko': '하리 라야 푸아사 (이드 알 피트르)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Puasa Day 2',
@@ -1759,31 +2050,46 @@ class WorldHolidays {
         name: 'Wesak Day',
         date: DateTime(2024, 05, 22),
         type: HolidayType.national,
-        description: {'en': 'Wesak Day (Buddha\'s Birthday)', 'ko': '웨삭절 (부처님 오신 날)'},
+        description: {
+          'en': 'Wesak Day (Buddha\'s Birthday)',
+          'ko': '웨삭절 (부처님 오신 날)'
+        },
       ),
       Holiday(
         name: 'The Yang di-Pertuan Agong\'s Birthday',
         date: DateTime(2024, 06, 03),
         type: HolidayType.national,
-        description: {'en': 'The Yang di-Pertuan Agong\'s Birthday', 'ko': '양 디 페르투안 아공 생일'},
+        description: {
+          'en': 'The Yang di-Pertuan Agong\'s Birthday',
+          'ko': '양 디 페르투안 아공 생일'
+        },
       ),
       Holiday(
         name: 'Hari Raya Haji',
         date: DateTime(2024, 06, 17),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Haji (Eid al-Adha)', 'ko': '하리 라야 하지 (이드 알 아드하)'},
+        description: {
+          'en': 'Hari Raya Haji (Eid al-Adha)',
+          'ko': '하리 라야 하지 (이드 알 아드하)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Haji (Day 2)',
         date: DateTime(2024, 06, 18),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Haji (Day 2) (Kelantan, Terengganu)', 'ko': '하리 라야 하지 둘째 날 (클란탄, 트렝가누)'},
+        description: {
+          'en': 'Hari Raya Haji (Day 2) (Kelantan, Terengganu)',
+          'ko': '하리 라야 하지 둘째 날 (클란탄, 트렝가누)'
+        },
       ),
       Holiday(
         name: 'Muharram/New Year',
         date: DateTime(2024, 07, 07),
         type: HolidayType.national,
-        description: {'en': 'Muharram/New Year (Islamic New Year)', 'ko': '무하람/신년 (이슬람 신년)'},
+        description: {
+          'en': 'Muharram/New Year (Islamic New Year)',
+          'ko': '무하람/신년 (이슬람 신년)'
+        },
       ),
       Holiday(
         name: 'Malaysia\'s National Day',
@@ -1795,13 +2101,19 @@ class WorldHolidays {
         name: 'The Prophet Muhammad\'s Birthday / Malaysia Day',
         date: DateTime(2024, 09, 16),
         type: HolidayType.national,
-        description: {'en': 'The Prophet Muhammad\'s Birthday / Malaysia Day', 'ko': '예언자 무함마드 생일 / 말레이시아의 날'},
+        description: {
+          'en': 'The Prophet Muhammad\'s Birthday / Malaysia Day',
+          'ko': '예언자 무함마드 생일 / 말레이시아의 날'
+        },
       ),
       Holiday(
         name: 'Diwali/Deepavali',
         date: DateTime(2024, 10, 31),
         type: HolidayType.national,
-        description: {'en': 'Diwali/Deepavali (Most regions)', 'ko': '디왈리/디파발리 (대부분 지역)'},
+        description: {
+          'en': 'Diwali/Deepavali (Most regions)',
+          'ko': '디왈리/디파발리 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -1819,13 +2131,19 @@ class WorldHolidays {
         name: 'Second Day of Chinese New Year',
         date: DateTime(2025, 01, 30),
         type: HolidayType.national,
-        description: {'en': 'Second Day of Chinese New Year (Most regions)', 'ko': '중국 신정 둘째 날 (대부분 지역)'},
+        description: {
+          'en': 'Second Day of Chinese New Year (Most regions)',
+          'ko': '중국 신정 둘째 날 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Puasa',
         date: DateTime(2025, 03, 31),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Puasa (Eid al-Fitr)', 'ko': '하리 라야 푸아사 (이드 알 피트르)'},
+        description: {
+          'en': 'Hari Raya Puasa (Eid al-Fitr)',
+          'ko': '하리 라야 푸아사 (이드 알 피트르)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Puasa Day 2',
@@ -1843,31 +2161,46 @@ class WorldHolidays {
         name: 'Wesak Day',
         date: DateTime(2025, 05, 12),
         type: HolidayType.national,
-        description: {'en': 'Wesak Day (Buddha\'s Birthday)', 'ko': '웨삭절 (부처님 오신 날)'},
+        description: {
+          'en': 'Wesak Day (Buddha\'s Birthday)',
+          'ko': '웨삭절 (부처님 오신 날)'
+        },
       ),
       Holiday(
         name: 'The Yang di-Pertuan Agong\'s Birthday',
         date: DateTime(2025, 06, 02),
         type: HolidayType.national,
-        description: {'en': 'The Yang di-Pertuan Agong\'s Birthday', 'ko': '양 디 페르투안 아공 생일'},
+        description: {
+          'en': 'The Yang di-Pertuan Agong\'s Birthday',
+          'ko': '양 디 페르투안 아공 생일'
+        },
       ),
       Holiday(
         name: 'Hari Raya Haji',
         date: DateTime(2025, 06, 07),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Haji (Eid al-Adha)', 'ko': '하리 라야 하지 (이드 알 아드하)'},
+        description: {
+          'en': 'Hari Raya Haji (Eid al-Adha)',
+          'ko': '하리 라야 하지 (이드 알 아드하)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Haji (Day 2)',
         date: DateTime(2025, 06, 08),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Haji (Day 2) (Kelantan, Terengganu)', 'ko': '하리 라야 하지 둘째 날 (클란탄, 트렝가누)'},
+        description: {
+          'en': 'Hari Raya Haji (Day 2) (Kelantan, Terengganu)',
+          'ko': '하리 라야 하지 둘째 날 (클란탄, 트렝가누)'
+        },
       ),
       Holiday(
         name: 'Muharram/New Year',
         date: DateTime(2025, 06, 27),
         type: HolidayType.national,
-        description: {'en': 'Muharram/New Year (Islamic New Year)', 'ko': '무하람/신년 (이슬람 신년)'},
+        description: {
+          'en': 'Muharram/New Year (Islamic New Year)',
+          'ko': '무하람/신년 (이슬람 신년)'
+        },
       ),
       Holiday(
         name: 'Malaysia\'s National Day',
@@ -1879,7 +2212,10 @@ class WorldHolidays {
         name: 'The Prophet Muhammad\'s Birthday',
         date: DateTime(2025, 09, 05),
         type: HolidayType.national,
-        description: {'en': 'The Prophet Muhammad\'s Birthday', 'ko': '예언자 무함마드 생일'},
+        description: {
+          'en': 'The Prophet Muhammad\'s Birthday',
+          'ko': '예언자 무함마드 생일'
+        },
       ),
       Holiday(
         name: 'Malaysia Day Holiday',
@@ -1897,7 +2233,10 @@ class WorldHolidays {
         name: 'Diwali/Deepavali',
         date: DateTime(2025, 10, 20),
         type: HolidayType.national,
-        description: {'en': 'Diwali/Deepavali (Most regions)', 'ko': '디왈리/디파발리 (대부분 지역)'},
+        description: {
+          'en': 'Diwali/Deepavali (Most regions)',
+          'ko': '디왈리/디파발리 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Christmas Day',
@@ -1915,13 +2254,19 @@ class WorldHolidays {
         name: 'Second Day of Chinese New Year',
         date: DateTime(2026, 02, 18),
         type: HolidayType.national,
-        description: {'en': 'Second Day of Chinese New Year (Most regions)', 'ko': '중국 신정 둘째 날 (대부분 지역)'},
+        description: {
+          'en': 'Second Day of Chinese New Year (Most regions)',
+          'ko': '중국 신정 둘째 날 (대부분 지역)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Puasa',
         date: DateTime(2026, 03, 20),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Puasa (Eid al-Fitr)', 'ko': '하리 라야 푸아사 (이드 알 피트르)'},
+        description: {
+          'en': 'Hari Raya Puasa (Eid al-Fitr)',
+          'ko': '하리 라야 푸아사 (이드 알 피트르)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Puasa Day 2',
@@ -1939,31 +2284,46 @@ class WorldHolidays {
         name: 'Hari Raya Haji',
         date: DateTime(2026, 05, 27),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Haji (Eid al-Adha)', 'ko': '하리 라야 하지 (이드 알 아드하)'},
+        description: {
+          'en': 'Hari Raya Haji (Eid al-Adha)',
+          'ko': '하리 라야 하지 (이드 알 아드하)'
+        },
       ),
       Holiday(
         name: 'Hari Raya Haji (Day 2)',
         date: DateTime(2026, 05, 28),
         type: HolidayType.national,
-        description: {'en': 'Hari Raya Haji (Day 2) (Kelantan, Terengganu)', 'ko': '하리 라야 하지 둘째 날 (클란탄, 트렝가누)'},
+        description: {
+          'en': 'Hari Raya Haji (Day 2) (Kelantan, Terengganu)',
+          'ko': '하리 라야 하지 둘째 날 (클란탄, 트렝가누)'
+        },
       ),
       Holiday(
         name: 'The Yang di-Pertuan Agong\'s Birthday',
         date: DateTime(2026, 06, 01),
         type: HolidayType.national,
-        description: {'en': 'The Yang di-Pertuan Agong\'s Birthday', 'ko': '양 디 페르투안 아공 생일'},
+        description: {
+          'en': 'The Yang di-Pertuan Agong\'s Birthday',
+          'ko': '양 디 페르투안 아공 생일'
+        },
       ),
       Holiday(
         name: 'Muharram/New Year',
         date: DateTime(2026, 06, 17),
         type: HolidayType.national,
-        description: {'en': 'Muharram/New Year (Islamic New Year)', 'ko': '무하람/신년 (이슬람 신년)'},
+        description: {
+          'en': 'Muharram/New Year (Islamic New Year)',
+          'ko': '무하람/신년 (이슬람 신년)'
+        },
       ),
       Holiday(
         name: 'The Prophet Muhammad\'s Birthday',
         date: DateTime(2026, 08, 26),
         type: HolidayType.national,
-        description: {'en': 'The Prophet Muhammad\'s Birthday', 'ko': '예언자 무함마드 생일'},
+        description: {
+          'en': 'The Prophet Muhammad\'s Birthday',
+          'ko': '예언자 무함마드 생일'
+        },
       ),
       Holiday(
         name: 'Malaysia\'s National Day',
@@ -2043,13 +2403,19 @@ class WorldHolidays {
         name: 'Royal Ploughing Ceremony Day',
         date: DateTime(2024, 05, 10),
         type: HolidayType.national,
-        description: {'en': 'Royal Ploughing Ceremony Day', 'ko': '왕실 쟁기질 의식의 날'},
+        description: {
+          'en': 'Royal Ploughing Ceremony Day',
+          'ko': '왕실 쟁기질 의식의 날'
+        },
       ),
       Holiday(
         name: 'Visakha Bucha',
         date: DateTime(2024, 05, 22),
         type: HolidayType.national,
-        description: {'en': 'Visakha Bucha (Buddha\'s Birthday)', 'ko': '위사카 부차 (부처님 오신 날)'},
+        description: {
+          'en': 'Visakha Bucha (Buddha\'s Birthday)',
+          'ko': '위사카 부차 (부처님 오신 날)'
+        },
       ),
       Holiday(
         name: 'Queen Suthida\'s Birthday',
@@ -2067,7 +2433,10 @@ class WorldHolidays {
         name: 'King Vajiralongkorn\'s Birthday (Observed)',
         date: DateTime(2024, 07, 29),
         type: HolidayType.national,
-        description: {'en': 'King Vajiralongkorn\'s Birthday (Observed)', 'ko': '바지랄롱콘 국왕 생일 대체휴일'},
+        description: {
+          'en': 'King Vajiralongkorn\'s Birthday (Observed)',
+          'ko': '바지랄롱콘 국왕 생일 대체휴일'
+        },
       ),
       Holiday(
         name: 'The Queen Mother\'s Birthday',
@@ -2079,7 +2448,10 @@ class WorldHolidays {
         name: 'Anniversary of the Death of King Bhumibol (Observed)',
         date: DateTime(2024, 10, 14),
         type: HolidayType.national,
-        description: {'en': 'Anniversary of the Death of King Bhumibol (Observed)', 'ko': '푸미폰 국왕 서거 기념일 대체휴일'},
+        description: {
+          'en': 'Anniversary of the Death of King Bhumibol (Observed)',
+          'ko': '푸미폰 국왕 서거 기념일 대체휴일'
+        },
       ),
       Holiday(
         name: 'Chulalongkorn Day',
@@ -2091,7 +2463,10 @@ class WorldHolidays {
         name: 'King Bhumibol\'s Birthday/Father\'s Day',
         date: DateTime(2024, 12, 05),
         type: HolidayType.national,
-        description: {'en': 'King Bhumibol\'s Birthday/Father\'s Day', 'ko': '푸미폰 국왕 생일/아버지의 날'},
+        description: {
+          'en': 'King Bhumibol\'s Birthday/Father\'s Day',
+          'ko': '푸미폰 국왕 생일/아버지의 날'
+        },
       ),
       Holiday(
         name: 'Constitution Day',
@@ -2163,7 +2538,10 @@ class WorldHolidays {
         name: 'Royal Ploughing Ceremony Day',
         date: DateTime(2025, 05, 09),
         type: HolidayType.national,
-        description: {'en': 'Royal Ploughing Ceremony Day', 'ko': '왕실 쟁기질 의식의 날'},
+        description: {
+          'en': 'Royal Ploughing Ceremony Day',
+          'ko': '왕실 쟁기질 의식의 날'
+        },
       ),
       Holiday(
         name: 'Visakha Bucha (Observed)',
@@ -2193,7 +2571,10 @@ class WorldHolidays {
         name: 'King Vajiralongkorn\'s Birthday',
         date: DateTime(2025, 07, 28),
         type: HolidayType.national,
-        description: {'en': 'King Vajiralongkorn\'s Birthday', 'ko': '바지랄롱콘 국왕 생일'},
+        description: {
+          'en': 'King Vajiralongkorn\'s Birthday',
+          'ko': '바지랄롱콘 국왕 생일'
+        },
       ),
       Holiday(
         name: 'Bridge Public Holiday',
@@ -2211,7 +2592,10 @@ class WorldHolidays {
         name: 'Anniversary of the Death of King Bhumibol',
         date: DateTime(2025, 10, 13),
         type: HolidayType.national,
-        description: {'en': 'Anniversary of the Death of King Bhumibol', 'ko': '푸미폰 국왕 서거 기념일'},
+        description: {
+          'en': 'Anniversary of the Death of King Bhumibol',
+          'ko': '푸미폰 국왕 서거 기념일'
+        },
       ),
       Holiday(
         name: 'Chulalongkorn Day',
@@ -2223,7 +2607,10 @@ class WorldHolidays {
         name: 'King Bhumibol\'s Birthday/Father\'s Day',
         date: DateTime(2025, 12, 05),
         type: HolidayType.national,
-        description: {'en': 'King Bhumibol\'s Birthday/Father\'s Day', 'ko': '푸미폰 국왕 생일/아버지의 날'},
+        description: {
+          'en': 'King Bhumibol\'s Birthday/Father\'s Day',
+          'ko': '푸미폰 국왕 생일/아버지의 날'
+        },
       ),
       Holiday(
         name: 'Constitution Day',
@@ -2301,7 +2688,10 @@ class WorldHolidays {
         name: 'King Vajiralongkorn\'s Birthday',
         date: DateTime(2026, 07, 28),
         type: HolidayType.national,
-        description: {'en': 'King Vajiralongkorn\'s Birthday', 'ko': '바지랄롱콘 국왕 생일'},
+        description: {
+          'en': 'King Vajiralongkorn\'s Birthday',
+          'ko': '바지랄롱콘 국왕 생일'
+        },
       ),
       Holiday(
         name: 'Asalha Bucha',
@@ -2319,7 +2709,10 @@ class WorldHolidays {
         name: 'Anniversary of the Death of King Bhumibol',
         date: DateTime(2026, 10, 13),
         type: HolidayType.national,
-        description: {'en': 'Anniversary of the Death of King Bhumibol', 'ko': '푸미폰 국왕 서거 기념일'},
+        description: {
+          'en': 'Anniversary of the Death of King Bhumibol',
+          'ko': '푸미폰 국왕 서거 기념일'
+        },
       ),
       Holiday(
         name: 'Chulalongkorn Day',
@@ -2331,13 +2724,19 @@ class WorldHolidays {
         name: 'King Bhumibol\'s Birthday/Father\'s Day',
         date: DateTime(2026, 12, 05),
         type: HolidayType.national,
-        description: {'en': 'King Bhumibol\'s Birthday/Father\'s Day', 'ko': '푸미폰 국왕 생일/아버지의 날'},
+        description: {
+          'en': 'King Bhumibol\'s Birthday/Father\'s Day',
+          'ko': '푸미폰 국왕 생일/아버지의 날'
+        },
       ),
       Holiday(
         name: 'King Bhumibol\'s Birthday/Father\'s Day (Observed)',
         date: DateTime(2026, 12, 07),
         type: HolidayType.national,
-        description: {'en': 'King Bhumibol\'s Birthday/Father\'s Day (Observed)', 'ko': '푸미폰 국왕 생일/아버지의 날 대체휴일'},
+        description: {
+          'en': 'King Bhumibol\'s Birthday/Father\'s Day (Observed)',
+          'ko': '푸미폰 국왕 생일/아버지의 날 대체휴일'
+        },
       ),
       Holiday(
         name: 'Constitution Day',
@@ -2411,7 +2810,10 @@ class WorldHolidays {
         name: 'Tomb Sweeping Day / Children\'s Day',
         date: DateTime(2024, 04, 04),
         type: HolidayType.national,
-        description: {'en': 'Tomb Sweeping Day / Children\'s Day', 'ko': '청명절 / 어린이날'},
+        description: {
+          'en': 'Tomb Sweeping Day / Children\'s Day',
+          'ko': '청명절 / 어린이날'
+        },
       ),
       Holiday(
         name: 'Children\'s Day',
@@ -2435,7 +2837,10 @@ class WorldHolidays {
         name: 'Labor Day (Private Sector Only)',
         date: DateTime(2024, 05, 01),
         type: HolidayType.regional,
-        description: {'en': 'Labor Day (Private Sector Only)', 'ko': '노동절 (민간부문만)'},
+        description: {
+          'en': 'Labor Day (Private Sector Only)',
+          'ko': '노동절 (민간부문만)'
+        },
       ),
       Holiday(
         name: 'Dragon Boat Festival',
@@ -2519,13 +2924,19 @@ class WorldHolidays {
         name: 'Tomb Sweeping Day / Children\'s Day',
         date: DateTime(2025, 04, 04),
         type: HolidayType.national,
-        description: {'en': 'Tomb Sweeping Day / Children\'s Day', 'ko': '청명절 / 어린이날'},
+        description: {
+          'en': 'Tomb Sweeping Day / Children\'s Day',
+          'ko': '청명절 / 어린이날'
+        },
       ),
       Holiday(
         name: 'Labor Day (Private Sector Only)',
         date: DateTime(2025, 05, 01),
         type: HolidayType.regional,
-        description: {'en': 'Labor Day (Private Sector Only)', 'ko': '노동절 (민간부문만)'},
+        description: {
+          'en': 'Labor Day (Private Sector Only)',
+          'ko': '노동절 (민간부문만)'
+        },
       ),
       Holiday(
         name: 'Dragon Boat Festival Holiday',
@@ -2561,7 +2972,10 @@ class WorldHolidays {
         name: 'Day off for Taiwan\'s Retrocession Day',
         date: DateTime(2025, 10, 24),
         type: HolidayType.national,
-        description: {'en': 'Day off for Taiwan\'s Retrocession Day', 'ko': '대만 광복절 대체휴일'},
+        description: {
+          'en': 'Day off for Taiwan\'s Retrocession Day',
+          'ko': '대만 광복절 대체휴일'
+        },
       ),
       Holiday(
         name: 'Constitution Day',
@@ -2633,7 +3047,10 @@ class WorldHolidays {
         name: 'Peace Memorial Day (Observed)',
         date: DateTime(2026, 02, 27),
         type: HolidayType.national,
-        description: {'en': 'Peace Memorial Day (Observed)', 'ko': '평화기념일 대체휴일'},
+        description: {
+          'en': 'Peace Memorial Day (Observed)',
+          'ko': '평화기념일 대체휴일'
+        },
       ),
       Holiday(
         name: 'Children\'s Day (Observed)',
@@ -2687,7 +3104,10 @@ class WorldHolidays {
         name: 'Day off for Taiwan\'s Retrocession Day',
         date: DateTime(2026, 10, 26),
         type: HolidayType.national,
-        description: {'en': 'Day off for Taiwan\'s Retrocession Day', 'ko': '대만 광복절 대체휴일'},
+        description: {
+          'en': 'Day off for Taiwan\'s Retrocession Day',
+          'ko': '대만 광복절 대체휴일'
+        },
       ),
       Holiday(
         name: 'Constitution Day',
@@ -2707,7 +3127,10 @@ class WorldHolidays {
         name: 'Martin Luther King Jr. Day',
         date: DateTime(2024, 01, 15),
         type: HolidayType.national,
-        description: {'en': 'Martin Luther King Jr. Day', 'ko': '마틴 루터 킹 주니어 기념일'},
+        description: {
+          'en': 'Martin Luther King Jr. Day',
+          'ko': '마틴 루터 킹 주니어 기념일'
+        },
       ),
       Holiday(
         name: 'Presidents\' Day',
@@ -2779,13 +3202,19 @@ class WorldHolidays {
         name: 'National Day of Mourning for Jimmy Carter',
         date: DateTime(2025, 01, 09),
         type: HolidayType.national,
-        description: {'en': 'National Day of Mourning for Jimmy Carter', 'ko': '지미 카터 추모일'},
+        description: {
+          'en': 'National Day of Mourning for Jimmy Carter',
+          'ko': '지미 카터 추모일'
+        },
       ),
       Holiday(
         name: 'Martin Luther King Jr. Day / Inauguration Day',
         date: DateTime(2025, 01, 20),
         type: HolidayType.national,
-        description: {'en': 'Martin Luther King Jr. Day / Inauguration Day (DC, MD*, VA*)', 'ko': '마틴 루터 킹 주니어 기념일 / 대통령 취임식'},
+        description: {
+          'en': 'Martin Luther King Jr. Day / Inauguration Day (DC, MD*, VA*)',
+          'ko': '마틴 루터 킹 주니어 기념일 / 대통령 취임식'
+        },
       ),
       Holiday(
         name: 'Presidents\' Day',
@@ -2851,7 +3280,10 @@ class WorldHolidays {
         name: 'Martin Luther King Jr. Day',
         date: DateTime(2026, 01, 19),
         type: HolidayType.national,
-        description: {'en': 'Martin Luther King Jr. Day', 'ko': '마틴 루터 킹 주니어 기념일'},
+        description: {
+          'en': 'Martin Luther King Jr. Day',
+          'ko': '마틴 루터 킹 주니어 기념일'
+        },
       ),
       Holiday(
         name: 'Presidents\' Day',
@@ -2967,13 +3399,19 @@ class WorldHolidays {
         name: 'Liberation Day/Reunification Day Holiday',
         date: DateTime(2024, 04, 29),
         type: HolidayType.national,
-        description: {'en': 'Liberation Day/Reunification Day Holiday', 'ko': '통일절 연휴'},
+        description: {
+          'en': 'Liberation Day/Reunification Day Holiday',
+          'ko': '통일절 연휴'
+        },
       ),
       Holiday(
         name: 'Liberation Day/Reunification Day',
         date: DateTime(2024, 04, 30),
         type: HolidayType.national,
-        description: {'en': 'Liberation Day/Reunification Day', 'ko': '통일절 (사이공 해방일)'},
+        description: {
+          'en': 'Liberation Day/Reunification Day',
+          'ko': '통일절 (사이공 해방일)'
+        },
       ),
       Holiday(
         name: 'International Labor Day',
@@ -3081,7 +3519,10 @@ class WorldHolidays {
         name: 'Liberation Day/Reunification Day',
         date: DateTime(2025, 04, 30),
         type: HolidayType.national,
-        description: {'en': 'Liberation Day/Reunification Day', 'ko': '통일절 (사이공 해방일)'},
+        description: {
+          'en': 'Liberation Day/Reunification Day',
+          'ko': '통일절 (사이공 해방일)'
+        },
       ),
       Holiday(
         name: 'International Labor Day',
@@ -3093,7 +3534,10 @@ class WorldHolidays {
         name: 'International Labor Day Holiday',
         date: DateTime(2025, 05, 02),
         type: HolidayType.national,
-        description: {'en': 'International Labor Day Holiday', 'ko': '국제 노동절 연휴'},
+        description: {
+          'en': 'International Labor Day Holiday',
+          'ko': '국제 노동절 연휴'
+        },
       ),
       Holiday(
         name: 'Independence Day Holiday',
@@ -3159,7 +3603,10 @@ class WorldHolidays {
         name: 'Liberation Day/Reunification Day',
         date: DateTime(2026, 04, 30),
         type: HolidayType.national,
-        description: {'en': 'Liberation Day/Reunification Day', 'ko': '통일절 (사이공 해방일)'},
+        description: {
+          'en': 'Liberation Day/Reunification Day',
+          'ko': '통일절 (사이공 해방일)'
+        },
       ),
       Holiday(
         name: 'International Labor Day',
@@ -3175,6 +3622,7 @@ class WorldHolidays {
       ),
     ],
   };
+
   /// Get holidays for a specific country
   ///
   /// [countryCode] - Country code ('KR', 'US', 'JP', 'CN', 'VN', 'MY', 'TH', 'CA', 'BR', 'TW')

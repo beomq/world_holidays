@@ -43,18 +43,10 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Node.js (if any)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Exclude API files from pub.dev package
+api/
+index.html
 
-# Firebase (not needed for this project)
-functions/
-firebase.json
-.firebaserc
-
-# Temporary files
-*.tmp
-*.temp
-example_new_country.json
+# Exclude generated files
+*.g.dart
+*.freezed.dart
