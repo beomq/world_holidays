@@ -206,13 +206,12 @@ fvm flutter pub upgrade world_holidays
 
 ## Migrating from 2.0.x
 
-- `Holiday.description` is `Map<String, String>?`; use `descriptionEn`,
-  `descriptionKo`, or `getDescription(language)`.
-- Invalid holiday type strings now throw `FormatException`.
-- `getHolidays()` remains cache-first and does not automatically access the network.
-- Use `updateCountryHolidays()` or `updateAllHolidays()` for source and failure details.
-- Use asynchronous query methods when cached remote updates must be visible.
-- Do not mutate returned lists or package-decoded description maps.
+See the [2.0.1 to 2.1.1 migration guide](MIGRATION.md) for the complete
+compatibility and rollout checklist.
+
+The main 2.0.1 lookup and update signatures remain source-compatible. Review
+immutable package results, strict unknown-type parsing, cache rollout, and
+service disposal before upgrading.
 
 ## License
 

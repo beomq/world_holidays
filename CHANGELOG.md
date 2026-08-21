@@ -29,6 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Migration
 
 - No API migration is required from 2.1.0.
+- For 2.0.1 users, follow the
+  [2.0.1 to 2.1.1 migration guide](MIGRATION.md).
 - Upgrade the package for corrected synchronous bundled queries.
 - Call `updateCountryHolidays('KR')` to replace a cached Korean payload
   immediately after the hosted API is deployed.
