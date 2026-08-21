@@ -8,6 +8,8 @@ from .models import (
     CountryEntry,
     CountryIndex,
     CountryPayload,
+    CuratedDriftReport,
+    CuratedYearGap,
     Description,
     HolidayRecord,
     Overrides,
@@ -55,6 +57,34 @@ def _normalize_text(
                 ko=_replace_text(holiday.description.ko, replacements),
             ),
         }
+    )
+
+
+def find_curated_year_gaps(
+    country_code: str,
+    existing: Iterable[HolidayRecord],
+    baseline: Iterable[HolidayRecord],
+    overrides: Overrides,
+) -> tuple[HolidayRecord, ...]:
+    """Find calculated dates not acknowledged by authoritative curated data."""
+    curated_years = set(overrides.curated_years.get(country_code, ()))
+    acknowledged_dates = {
+        holiday.date for holiday in existing if holiday.date.year in curated_years
+    }
+    acknowledged_dates.update(
+        removal.date
+        for removal in overrides.removals
+        if removal.country == country_code
+    )
+    acknowledged_dates.update(
+        upsert.holiday.date
+        for upsert in overrides.upserts
+        if upsert.country == country_code
+    )
+    return tuple(
+        holiday
+        for holiday in baseline
+        if holiday.date.year in curated_years and holiday.date not in acknowledged_dates
     )
 
 
@@ -115,6 +145,7 @@ def generate_repository(
     index = CountryIndex.model_validate_json(index_path.read_text(encoding="utf-8"))
     target_years = tuple(range(current_year - 1, current_year + 3))
     generated: dict[str, tuple[HolidayRecord, ...]] = {}
+    curated_gaps: list[CuratedYearGap] = []
     payloads: list[CountryPayload] = []
     written: list[Path] = []
     content_changed = False
@@ -125,6 +156,15 @@ def generate_repository(
             payload_path.read_text(encoding="utf-8")
         )
         baseline = provider.holidays_for(country.code, target_years)
+        curated_gaps.extend(
+            CuratedYearGap(country=country.code, holiday=holiday)
+            for holiday in find_curated_year_gaps(
+                country.code,
+                payload.holidays,
+                baseline,
+                overrides,
+            )
+        )
         holidays = merge_records(
             country.code,
             payload.holidays,
@@ -150,6 +190,10 @@ def generate_repository(
         write_json(payload_path, updated_payload)
         payloads.append(updated_payload)
         written.append(payload_path)
+
+    drift_path = root / "data/curated-drift.json"
+    write_json(drift_path, CuratedDriftReport(gaps=tuple(curated_gaps)))
+    written.append(drift_path)
 
     supported_years = tuple(
         sorted({year for payload in payloads for year in payload.supported_years})

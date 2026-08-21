@@ -20,7 +20,7 @@
     2027,
     2028
   ],
-  "totalHolidays": 841,
+  "totalHolidays": 843,
   "supportedLanguages": [
     "en",
     "ko"
@@ -31,7 +31,7 @@
       "code": "KR",
       "name": "South Korea",
       "flag": "🇰🇷",
-      "totalHolidays": 98,
+      "totalHolidays": 100,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json",
       "names": {
         "en": "South Korea",

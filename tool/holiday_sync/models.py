@@ -56,6 +56,15 @@ class Removal(BaseModel):
     name: str = Field(min_length=1)
 
 
+class SourceReference(BaseModel):
+    """Official evidence for a reviewed holiday correction."""
+
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
+
+    url: str = Field(pattern=r"^https://", min_length=9)
+    verified_on: datetime.date = Field(alias="verifiedOn")
+
+
 class Upsert(BaseModel):
     """Reviewed country-specific holiday replacement."""
 
@@ -63,6 +72,25 @@ class Upsert(BaseModel):
 
     country: CountryCode
     holiday: HolidayRecord
+    source: SourceReference
+
+
+class CuratedYearGap(BaseModel):
+    """Calculated holiday date missing from a curated country year."""
+
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
+
+    country: CountryCode
+    holiday: HolidayRecord
+
+
+class CuratedDriftReport(BaseModel):
+    """Generated review queue for curated-year baseline additions."""
+
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
+
+    version: int = Field(default=1, ge=1)
+    gaps: tuple[CuratedYearGap, ...]
 
 
 class Overrides(BaseModel):

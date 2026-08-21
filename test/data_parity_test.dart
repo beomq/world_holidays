@@ -53,4 +53,17 @@ void main() {
       expect(bundled, hosted, reason: code);
     }
   });
+
+  test('South Korea includes official 2026 public holiday changes', () async {
+    final worldHolidays = WorldHolidays();
+    final holidays = await worldHolidays.getHolidays('KR', year: 2026);
+    final namesByDate = {
+      for (final holiday in holidays) holiday.dateString: holiday.name,
+    };
+
+    expect(namesByDate['2026-05-01'], 'Labor Day');
+    expect(namesByDate['2026-06-03'], '지방선거');
+    expect(namesByDate['2026-07-17'], 'Constitution Day');
+    expect(worldHolidays.isHoliday('KR', DateTime(2026, 7, 17)), isTrue);
+  });
 }

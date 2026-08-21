@@ -17,5 +17,38 @@
     "대체휴일": "대체 휴일"
   },
   "removals": [],
-  "upserts": []
+  "upserts": [
+    {
+      "country": "KR",
+      "holiday": {
+        "name": "Labor Day",
+        "date": "2026-05-01",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Labor Day",
+          "ko": "노동절"
+        }
+      },
+      "source": {
+        "url": "https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/?mode=view&cntId=4250",
+        "verifiedOn": "2026-08-21"
+      }
+    },
+    {
+      "country": "KR",
+      "holiday": {
+        "name": "Constitution Day",
+        "date": "2026-07-17",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Constitution Day",
+          "ko": "제헌절"
+        }
+      },
+      "source": {
+        "url": "https://law.go.kr/LSW/lsRvsDocListP.do?lsId=014112&chrClsCd=010202&lsRvsGubun=all",
+        "verifiedOn": "2026-08-21"
+      }
+    }
+  ]
 }

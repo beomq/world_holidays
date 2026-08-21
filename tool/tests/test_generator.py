@@ -15,7 +15,13 @@ from tool.holiday_sync import (
     generate_repository,
     merge_records,
 )
-from tool.holiday_sync.models import CountryIndex, CountryPayload, Description
+from tool.holiday_sync.models import (
+    CountryIndex,
+    CountryPayload,
+    Description,
+    SourceReference,
+    Upsert,
+)
 from tool.holiday_sync.providers import PythonHolidaysProvider
 
 if TYPE_CHECKING:
@@ -50,7 +56,7 @@ def overrides(
     *,
     replacements: dict[str, str] | None = None,
     removals: list[dict[str, str]] | None = None,
-    upserts: list[dict[str, object]] | None = None,
+    upserts: list[Upsert] | None = None,
 ) -> Overrides:
     return Overrides.model_validate(
         {
@@ -106,10 +112,14 @@ def test_text_replacement_removal_and_upsert_are_deterministic() -> None:
         replacements={"대체휴일": "대체 휴일"},
         removals=[{"country": "KR", "date": "2026-06-01", "name": "Remove me"}],
         upserts=[
-            {
-                "country": "KR",
-                "holiday": replacement.model_dump(mode="json"),
-            }
+            Upsert(
+                country="KR",
+                holiday=replacement,
+                source=SourceReference(
+                    url="https://example.test",
+                    verifiedOn=date(2026, 8, 21),
+                ),
+            )
         ],
     )
 

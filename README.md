@@ -12,11 +12,11 @@ optional hosted updates.
 
 ## Coverage
 
-Version 2.1.0 contains 841 records for 2024-2028.
+Version 2.1.1 contains 843 records for 2024-2028.
 
 | Country | Code | Records |
 | --- | --- | ---: |
-| South Korea | `KR` | 98 |
+| South Korea | `KR` | 100 |
 | United States | `US` | 62 |
 | Japan | `JP` | 90 |
 | China | `CN` | 120 |
@@ -48,7 +48,7 @@ files directly.
 
 ```yaml
 dependencies:
-  world_holidays: ^2.1.0
+  world_holidays: ^2.1.1
 ```
 
 ```dart
@@ -171,8 +171,8 @@ from the installed `python-holidays` version on every synchronization.
 
 Recommended operation:
 
-- Monthly synchronization throughout the year
-- Weekly synchronization from September through December
+- Weekly synchronization throughout the year
+- Review `data/curated-drift.json` for calculated dates missing from curated years
 - Manual workflow dispatch after temporary-holiday announcements
 - Review every generated pull request before publishing
 
@@ -187,6 +187,22 @@ fvm flutter test --no-pub
 uv run --no-project tool/sync_holidays.py --check
 fvm flutter pub publish --dry-run
 ```
+
+## Upgrading from 2.1.0
+
+Version 2.1.1 changes holiday data only. No Dart API migration is required.
+
+```bash
+fvm flutter pub upgrade world_holidays
+```
+
+- Synchronous `isHoliday()` and `getNextHoliday()` calls use corrected bundled
+  data after the package upgrade.
+- Cache-aware callers can apply the hosted correction immediately with
+  `await worldHolidays.updateCountryHolidays('KR')`.
+- `getHolidays()` still does not access the network automatically. Without an
+  explicit update, an existing cached payload remains valid for up to seven
+  days before bundled data is used.
 
 ## Migrating from 2.0.x
 

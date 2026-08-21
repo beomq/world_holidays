@@ -1,6 +1,6 @@
 name: world_holidays
 description: Generated multi-country holiday information with offline-first lookup and optional hosted updates.
-version: 2.1.0
+version: 2.1.1
 homepage: https://beomq.github.io/world_holidays/
 repository: https://github.com/beomq/world_holidays
 issue_tracker: https://github.com/beomq/world_holidays/issues

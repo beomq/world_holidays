@@ -5,8 +5,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 3 1 * *"
-    - cron: "0 3 * 9-12 1"
+    - cron: "0 3 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -77,4 +76,6 @@ jobs:
           title: "chore: 공휴일 데이터 자동 동기화"
           body: |
             `python-holidays` 계산 결과와 프로젝트 보정 데이터를 병합했습니다.
+            `data/curated-drift.json`에 신규 날짜가 있으면 공식 출처를 확인하고
+            override로 승인한 뒤 병합해 주세요.
             병합 전에 국가별 임시·대체 공휴일과 설명을 검토해 주세요.

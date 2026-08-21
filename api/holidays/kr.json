@@ -9,7 +9,7 @@
     2027,
     2028
   ],
-  "totalHolidays": 98,
+  "totalHolidays": 100,
   "holidays": [
     {
       "name": "신정",
@@ -390,6 +390,15 @@
       }
     },
     {
+      "name": "Labor Day",
+      "date": "2026-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "노동절"
+      }
+    },
+    {
       "name": "어린이날",
       "date": "2026-05-05",
       "type": "NATIONAL",
@@ -432,6 +441,15 @@
       "description": {
         "en": "Memorial Day",
         "ko": "현충일"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2026-07-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "제헌절"
       }
     },
     {

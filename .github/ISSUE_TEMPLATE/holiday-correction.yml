@@ -1,0 +1,59 @@
+name: Holiday correction
+description: Report a missing, extra, temporary, or substitute public holiday.
+title: "[Holiday correction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Government holiday calendars can change after publication. Please
+        include an official source so the correction can be reviewed quickly.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: ISO 3166-1 alpha-2 code and country name.
+      placeholder: KR - South Korea
+    validations:
+      required: true
+  - type: textarea
+    id: dates
+    attributes:
+      label: Affected dates
+      description: List each date and the expected holiday name.
+      placeholder: "2026-07-17: Constitution Day"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source
+      description: Government, election authority, or legislation URL.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: world_holidays version
+      placeholder: 2.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Data access method
+      options:
+        - Bundled synchronous query (isHoliday / getNextHoliday)
+        - Cache-aware query (getHolidays / async query methods)
+        - Explicit hosted update (updateCountryHolidays / updateAllHolidays)
+        - Hosted JSON API directly
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the smallest code or API response showing the issue.
+    validations:
+      required: true

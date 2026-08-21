@@ -387,6 +387,15 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
+      name: 'Labor Day',
+      date: DateTime(2026, 5, 1),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Labor Day',
+        'ko': '노동절',
+      },
+    ),
+    Holiday(
       name: '어린이날',
       date: DateTime(2026, 5, 5),
       type: HolidayType.national,
@@ -429,6 +438,15 @@ final bundledHolidayData = <String, List<Holiday>>{
       description: <String, String>{
         'en': 'Memorial Day',
         'ko': '현충일',
+      },
+    ),
+    Holiday(
+      name: 'Constitution Day',
+      date: DateTime(2026, 7, 17),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Constitution Day',
+        'ko': '제헌절',
       },
     ),
     Holiday(

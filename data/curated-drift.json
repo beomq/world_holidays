@@ -1,0 +1,533 @@
+{
+  "version": 1,
+  "gaps": [
+    {
+      "country": "KR",
+      "holiday": {
+        "name": "Temporary Public Holiday",
+        "date": "2025-01-27",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Temporary Public Holiday",
+          "ko": "임시공휴일"
+        }
+      }
+    },
+    {
+      "country": "KR",
+      "holiday": {
+        "name": "Alternative holiday for Independence Movement Day",
+        "date": "2025-03-03",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Alternative holiday for Independence Movement Day",
+          "ko": "삼일절 대체 휴일"
+        }
+      }
+    },
+    {
+      "country": "KR",
+      "holiday": {
+        "name": "Presidential Election Day",
+        "date": "2025-06-03",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Presidential Election Day",
+          "ko": "대통령 선거일"
+        }
+      }
+    },
+    {
+      "country": "US",
+      "holiday": {
+        "name": "Independence Day",
+        "date": "2026-07-04",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Independence Day",
+          "ko": "Independence Day"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 01/26/2025)",
+        "date": "2025-02-03",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 01/26/2025)",
+          "ko": "Day off (substituted from 01/26/2025)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 02/08/2025)",
+        "date": "2025-02-04",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 02/08/2025)",
+          "ko": "Day off (substituted from 02/08/2025)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Tomb-Sweeping Day",
+        "date": "2025-04-04",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Tomb-Sweeping Day",
+          "ko": "Tomb-Sweeping Day"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Dragon Boat Festival",
+        "date": "2025-05-31",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Dragon Boat Festival",
+          "ko": "Dragon Boat Festival"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Dragon Boat Festival (observed)",
+        "date": "2025-06-02",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Dragon Boat Festival (observed)",
+          "ko": "Dragon Boat Festival (observed)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 09/28/2025)",
+        "date": "2025-10-07",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 09/28/2025)",
+          "ko": "Day off (substituted from 09/28/2025)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 10/11/2025)",
+        "date": "2025-10-08",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 10/11/2025)",
+          "ko": "Day off (substituted from 10/11/2025)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 01/04/2026)",
+        "date": "2026-01-02",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 01/04/2026)",
+          "ko": "Day off (substituted from 01/04/2026)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Chinese New Year's Eve",
+        "date": "2026-02-16",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Chinese New Year's Eve",
+          "ko": "Chinese New Year's Eve"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Chinese New Year (Spring Festival)",
+        "date": "2026-02-17",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Chinese New Year (Spring Festival)",
+          "ko": "Chinese New Year (Spring Festival)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Chinese New Year (Spring Festival)",
+        "date": "2026-02-18",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Chinese New Year (Spring Festival)",
+          "ko": "Chinese New Year (Spring Festival)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Chinese New Year (Spring Festival)",
+        "date": "2026-02-19",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Chinese New Year (Spring Festival)",
+          "ko": "Chinese New Year (Spring Festival)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 02/14/2026)",
+        "date": "2026-02-20",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 02/14/2026)",
+          "ko": "Day off (substituted from 02/14/2026)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Day off (substituted from 02/28/2026)",
+        "date": "2026-02-23",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 02/28/2026)",
+          "ko": "Day off (substituted from 02/28/2026)"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Dragon Boat Festival",
+        "date": "2026-06-19",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Dragon Boat Festival",
+          "ko": "Dragon Boat Festival"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "holiday": {
+        "name": "Mid-Autumn Festival",
+        "date": "2026-09-25",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Mid-Autumn Festival",
+          "ko": "Mid-Autumn Festival"
+        }
+      }
+    },
+    {
+      "country": "VN",
+      "holiday": {
+        "name": "Hung Kings' Commemoration Day (observed)",
+        "date": "2026-04-27",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Hung Kings' Commemoration Day (observed)",
+          "ko": "Hung Kings' Commemoration Day (observed)"
+        }
+      }
+    },
+    {
+      "country": "VN",
+      "holiday": {
+        "name": "National Day",
+        "date": "2026-09-01",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Day",
+          "ko": "National Day"
+        }
+      }
+    },
+    {
+      "country": "MY",
+      "holiday": {
+        "name": "National Day (observed)",
+        "date": "2025-09-01",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Day (observed)",
+          "ko": "National Day (observed)"
+        }
+      }
+    },
+    {
+      "country": "MY",
+      "holiday": {
+        "name": "Eid al-Fitr (Second Day)",
+        "date": "2026-03-22",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Eid al-Fitr (Second Day)",
+          "ko": "Eid al-Fitr (Second Day)"
+        }
+      }
+    },
+    {
+      "country": "MY",
+      "holiday": {
+        "name": "Eid al-Fitr (Second Day) (observed)",
+        "date": "2026-03-23",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Eid al-Fitr (Second Day) (observed)",
+          "ko": "Eid al-Fitr (Second Day) (observed)"
+        }
+      }
+    },
+    {
+      "country": "MY",
+      "holiday": {
+        "name": "Vesak Day",
+        "date": "2026-05-31",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Vesak Day",
+          "ko": "Vesak Day"
+        }
+      }
+    },
+    {
+      "country": "MY",
+      "holiday": {
+        "name": "Vesak Day (observed)",
+        "date": "2026-06-02",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Vesak Day (observed)",
+          "ko": "Vesak Day (observed)"
+        }
+      }
+    },
+    {
+      "country": "MY",
+      "holiday": {
+        "name": "Prophet Muhammad's Birthday",
+        "date": "2026-08-25",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Prophet Muhammad's Birthday",
+          "ko": "Prophet Muhammad's Birthday"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "National Children's Day",
+        "date": "2025-01-11",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Children's Day",
+          "ko": "National Children's Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "Chakri Memorial Day",
+        "date": "2025-04-06",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Chakri Memorial Day",
+          "ko": "Chakri Memorial Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "National Labor Day",
+        "date": "2025-05-01",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Labor Day",
+          "ko": "National Labor Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "Coronation Day",
+        "date": "2025-05-04",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Coronation Day",
+          "ko": "Coronation Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "Visakha Bucha",
+        "date": "2025-05-11",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Visakha Bucha",
+          "ko": "Visakha Bucha"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "Buddhist Lent Day",
+        "date": "2025-07-11",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Buddhist Lent Day",
+          "ko": "Buddhist Lent Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "National Children's Day",
+        "date": "2026-01-10",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Children's Day",
+          "ko": "National Children's Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "National Labor Day",
+        "date": "2026-05-01",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Labor Day",
+          "ko": "National Labor Day"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "Visakha Bucha",
+        "date": "2026-05-31",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Visakha Bucha",
+          "ko": "Visakha Bucha"
+        }
+      }
+    },
+    {
+      "country": "TH",
+      "holiday": {
+        "name": "Buddhist Lent Day",
+        "date": "2026-07-30",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Buddhist Lent Day",
+          "ko": "Buddhist Lent Day"
+        }
+      }
+    },
+    {
+      "country": "TW",
+      "holiday": {
+        "name": "Confucius' Birthday",
+        "date": "2025-09-28",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Confucius' Birthday",
+          "ko": "Confucius' Birthday"
+        }
+      }
+    },
+    {
+      "country": "TW",
+      "holiday": {
+        "name": "Taiwan Restoration and Guningtou Victory Memorial Day",
+        "date": "2025-10-25",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Taiwan Restoration and Guningtou Victory Memorial Day",
+          "ko": "Taiwan Restoration and Guningtou Victory Memorial Day"
+        }
+      }
+    },
+    {
+      "country": "TW",
+      "holiday": {
+        "name": "Peace Memorial Day",
+        "date": "2026-02-28",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Peace Memorial Day",
+          "ko": "Peace Memorial Day"
+        }
+      }
+    },
+    {
+      "country": "TW",
+      "holiday": {
+        "name": "Children's Day",
+        "date": "2026-04-04",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Children's Day",
+          "ko": "Children's Day"
+        }
+      }
+    },
+    {
+      "country": "TW",
+      "holiday": {
+        "name": "National Day",
+        "date": "2026-10-10",
+        "type": "NATIONAL",
+        "description": {
+          "en": "National Day",
+          "ko": "National Day"
+        }
+      }
+    },
+    {
+      "country": "TW",
+      "holiday": {
+        "name": "Taiwan Restoration and Guningtou Victory Memorial Day",
+        "date": "2026-10-25",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Taiwan Restoration and Guningtou Victory Memorial Day",
+          "ko": "Taiwan Restoration and Guningtou Victory Memorial Day"
+        }
+      }
+    }
+  ]
+}
