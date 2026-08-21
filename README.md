@@ -55,71 +55,135 @@ dependencies:
 import 'package:world_holidays/world_holidays.dart';
 ```
 
-## Basic lookup
+## Keeping holiday data current
+
+For most apps, use an offline-first, stale-while-revalidate flow:
+
+1. Read cache or bundled data and render it immediately.
+2. At app startup or resume, refresh only when the last attempt is stale.
+3. Replace visible data only when the hosted update succeeds.
+4. Keep the existing local data when the network request fails.
+
+GitHub Pages is a static distribution source, not a per-query backend. Do not
+request it for every date or every calendar cell. A 24-hour refresh interval is
+the recommended default, with a manual refresh action when users need it.
+
+```dart
+const holidayRefreshInterval = Duration(hours: 24);
+
+Future<List<Holiday>> loadCurrentHolidays({
+  required WorldHolidays worldHolidays,
+  required String countryCode,
+  required DateTime? lastRefreshAttempt,
+  required void Function(DateTime value) recordRefreshAttempt,
+  required void Function(List<Holiday> holidays) publish,
+  DateTime Function()? now,
+}) async {
+  // Fast local path: fresh cache first, otherwise the bundled snapshot.
+  final local = await worldHolidays.getHolidays(countryCode);
+  publish(local);
+
+  final checkedAt = (now ?? DateTime.now)();
+  final recentlyAttempted = lastRefreshAttempt != null &&
+      checkedAt.difference(lastRefreshAttempt) < holidayRefreshInterval;
+  if (recentlyAttempted) {
+    return local;
+  }
+
+  // Record the attempt in app storage so startup/resume cannot hammer Pages.
+  recordRefreshAttempt(checkedAt);
+  final outcome = await worldHolidays.updateCountryHolidays(countryCode);
+
+  if (!outcome.succeeded) {
+    // Keep the cache or bundle already shown. The fallback in outcome.holidays
+    // may be older than a previously cached payload.
+    return local;
+  }
+
+  // Use the exact payload downloaded by this call, even if cache persistence
+  // later becomes unavailable.
+  publish(outcome.holidays);
+  return outcome.holidays;
+}
+```
+
+Persist `lastRefreshAttempt` with the application's existing settings or state
+storage. Call this loader at cold start and when the app returns to the
+foreground. Pass `null` for `lastRefreshAttempt` to implement a user-initiated
+"Refresh now" action.
+
+The library already supports every operation used by this flow:
+
+- `getHolidays()` reads a valid seven-day cache or the bundled snapshot.
+- `updateCountryHolidays()` explicitly downloads and caches hosted JSON.
+- `CountryUpdateOutcome.succeeded` distinguishes remote success from fallback.
+- `CountryUpdateOutcome.holidays` provides the exact downloaded list on success.
+
+`getHolidays()` never starts a network request, and cache expiry falls back to
+the bundle instead of downloading. A compatible data-only hosted update can
+reach an older installed package; new Dart APIs or wire-format changes still
+require a package upgrade.
+
+For a calendar, keep the returned list in application state and index it once
+instead of calling an asynchronous query for every cell:
+
+```dart
+final holidaysByDate = {
+  for (final holiday in visibleHolidays) holiday.dateString: holiday,
+};
+final holiday = holidaysByDate['2025-01-27'];
+```
+
+### Fully offline alternative
+
+If the app must never access the network, upgrade the package and use the
+synchronous bundled queries:
+
+```bash
+fvm flutter pub upgrade world_holidays
+```
 
 ```dart
 final worldHolidays = WorldHolidays();
 
-// Fresh seven-day cache first, then bundled generated data.
-final koreanHolidays = await worldHolidays.getHolidays('KR', year: 2027);
-
-final newYear = worldHolidays.isHoliday('KR', DateTime(2027, 1, 1));
-final nextBundled = worldHolidays.getNextHoliday('JP');
-```
-
-`getHolidays()` does not make a network request automatically. Networking is
-always explicit through an update method.
-
-## Explicit hosted updates
-
-Use structured outcomes when the caller needs to distinguish remote success
-from bundled fallback.
-
-```dart
-final outcome = await worldHolidays.updateCountryHolidays('KR');
-
-if (outcome.succeeded) {
-  print('Downloaded ${outcome.holidays.length} records');
-} else {
-  print('Using ${outcome.source}: ${outcome.error}');
+try {
+  final isHoliday = worldHolidays.isHoliday(
+    'KR',
+    DateTime(2025, 1, 27),
+  );
+  final nextHoliday = worldHolidays.getNextHoliday('KR');
+} finally {
+  worldHolidays.dispose();
 }
-
-final bulk = await worldHolidays.updateAllHolidays();
-print('Updated: ${bulk.successfulCountries}');
-print('Fallback: ${bulk.failedCountries}');
 ```
 
-A bulk update attempts every supported country. One failed country no longer
-aborts later updates. `updateHolidays()` remains as a compatibility adapter that
-returns only the flattened holiday list.
+The synchronous methods always use the installed package snapshot. After a
+package upgrade, call `clearCache()` only when `getHolidays()` must ignore an
+older cached payload and use the new bundle immediately.
 
-## Cache-aware queries
+## Cache-aware query helpers
 
-The original synchronous query methods remain deterministic and use bundled
-data. Use their asynchronous counterparts after an online update.
+After a successful hosted refresh has populated the cache, one-off queries can
+use the asynchronous helpers:
 
 ```dart
-await worldHolidays.updateCountryHolidays('US');
-
 final isHoliday = await worldHolidays.isHolidayAsync(
-  'US',
-  DateTime(2027, 7, 5),
-);
-final next = await worldHolidays.getNextHolidayAsync('US');
-final today = await worldHolidays.isTodayHolidayAsync('US');
-```
-
-Inclusive date ranges are also cache-aware:
-
-```dart
-final holidays = await worldHolidays.getHolidaysInRange(
   'KR',
-  DateTime(2027, 1, 1),
-  DateTime(2027, 12, 31),
+  DateTime(2025, 1, 27),
+);
+final today = await worldHolidays.isTodayHolidayAsync('KR');
+final next = await worldHolidays.getNextHolidayAsync('KR');
+final range = await worldHolidays.getHolidaysInRange(
+  'KR',
+  DateTime(2025, 1, 1),
+  DateTime(2025, 12, 31),
 );
 ```
 
-Passing an end date before the start date throws `ArgumentError`.
+For a full calendar, indexing the successful `outcome.holidays` list once is
+more efficient than calling an asynchronous helper for every cell. Range query
+boundaries are inclusive; an end date before the start date throws
+`ArgumentError`.
 
 ## Holiday model
 
@@ -141,6 +205,7 @@ holidays. Returned lists and descriptions decoded by the package are immutable.
 - SharedPreferences key: `world_holidays_<lowercase-country-code>`
 - Expiry: seven days
 - Cached payload: complete country response; year/range filtering happens when read
+- Cache expiry causes bundled fallback; it does not trigger a network request
 - Expired, malformed, or invalid-type cache entries fall back to bundled data
 - `clearCache()` removes all package cache entries
 

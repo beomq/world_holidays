@@ -66,31 +66,46 @@ Package cache and hosted-update reads catch invalid payloads and fall back to
 bundled data. This change mainly affects callers that decode external JSON
 directly.
 
-### Choose bundled or cache-aware queries
+### Choose how holiday data stays current
 
-The original synchronous methods still read bundled data:
+For most apps, use offline-first stale-while-revalidate:
 
-```dart
-final isHoliday = worldHolidays.isHoliday(
-  'KR',
-  DateTime(2026, 7, 17),
-);
-```
+1. Render `getHolidays()` output immediately; it reads cache or bundle data.
+2. At app startup or resume, refresh only when the previous attempt is old.
+3. Replace application state only when `outcome.succeeded` is true.
+4. On failure, keep the local list already displayed.
 
-After an explicit hosted update, use the asynchronous methods when the query
-must observe cached remote data:
+A 24-hour interval is the recommended default. Persist the last attempt time in
+application storage and let a manual refresh bypass the interval.
 
 ```dart
-final outcome = await worldHolidays.updateCountryHolidays('KR');
-if (outcome.succeeded) {
-  final isHoliday = await worldHolidays.isHolidayAsync(
-    'KR',
-    DateTime(2026, 7, 17),
-  );
+final worldHolidays = WorldHolidays();
+
+try {
+  var visible = await worldHolidays.getHolidays('KR');
+  final outcome = await worldHolidays.updateCountryHolidays('KR');
+  if (outcome.succeeded) {
+    visible = outcome.holidays;
+  }
+  // Keep `visible` unchanged when the update fails.
+} finally {
+  worldHolidays.dispose();
 }
 ```
 
-`getHolidays()` remains cache-first and never starts a network request.
+Do not replace existing cached data with `outcome.holidays` after a failed
+update because the failure outcome contains bundled fallback data, which can be
+older than the cache already displayed. Do not query GitHub Pages per date or
+calendar cell; keep the successful list in application state and index it by
+`dateString`.
+
+Neither `getHolidays()` nor cache expiry starts a network request. An older
+package can consume a compatible data-only hosted update, while new Dart APIs
+or wire-format changes still require a package upgrade.
+
+Apps that must remain fully offline should upgrade the package and use
+`isHoliday()`, `isTodayHoliday()`, and `getNextHoliday()`, which always read the
+bundled snapshot.
 
 ### Roll out the corrected Korean data
 
@@ -105,8 +120,14 @@ after the package upgrade.
   cache before calling `getHolidays()`:
 
 ```dart
-await worldHolidays.clearCache();
-final holidays = await worldHolidays.getHolidays('KR');
+final worldHolidays = WorldHolidays();
+
+try {
+  await worldHolidays.clearCache();
+  final holidays = await worldHolidays.getHolidays('KR');
+} finally {
+  worldHolidays.dispose();
+}
 ```
 
 The corrected Korean data includes:
