@@ -46,6 +46,15 @@ class HolidayRecord(BaseModel):
         return (self.date, self.name)
 
 
+class SourceReference(BaseModel):
+    """Official evidence for a reviewed holiday correction."""
+
+    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
+
+    url: str = Field(pattern=r"^https://", min_length=9)
+    verified_on: datetime.date = Field(alias="verifiedOn")
+
+
 class Removal(BaseModel):
     """Holiday identity removed from the merged dataset."""
 
@@ -54,15 +63,7 @@ class Removal(BaseModel):
     country: CountryCode
     date: datetime.date
     name: str = Field(min_length=1)
-
-
-class SourceReference(BaseModel):
-    """Official evidence for a reviewed holiday correction."""
-
-    model_config: ClassVar[ConfigDict] = ConfigDict(frozen=True)
-
-    url: str = Field(pattern=r"^https://", min_length=9)
-    verified_on: datetime.date = Field(alias="verifiedOn")
+    source: SourceReference
 
 
 class Upsert(BaseModel):

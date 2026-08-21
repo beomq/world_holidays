@@ -66,4 +66,19 @@ void main() {
     expect(namesByDate['2026-07-17'], 'Constitution Day');
     expect(worldHolidays.isHoliday('KR', DateTime(2026, 7, 17)), isTrue);
   });
+
+  test('South Korea corrects 2024 and 2025 substitute holidays', () async {
+    final worldHolidays = WorldHolidays();
+    final holidays = await worldHolidays.getHolidays('KR');
+    final namesByDate = {
+      for (final holiday in holidays) holiday.dateString: holiday.name,
+    };
+
+    expect(namesByDate['2024-09-19'], isNull);
+    expect(namesByDate['2025-01-27'], '임시공휴일');
+    expect(namesByDate['2025-01-31'], isNull);
+    expect(worldHolidays.isHoliday('KR', DateTime(2024, 9, 19)), isFalse);
+    expect(worldHolidays.isHoliday('KR', DateTime(2025, 1, 27)), isTrue);
+    expect(worldHolidays.isHoliday('KR', DateTime(2025, 1, 31)), isFalse);
+  });
 }

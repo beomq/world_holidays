@@ -144,15 +144,6 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
-      name: '추석 대체 휴일',
-      date: DateTime(2024, 9, 19),
-      type: HolidayType.national,
-      description: <String, String>{
-        'en': 'Chuseok Substitute Holiday',
-        'ko': '추석 대체 휴일',
-      },
-    ),
-    Holiday(
       name: '개천절',
       date: DateTime(2024, 10, 3),
       type: HolidayType.national,
@@ -189,6 +180,15 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
+      name: '임시공휴일',
+      date: DateTime(2025, 1, 27),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Temporary Public Holiday',
+        'ko': '임시공휴일',
+      },
+    ),
+    Holiday(
       name: '설날',
       date: DateTime(2025, 1, 28),
       type: HolidayType.national,
@@ -213,15 +213,6 @@ final bundledHolidayData = <String, List<Holiday>>{
       description: <String, String>{
         'en': 'Lunar New Year\'s Day (Second Day)',
         'ko': '음력 새해 (다음날)',
-      },
-    ),
-    Holiday(
-      name: '설날 대체 휴일',
-      date: DateTime(2025, 1, 31),
-      type: HolidayType.national,
-      description: <String, String>{
-        'en': 'Lunar New Year Substitute Holiday',
-        'ko': '설날 대체 휴일',
       },
     ),
     Holiday(

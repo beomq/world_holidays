@@ -9,7 +9,7 @@
     2027,
     2028
   ],
-  "totalHolidays": 100,
+  "totalHolidays": 99,
   "holidays": [
     {
       "name": "신정",
@@ -147,15 +147,6 @@
       }
     },
     {
-      "name": "추석 대체 휴일",
-      "date": "2024-09-19",
-      "type": "NATIONAL",
-      "description": {
-        "en": "Chuseok Substitute Holiday",
-        "ko": "추석 대체 휴일"
-      }
-    },
-    {
       "name": "개천절",
       "date": "2024-10-03",
       "type": "NATIONAL",
@@ -192,6 +183,15 @@
       }
     },
     {
+      "name": "임시공휴일",
+      "date": "2025-01-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Temporary Public Holiday",
+        "ko": "임시공휴일"
+      }
+    },
+    {
       "name": "설날",
       "date": "2025-01-28",
       "type": "NATIONAL",
@@ -216,15 +216,6 @@
       "description": {
         "en": "Lunar New Year's Day (Second Day)",
         "ko": "음력 새해 (다음날)"
-      }
-    },
-    {
-      "name": "설날 대체 휴일",
-      "date": "2025-01-31",
-      "type": "NATIONAL",
-      "description": {
-        "en": "Lunar New Year Substitute Holiday",
-        "ko": "설날 대체 휴일"
       }
     },
     {

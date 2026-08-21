@@ -4,18 +4,6 @@
     {
       "country": "KR",
       "holiday": {
-        "name": "Temporary Public Holiday",
-        "date": "2025-01-27",
-        "type": "NATIONAL",
-        "description": {
-          "en": "Temporary Public Holiday",
-          "ko": "임시공휴일"
-        }
-      }
-    },
-    {
-      "country": "KR",
-      "holiday": {
         "name": "Alternative holiday for Independence Movement Day",
         "date": "2025-03-03",
         "type": "NATIONAL",

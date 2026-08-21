@@ -12,11 +12,11 @@ optional hosted updates.
 
 ## Coverage
 
-Version 2.1.1 contains 843 records for 2024-2028.
+The current generated dataset contains 842 records for 2024-2028.
 
 | Country | Code | Records |
 | --- | --- | ---: |
-| South Korea | `KR` | 100 |
+| South Korea | `KR` | 99 |
 | United States | `US` | 62 |
 | Japan | `JP` | 90 |
 | China | `CN` | 120 |

@@ -55,7 +55,7 @@ def holiday(name: str, value: date) -> HolidayRecord:
 def overrides(
     *,
     replacements: dict[str, str] | None = None,
-    removals: list[dict[str, str]] | None = None,
+    removals: list[dict[str, object]] | None = None,
     upserts: list[Upsert] | None = None,
 ) -> Overrides:
     return Overrides.model_validate(
@@ -110,7 +110,17 @@ def test_text_replacement_removal_and_upsert_are_deterministic() -> None:
     replacement = holiday("Added", date(2026, 7, 1))
     config = overrides(
         replacements={"대체휴일": "대체 휴일"},
-        removals=[{"country": "KR", "date": "2026-06-01", "name": "Remove me"}],
+        removals=[
+            {
+                "country": "KR",
+                "date": "2026-06-01",
+                "name": "Remove me",
+                "source": {
+                    "url": "https://example.test/removal",
+                    "verifiedOn": "2026-08-21",
+                },
+            }
+        ],
         upserts=[
             Upsert(
                 country="KR",
