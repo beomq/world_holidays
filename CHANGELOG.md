@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2.1.2] - 2026-08-21
 
 ### Changed
 
@@ -16,6 +16,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed South Korea's incorrect 2024-09-19 Chuseok substitute holiday.
 - Added South Korea's 2025-01-27 temporary public holiday.
 - Removed South Korea's incorrect 2025-01-31 Lunar New Year substitute holiday.
+
+### Migration
+
+- No Dart API migration is required from 2.1.1.
+- Upgrade the package to replace the bundled Korean holiday data.
+- A successful `updateCountryHolidays('KR')` replaces an existing cached
+  Korean payload; use `clearCache()` when bundled data must be used without
+  relying on the network.
 
 ## [2.1.1] - 2026-08-21
 
@@ -42,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - No API migration is required from 2.1.0.
 - For 2.0.1 users, follow the
-  [2.0.1 to 2.1.1 migration guide](MIGRATION.md).
+  [2.0.1 to 2.1.2 migration guide](MIGRATION.md).
 - Upgrade the package for corrected synchronous bundled queries.
 - Call `updateCountryHolidays('KR')` to replace a cached Korean payload
   immediately after the hosted API is deployed.

@@ -12,7 +12,7 @@ optional hosted updates.
 
 ## Coverage
 
-The current generated dataset contains 842 records for 2024-2028.
+Version 2.1.2 contains 842 records for 2024-2028.
 
 | Country | Code | Records |
 | --- | --- | ---: |
@@ -48,7 +48,7 @@ files directly.
 
 ```yaml
 dependencies:
-  world_holidays: ^2.1.1
+  world_holidays: ^2.1.2
 ```
 
 ```dart
@@ -188,9 +188,9 @@ uv run --no-project tool/sync_holidays.py --check
 fvm flutter pub publish --dry-run
 ```
 
-## Upgrading from 2.1.0
+## Upgrading from 2.1.1
 
-Version 2.1.1 changes holiday data only. No Dart API migration is required.
+Version 2.1.2 changes holiday data only. No Dart API migration is required.
 
 ```bash
 fvm flutter pub upgrade world_holidays
@@ -202,11 +202,15 @@ fvm flutter pub upgrade world_holidays
   `await worldHolidays.updateCountryHolidays('KR')`.
 - `getHolidays()` still does not access the network automatically. Without an
   explicit update, an existing cached payload remains valid for up to seven
-  days before bundled data is used.
+  days before bundled data is used. Call `clearCache()` when corrected bundled
+  data must be used immediately without relying on the network.
+
+The Korean corrections remove the false 2024-09-19 and 2025-01-31 substitute
+holidays and add the official 2025-01-27 temporary public holiday.
 
 ## Migrating from 2.0.x
 
-See the [2.0.1 to 2.1.1 migration guide](MIGRATION.md) for the complete
+See the [2.0.1 to 2.1.2 migration guide](MIGRATION.md) for the complete
 compatibility and rollout checklist.
 
 The main 2.0.1 lookup and update signatures remain source-compatible. Review

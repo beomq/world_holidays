@@ -1,8 +1,8 @@
 # Migration Guide
 
-## 2.0.1 to 2.1.1
+## 2.0.1 to 2.1.2
 
-Version 2.1.1 keeps the main 2.0.1 method signatures, but 2.1.0 introduced
+Version 2.1.2 keeps the main 2.0.1 method signatures, but 2.1.0 introduced
 stricter parsing, immutable package results, structured update outcomes, and
 cache-aware asynchronous queries. Review the behavioral changes below before
 upgrading.
@@ -11,7 +11,7 @@ upgrading.
 
 ```yaml
 dependencies:
-  world_holidays: ^2.1.1
+  world_holidays: ^2.1.2
 ```
 
 ```bash
@@ -35,7 +35,7 @@ has not changed.
 ### Stop mutating package results
 
 Lists returned by the package and description maps decoded by the package are
-immutable in 2.1.1. Copy them before making changes:
+immutable in 2.1.2. Copy them before making changes:
 
 ```dart
 final mutableHolidays = [
@@ -98,7 +98,7 @@ The SharedPreferences key, payload shape, and seven-day expiry are compatible
 with 2.0.1. Therefore, a previously cached Korean payload can remain visible
 after the package upgrade.
 
-- `isHoliday()` and `getNextHoliday()` use the corrected 2.1.1 bundle
+- `isHoliday()` and `getNextHoliday()` use the corrected 2.1.2 bundle
   immediately.
 - A successful `updateCountryHolidays('KR')` replaces the existing cache.
 - To guarantee bundled data without relying on the network, clear the old
@@ -109,8 +109,11 @@ await worldHolidays.clearCache();
 final holidays = await worldHolidays.getHolidays('KR');
 ```
 
-The corrected Korean records include:
+The corrected Korean data includes:
 
+- 2024-09-19: removed false Chuseok substitute holiday
+- 2025-01-27: Temporary Public Holiday
+- 2025-01-31: removed false Lunar New Year substitute holiday
 - 2026-05-01: Labor Day
 - 2026-06-03: Local Election
 - 2026-07-17: Constitution Day
