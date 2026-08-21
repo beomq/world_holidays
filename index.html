@@ -400,6 +400,7 @@
           <div></div>
           <div style="display: flex; align-items: center; gap: 1rem">
             <label
+              id="language-select-label"
               for="language-select"
               style="color: white; font-weight: bold"
             >
@@ -707,26 +708,12 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           this.holidays = [];
           this.holidayData = null;
           this.countriesData = null;
+          this.selectedHoliday = null;
           this.currentLanguage = "en";
-          this.monthNames = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December",
-          ];
-          this.dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
           // Translations
           this.translations = {
             en: {
+              language: "Language:",
               headerDescription:
                 "Free holiday data for South Korea, United States, Japan, China, Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan",
               countries: "Countries",
@@ -743,6 +730,20 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               holidaysThisYear: "Holidays This Year",
               currentYear: "Current Year",
               holidayInformation: "Holiday Information",
+              previousMonth: "Previous",
+              nextMonth: "Next",
+              code: "Code",
+              holidays: "holidays",
+              holidayTitle: "Holidays",
+              date: "Date",
+              type: "Type",
+              description: "Description",
+              holidayTypes: {
+                NATIONAL: "National holiday",
+                RELIGIOUS: "Religious holiday",
+                OBSERVANCE: "Observance",
+                REGIONAL: "Regional holiday",
+              },
               usageExamples: "Usage Examples",
               dataStructure: "Data Structure",
               links: "Links",
@@ -751,6 +752,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               freeOpenSource: "Free & Open Source • MIT License",
             },
             ko: {
+              language: "언어:",
               headerDescription:
                 "한국, 미국, 일본, 중국, 베트남, 말레이시아, 태국, 캐나다, 브라질, 대만의 무료 공휴일 데이터",
               countries: "국가",
@@ -767,6 +769,20 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               holidaysThisYear: "올해 공휴일",
               currentYear: "현재 연도",
               holidayInformation: "공휴일 정보",
+              previousMonth: "이전",
+              nextMonth: "다음",
+              code: "국가 코드",
+              holidays: "개 공휴일",
+              holidayTitle: "공휴일",
+              date: "날짜",
+              type: "유형",
+              description: "설명",
+              holidayTypes: {
+                NATIONAL: "공휴일",
+                RELIGIOUS: "종교 휴일",
+                OBSERVANCE: "기념일",
+                REGIONAL: "지역 휴일",
+              },
               usageExamples: "사용 예제",
               dataStructure: "데이터 구조",
               links: "링크",
@@ -856,6 +872,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
         updateSupportedCountries() {
           if (!this.countriesData) return;
+          const t =
+            this.translations[this.currentLanguage] || this.translations.en;
 
           // Update country cards
           const countriesGrid = document.querySelector(".countries-grid");
@@ -875,8 +893,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               countryCard.innerHTML = `
                 <div class="flag">${country.flag}</div>
                 <h3>${countryName}</h3>
-                <p>Code: ${country.code}</p>
-                <p>${country.totalHolidays} holidays</p>
+                <p>${t.code}: ${country.code}</p>
+                <p>${country.totalHolidays} ${t.holidays}</p>
               `;
               countriesGrid.appendChild(countryCard);
             });
@@ -905,6 +923,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
         updateApiEndpoints() {
           if (!this.countriesData) return;
+          const t =
+            this.translations[this.currentLanguage] || this.translations.en;
 
           const endpointsContainer = document.querySelector(".endpoints");
           if (!endpointsContainer) return;
@@ -920,8 +940,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             window.location.href
           ).href;
           countriesEndpoint.innerHTML = `
-            <h3>📋 Get Countries</h3>
-            <p>Get list of all supported countries</p>
+            <h3>📋 ${t.getCountries}</h3>
+            <p>${t.getCountriesDesc}</p>
             <code>GET ${countriesUrl}</code>
           `;
           endpointsContainer.appendChild(countriesEndpoint);
@@ -938,9 +958,13 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               country.names && country.names[this.currentLanguage]
                 ? country.names[this.currentLanguage]
                 : country.name;
+            const endpointDescription =
+              this.currentLanguage === "ko"
+                ? `${countryName} 공휴일 전체 조회 (${yearRange})`
+                : `Get all ${countryName} holidays (${yearRange})`;
             endpoint.innerHTML = `
-              <h3>${country.flag} ${countryName} Holidays</h3>
-              <p>Get all ${countryName} holidays (${yearRange})</p>
+              <h3>${country.flag} ${countryName} ${t.holidayTitle}</h3>
+              <p>${endpointDescription}</p>
               <code>GET ${country.dataUrl}</code>
             `;
             endpointsContainer.appendChild(endpoint);
@@ -991,6 +1015,14 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         updateTranslations() {
           const t =
             this.translations[this.currentLanguage] || this.translations.en;
+          document.documentElement.lang = this.currentLanguage;
+
+          const languageSelectLabel = document.getElementById(
+            "language-select-label"
+          );
+          if (languageSelectLabel) {
+            languageSelectLabel.textContent = `🌐 ${t.language}`;
+          }
 
           // Update header description
           const headerDesc = document.getElementById("header-description");
@@ -1100,6 +1132,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
         render() {
           const container = document.getElementById("calendar-container");
+          const t =
+            this.translations[this.currentLanguage] || this.translations.en;
 
           // Create month navigation
           const nav = document.createElement("div");
@@ -1107,9 +1141,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
           const prevBtn = document.createElement("button");
           prevBtn.className = "month-nav-btn";
-          prevBtn.innerHTML =
-            '<span aria-hidden="true">‹</span><span class="month-nav-label"> Previous</span>';
-          prevBtn.setAttribute("aria-label", "Previous month");
+          prevBtn.innerHTML = `<span aria-hidden="true">‹</span><span class="month-nav-label"> ${t.previousMonth}</span>`;
+          prevBtn.setAttribute("aria-label", t.previousMonth);
           prevBtn.addEventListener("click", () => {
             this.currentMonth--;
             if (this.currentMonth < 0) {
@@ -1121,15 +1154,12 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
           const monthDisplay = document.createElement("div");
           monthDisplay.className = "current-month";
-          monthDisplay.textContent = `${this.monthNames[this.currentMonth]} ${
-            this.currentYear
-          }`;
+          monthDisplay.textContent = this.getMonthLabel();
 
           const nextBtn = document.createElement("button");
           nextBtn.className = "month-nav-btn";
-          nextBtn.innerHTML =
-            '<span class="month-nav-label">Next </span><span aria-hidden="true">›</span>';
-          nextBtn.setAttribute("aria-label", "Next month");
+          nextBtn.innerHTML = `<span class="month-nav-label">${t.nextMonth} </span><span aria-hidden="true">›</span>`;
+          nextBtn.setAttribute("aria-label", t.nextMonth);
           nextBtn.addEventListener("click", () => {
             this.currentMonth++;
             if (this.currentMonth > 11) {
@@ -1148,7 +1178,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           calendar.className = "calendar";
 
           // Add day headers
-          this.dayNames.forEach((day) => {
+          this.getDayNames().forEach((day) => {
             const dayHeader = document.createElement("div");
             dayHeader.className = "calendar-day-header";
             dayHeader.textContent = day;
@@ -1197,6 +1227,33 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           container.appendChild(calendar);
         }
 
+        getLocale() {
+          return this.currentLanguage === "ko" ? "ko-KR" : "en-US";
+        }
+
+        getMonthLabel() {
+          return new Intl.DateTimeFormat(this.getLocale(), {
+            year: "numeric",
+            month: "long",
+          }).format(new Date(this.currentYear, this.currentMonth, 1));
+        }
+
+        getDayNames() {
+          const formatter = new Intl.DateTimeFormat(this.getLocale(), {
+            weekday: "short",
+          });
+          const sunday = new Date(2024, 0, 7);
+          return Array.from({ length: 7 }, (_, index) =>
+            formatter.format(
+              new Date(
+                sunday.getFullYear(),
+                sunday.getMonth(),
+                sunday.getDate() + index
+              )
+            )
+          );
+        }
+
         createDayElement(day, isOtherMonth) {
           const dayElement = document.createElement("div");
           dayElement.className = "calendar-day";
@@ -1229,10 +1286,11 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             dayElement.classList.add("holiday");
             const holidayIndicator = document.createElement("div");
             holidayIndicator.className = "holiday-indicator";
+            const holidayLabel = this.getHolidayLabel(holiday);
             holidayIndicator.textContent =
-              holiday.name.length > 10
-                ? holiday.name.substring(0, 8) + "..."
-                : holiday.name;
+              holidayLabel.length > 10
+                ? holidayLabel.substring(0, 8) + "..."
+                : holidayLabel;
             dayElement.appendChild(dayNumber);
             dayElement.appendChild(holidayIndicator);
 
@@ -1246,9 +1304,33 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           return dayElement;
         }
 
+        getHolidayLabel(holiday) {
+          const description = holiday.description;
+          if (typeof description === "object" && description !== null) {
+            return (
+              description[this.currentLanguage] ||
+              description.en ||
+              description.ko ||
+              holiday.name
+            );
+          }
+          return holiday.name;
+        }
+
+        getHolidayTypeLabel(type) {
+          const t =
+            this.translations[this.currentLanguage] || this.translations.en;
+          return t.holidayTypes[type] || type;
+        }
+
         showHolidayInfo(holiday) {
           const infoDiv = document.getElementById("holiday-info");
           const detailsDiv = document.getElementById("holiday-details");
+          const t =
+            this.translations[this.currentLanguage] || this.translations.en;
+          const holidayLabel = this.getHolidayLabel(holiday);
+          const holidayType = this.getHolidayTypeLabel(holiday.type);
+          this.selectedHoliday = holiday;
 
           // Handle multilingual description
           let description = holiday.description;
@@ -1261,10 +1343,10 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           }
 
           detailsDiv.innerHTML = `
-            <strong>${holiday.name}</strong><br>
-            📅 Date: ${holiday.date}<br>
-            🏷️ Type: ${holiday.type}<br>
-            📝 Description: ${description}
+            <strong>${holidayLabel}</strong><br>
+            📅 ${t.date}: ${holiday.date}<br>
+            🏷️ ${t.type}: ${holidayType}<br>
+            📝 ${t.description}: ${description}
           `;
 
           infoDiv.style.display = "block";
@@ -1275,6 +1357,8 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             .getElementById("country-select")
             .addEventListener("change", async (e) => {
               this.selectedCountry = e.target.value;
+              this.selectedHoliday = null;
+              document.getElementById("holiday-info").style.display = "none";
               await this.loadHolidays();
               this.render();
               this.updateRemainingHolidays();
@@ -1287,6 +1371,10 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               this.updateTranslations();
               this.updateSupportedCountries();
               this.updateApiEndpoints();
+              this.render();
+              if (this.selectedHoliday) {
+                this.showHolidayInfo(this.selectedHoliday);
+              }
             });
         }
       }
