@@ -42,6 +42,13 @@ class _HolidayScreenState extends State<HolidayScreen> {
     'KR': '🇰🇷 South Korea',
     'US': '🇺🇸 United States',
     'JP': '🇯🇵 Japan',
+    'CN': '🇨🇳 China',
+    'VN': '🇻🇳 Vietnam',
+    'MY': '🇲🇾 Malaysia',
+    'TH': '🇹🇭 Thailand',
+    'CA': '🇨🇦 Canada',
+    'BR': '🇧🇷 Brazil',
+    'TW': '🇹🇼 Taiwan',
   };
 
   @override
@@ -49,6 +56,12 @@ class _HolidayScreenState extends State<HolidayScreen> {
     super.initState();
     _loadHolidays();
     _loadNextHoliday();
+  }
+
+  @override
+  void dispose() {
+    _worldHolidays.dispose();
+    super.dispose();
   }
 
   Future<void> _loadHolidays() async {
@@ -89,13 +102,22 @@ class _HolidayScreenState extends State<HolidayScreen> {
     });
 
     try {
-      await _worldHolidays.updateHolidays(countryCode: _selectedCountry);
+      final outcome =
+          await _worldHolidays.updateCountryHolidays(_selectedCountry);
       await _loadHolidays();
+      if (!mounted) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('✅ Holidays updated successfully!')),
+        SnackBar(
+          content: Text(
+            outcome.succeeded
+                ? '✅ Holidays updated successfully!'
+                : '⚠️ Using bundled data: ${outcome.error}',
+          ),
+        ),
       );
     } catch (e) {
+      if (!mounted) return;
       setState(() {
         _errorMessage = 'Failed to update holidays: $e';
         _isLoading = false;
@@ -321,8 +343,10 @@ class _HolidayScreenState extends State<HolidayScreen> {
               children: [
                 Text('${holiday.dateString} (${_getWeekday(holiday.date)})'),
                 if (holiday.description != null)
-                  Text(holiday.description!,
-                      style: TextStyle(color: Colors.grey[600])),
+                  Text(
+                    holiday.descriptionKo ?? holiday.descriptionEn ?? '',
+                    style: TextStyle(color: Colors.grey[600]),
+                  ),
               ],
             ),
             trailing: Chip(
@@ -330,7 +354,8 @@ class _HolidayScreenState extends State<HolidayScreen> {
                 holiday.type.name.toUpperCase(),
                 style: const TextStyle(fontSize: 10),
               ),
-              backgroundColor: _getTypeColor(holiday.type).withOpacity(0.2),
+              backgroundColor:
+                  _getTypeColor(holiday.type).withValues(alpha: 0.2),
             ),
           ),
         );

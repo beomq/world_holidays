@@ -1,0 +1,26 @@
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "COM812",
+  "CPY001",
+  "D203",
+  "D213",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tool/holiday_sync/models.py" = ["TC003"]
+"tool/tests/*.py" = [
+  "D101",
+  "D102",
+  "D103",
+  "PLR2004",
+  "S101",
+]
+
+[tool.basedpyright]
+include = ["tool"]
+pythonVersion = "3.12"
+typeCheckingMode = "all"
+executionEnvironments = [
+  { root = ".", extraPaths = ["tool"] },
+]

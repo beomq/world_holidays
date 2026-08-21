@@ -1,3 +1,16 @@
 # Exclude files from pub.dev package but keep for GitHub Pages
 api/
 index.html
+robots.txt
+sitemap.xml
+data/
+tool/
+pyproject.toml
+AGENTS.md
+**/AGENTS.md
+.omo/
+.debug-journal.md
+build/
+.github/
+.fvmrc
+analysis_options.yaml

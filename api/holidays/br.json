@@ -1,9 +1,15 @@
 {
   "country": "BR",
   "countryName": "Brazil",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 51,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 71,
   "holidays": [
     {
       "name": "New Year's Day",
@@ -462,6 +468,186 @@
       "description": {
         "en": "New Year's Eve (from 2pm)",
         "ko": "신정 전야 (오후 2시부터)"
+      }
+    },
+    {
+      "name": "Universal Fraternization Day",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Universal Fraternization Day",
+        "ko": "Universal Fraternization Day"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2027-03-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "Good Friday"
+      }
+    },
+    {
+      "name": "Tiradentes' Day",
+      "date": "2027-04-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tiradentes' Day",
+        "ko": "Tiradentes' Day"
+      }
+    },
+    {
+      "name": "Worker's Day",
+      "date": "2027-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Worker's Day",
+        "ko": "Worker's Day"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2027-09-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "Independence Day"
+      }
+    },
+    {
+      "name": "Our Lady of Aparecida",
+      "date": "2027-10-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Our Lady of Aparecida",
+        "ko": "Our Lady of Aparecida"
+      }
+    },
+    {
+      "name": "All Souls' Day",
+      "date": "2027-11-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "All Souls' Day",
+        "ko": "All Souls' Day"
+      }
+    },
+    {
+      "name": "Republic Proclamation Day",
+      "date": "2027-11-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Proclamation Day",
+        "ko": "Republic Proclamation Day"
+      }
+    },
+    {
+      "name": "National Day of Zumbi and Black Awareness",
+      "date": "2027-11-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day of Zumbi and Black Awareness",
+        "ko": "National Day of Zumbi and Black Awareness"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2027-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
+      }
+    },
+    {
+      "name": "Universal Fraternization Day",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Universal Fraternization Day",
+        "ko": "Universal Fraternization Day"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2028-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "Good Friday"
+      }
+    },
+    {
+      "name": "Tiradentes' Day",
+      "date": "2028-04-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tiradentes' Day",
+        "ko": "Tiradentes' Day"
+      }
+    },
+    {
+      "name": "Worker's Day",
+      "date": "2028-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Worker's Day",
+        "ko": "Worker's Day"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2028-09-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "Independence Day"
+      }
+    },
+    {
+      "name": "Our Lady of Aparecida",
+      "date": "2028-10-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Our Lady of Aparecida",
+        "ko": "Our Lady of Aparecida"
+      }
+    },
+    {
+      "name": "All Souls' Day",
+      "date": "2028-11-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "All Souls' Day",
+        "ko": "All Souls' Day"
+      }
+    },
+    {
+      "name": "Republic Proclamation Day",
+      "date": "2028-11-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Republic Proclamation Day",
+        "ko": "Republic Proclamation Day"
+      }
+    },
+    {
+      "name": "National Day of Zumbi and Black Awareness",
+      "date": "2028-11-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day of Zumbi and Black Awareness",
+        "ko": "National Day of Zumbi and Black Awareness"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2028-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
       }
     }
   ]

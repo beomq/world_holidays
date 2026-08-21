@@ -21,7 +21,7 @@ enum HolidayType {
   static HolidayType fromString(String value) {
     return HolidayType.values.firstWhere(
       (type) => type.value == value,
-      orElse: () => HolidayType.national,
+      orElse: () => throw FormatException('Unknown holiday type: $value'),
     );
   }
 

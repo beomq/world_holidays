@@ -1,9 +1,15 @@
 {
   "country": "VN",
   "countryName": "Vietnam",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 45,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 73,
   "holidays": [
     {
       "name": "International New Year's Day",
@@ -399,6 +405,267 @@
       "description": {
         "en": "Independence Day",
         "ko": "독립기념일 (호치민 독립 선언일)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "29 of Lunar New Year",
+      "date": "2027-02-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "29 of Lunar New Year",
+        "ko": "29 of Lunar New Year"
+      }
+    },
+    {
+      "name": "Lunar New Year's Eve",
+      "date": "2027-02-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Eve",
+        "ko": "Lunar New Year's Eve"
+      }
+    },
+    {
+      "name": "Lunar New Year",
+      "date": "2027-02-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year",
+        "ko": "Lunar New Year"
+      }
+    },
+    {
+      "name": "Second Day of Lunar New Year",
+      "date": "2027-02-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Second Day of Lunar New Year",
+        "ko": "Second Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Third Day of Lunar New Year",
+      "date": "2027-02-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Third Day of Lunar New Year",
+        "ko": "Third Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Fourth Day of Lunar New Year",
+      "date": "2027-02-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Fourth Day of Lunar New Year",
+        "ko": "Fourth Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Fifth Day of Lunar New Year",
+      "date": "2027-02-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Fifth Day of Lunar New Year",
+        "ko": "Fifth Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Hung Kings' Commemoration Day",
+      "date": "2027-04-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Hung Kings' Commemoration Day",
+        "ko": "Hung Kings' Commemoration Day"
+      }
+    },
+    {
+      "name": "Liberation Day/Reunification Day",
+      "date": "2027-04-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Liberation Day/Reunification Day",
+        "ko": "Liberation Day/Reunification Day"
+      }
+    },
+    {
+      "name": "International Labor Day",
+      "date": "2027-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "International Labor Day",
+        "ko": "International Labor Day"
+      }
+    },
+    {
+      "name": "International Labor Day (observed)",
+      "date": "2027-05-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "International Labor Day (observed)",
+        "ko": "International Labor Day (observed)"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2027-09-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2027-09-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "New Year's Day (observed)",
+      "date": "2028-01-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day (observed)",
+        "ko": "New Year's Day (observed)"
+      }
+    },
+    {
+      "name": "29 of Lunar New Year",
+      "date": "2028-01-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "29 of Lunar New Year",
+        "ko": "29 of Lunar New Year"
+      }
+    },
+    {
+      "name": "Lunar New Year's Eve",
+      "date": "2028-01-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year's Eve",
+        "ko": "Lunar New Year's Eve"
+      }
+    },
+    {
+      "name": "Lunar New Year",
+      "date": "2028-01-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Lunar New Year",
+        "ko": "Lunar New Year"
+      }
+    },
+    {
+      "name": "Second Day of Lunar New Year",
+      "date": "2028-01-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Second Day of Lunar New Year",
+        "ko": "Second Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Third Day of Lunar New Year",
+      "date": "2028-01-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Third Day of Lunar New Year",
+        "ko": "Third Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Fourth Day of Lunar New Year",
+      "date": "2028-01-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Fourth Day of Lunar New Year",
+        "ko": "Fourth Day of Lunar New Year"
+      }
+    },
+    {
+      "name": "Hung Kings' Commemoration Day",
+      "date": "2028-04-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Hung Kings' Commemoration Day",
+        "ko": "Hung Kings' Commemoration Day"
+      }
+    },
+    {
+      "name": "Liberation Day/Reunification Day",
+      "date": "2028-04-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Liberation Day/Reunification Day",
+        "ko": "Liberation Day/Reunification Day"
+      }
+    },
+    {
+      "name": "International Labor Day",
+      "date": "2028-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "International Labor Day",
+        "ko": "International Labor Day"
+      }
+    },
+    {
+      "name": "Liberation Day/Reunification Day (observed)",
+      "date": "2028-05-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Liberation Day/Reunification Day (observed)",
+        "ko": "Liberation Day/Reunification Day (observed)"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2028-09-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2028-09-02",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "National Day (observed)",
+      "date": "2028-09-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day (observed)",
+        "ko": "National Day (observed)"
       }
     }
   ]

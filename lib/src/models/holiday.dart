@@ -26,10 +26,14 @@ class Holiday {
     Map<String, String>? description;
     if (json['description'] != null) {
       if (json['description'] is Map<String, dynamic>) {
-        description = Map<String, String>.from(json['description']);
+        description = Map.unmodifiable(
+          Map<String, String>.from(json['description'] as Map),
+        );
       } else if (json['description'] is String) {
         // Backward compatibility for old format
-        description = {'en': json['description'] as String};
+        description = Map.unmodifiable({
+          'en': json['description'] as String,
+        });
       }
     }
 
@@ -47,7 +51,8 @@ class Holiday {
       'name': name,
       'date': date.toIso8601String().split('T')[0], // YYYY-MM-DD format
       'type': type.value,
-      'description': description,
+      'description':
+          description == null ? null : Map<String, String>.from(description!),
     };
   }
 

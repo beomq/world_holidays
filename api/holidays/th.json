@@ -1,9 +1,15 @@
 {
   "country": "TH",
   "countryName": "Thailand",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 54,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 111,
   "holidays": [
     {
       "name": "New Year's Day",
@@ -20,7 +26,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Makha Bucha (Observed)",
-        "ko": "마카 부차 대체휴일"
+        "ko": "마카 부차 대체 휴일"
       }
     },
     {
@@ -29,7 +35,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Chakri Day (Observed)",
-        "ko": "차크리 왕조 기념일 대체휴일"
+        "ko": "차크리 왕조 기념일 대체 휴일"
       }
     },
     {
@@ -74,7 +80,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Songkran Observed",
-        "ko": "송크란 대체휴일"
+        "ko": "송크란 대체 휴일"
       }
     },
     {
@@ -83,7 +89,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Coronation Day (Observed)",
-        "ko": "대관식 기념일 대체휴일"
+        "ko": "대관식 기념일 대체 휴일"
       }
     },
     {
@@ -119,7 +125,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Asalha Bucha (Observed)",
-        "ko": "아살하 부차 대체휴일"
+        "ko": "아살하 부차 대체 휴일"
       }
     },
     {
@@ -128,7 +134,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "King Vajiralongkorn's Birthday (Observed)",
-        "ko": "바지랄롱콘 국왕 생일 대체휴일"
+        "ko": "바지랄롱콘 국왕 생일 대체 휴일"
       }
     },
     {
@@ -146,7 +152,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Anniversary of the Death of King Bhumibol (Observed)",
-        "ko": "푸미폰 국왕 서거 기념일 대체휴일"
+        "ko": "푸미폰 국왕 서거 기념일 대체 휴일"
       }
     },
     {
@@ -218,7 +224,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Chakri Day (Observed)",
-        "ko": "차크리 왕조 기념일 대체휴일"
+        "ko": "차크리 왕조 기념일 대체 휴일"
       }
     },
     {
@@ -254,7 +260,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Songkran Observed",
-        "ko": "송크란 대체휴일"
+        "ko": "송크란 대체 휴일"
       }
     },
     {
@@ -263,7 +269,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Coronation Day (Observed)",
-        "ko": "대관식 기념일 대체휴일"
+        "ko": "대관식 기념일 대체 휴일"
       }
     },
     {
@@ -281,7 +287,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Visakha Bucha (Observed)",
-        "ko": "위사카 부차 대체휴일"
+        "ko": "위사카 부차 대체 휴일"
       }
     },
     {
@@ -461,7 +467,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Visakha Bucha (Observed)",
-        "ko": "위사카 부차 대체휴일"
+        "ko": "위사카 부차 대체 휴일"
       }
     },
     {
@@ -533,7 +539,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "King Bhumibol's Birthday/Father's Day (Observed)",
-        "ko": "푸미폰 국왕 생일/아버지의 날 대체휴일"
+        "ko": "푸미폰 국왕 생일/아버지의 날 대체 휴일"
       }
     },
     {
@@ -552,6 +558,456 @@
       "description": {
         "en": "New Year's Eve",
         "ko": "신정 전야"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "National Children's Day",
+      "date": "2027-01-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Children's Day",
+        "ko": "National Children's Day"
+      }
+    },
+    {
+      "name": "Makha Bucha",
+      "date": "2027-02-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Makha Bucha",
+        "ko": "Makha Bucha"
+      }
+    },
+    {
+      "name": "Makha Bucha (in lieu)",
+      "date": "2027-02-22",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Makha Bucha (in lieu)",
+        "ko": "Makha Bucha (in lieu)"
+      }
+    },
+    {
+      "name": "Chakri Memorial Day",
+      "date": "2027-04-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chakri Memorial Day",
+        "ko": "Chakri Memorial Day"
+      }
+    },
+    {
+      "name": "Songkran Festival",
+      "date": "2027-04-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival",
+        "ko": "Songkran Festival"
+      }
+    },
+    {
+      "name": "Songkran Festival",
+      "date": "2027-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival",
+        "ko": "Songkran Festival"
+      }
+    },
+    {
+      "name": "Songkran Festival",
+      "date": "2027-04-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival",
+        "ko": "Songkran Festival"
+      }
+    },
+    {
+      "name": "National Labor Day",
+      "date": "2027-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Labor Day",
+        "ko": "National Labor Day"
+      }
+    },
+    {
+      "name": "National Labor Day (in lieu)",
+      "date": "2027-05-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Labor Day (in lieu)",
+        "ko": "National Labor Day (in lieu)"
+      }
+    },
+    {
+      "name": "Coronation Day",
+      "date": "2027-05-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coronation Day",
+        "ko": "Coronation Day"
+      }
+    },
+    {
+      "name": "Visakha Bucha",
+      "date": "2027-05-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Visakha Bucha",
+        "ko": "Visakha Bucha"
+      }
+    },
+    {
+      "name": "HM Queen Suthida's Birthday",
+      "date": "2027-06-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM Queen Suthida's Birthday",
+        "ko": "HM Queen Suthida's Birthday"
+      }
+    },
+    {
+      "name": "Asarnha Bucha",
+      "date": "2027-07-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Asarnha Bucha",
+        "ko": "Asarnha Bucha"
+      }
+    },
+    {
+      "name": "Buddhist Lent Day",
+      "date": "2027-07-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Buddhist Lent Day",
+        "ko": "Buddhist Lent Day"
+      }
+    },
+    {
+      "name": "Asarnha Bucha (in lieu)",
+      "date": "2027-07-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Asarnha Bucha (in lieu)",
+        "ko": "Asarnha Bucha (in lieu)"
+      }
+    },
+    {
+      "name": "HM King Maha Vajiralongkorn's Birthday",
+      "date": "2027-07-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Maha Vajiralongkorn's Birthday",
+        "ko": "HM King Maha Vajiralongkorn's Birthday"
+      }
+    },
+    {
+      "name": "HM Queen Sirikit The Queen Mother's Birthday; National Mother's Day",
+      "date": "2027-08-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM Queen Sirikit The Queen Mother's Birthday; National Mother's Day",
+        "ko": "HM Queen Sirikit The Queen Mother's Birthday; National Mother's Day"
+      }
+    },
+    {
+      "name": "HM King Bhumibol Adulyadej Memorial Day",
+      "date": "2027-10-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Bhumibol Adulyadej Memorial Day",
+        "ko": "HM King Bhumibol Adulyadej Memorial Day"
+      }
+    },
+    {
+      "name": "HM King Chulalongkorn Memorial Day",
+      "date": "2027-10-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Chulalongkorn Memorial Day",
+        "ko": "HM King Chulalongkorn Memorial Day"
+      }
+    },
+    {
+      "name": "HM King Chulalongkorn Memorial Day (in lieu)",
+      "date": "2027-10-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Chulalongkorn Memorial Day (in lieu)",
+        "ko": "HM King Chulalongkorn Memorial Day (in lieu)"
+      }
+    },
+    {
+      "name": "HM King Bhumibol Adulyadej the Great's Birthday; National Day; National Father's Day",
+      "date": "2027-12-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Bhumibol Adulyadej the Great's Birthday; National Day; National Father's Day",
+        "ko": "HM King Bhumibol Adulyadej the Great's Birthday; National Day; National Father's Day"
+      }
+    },
+    {
+      "name": "HM King Bhumibol Adulyadej the Great's Birthday (in lieu); National Day (in lieu); National Father's Day (in lieu)",
+      "date": "2027-12-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Bhumibol Adulyadej the Great's Birthday (in lieu); National Day (in lieu); National Father's Day (in lieu)",
+        "ko": "HM King Bhumibol Adulyadej the Great's Birthday (in lieu); National Day (in lieu); National Father's Day (in lieu)"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2027-12-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "Constitution Day"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2027-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve",
+        "ko": "New Year's Eve"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "New Year's Day (in lieu)",
+      "date": "2028-01-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day (in lieu)",
+        "ko": "New Year's Day (in lieu)"
+      }
+    },
+    {
+      "name": "National Children's Day",
+      "date": "2028-01-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Children's Day",
+        "ko": "National Children's Day"
+      }
+    },
+    {
+      "name": "Makha Bucha",
+      "date": "2028-02-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Makha Bucha",
+        "ko": "Makha Bucha"
+      }
+    },
+    {
+      "name": "Chakri Memorial Day",
+      "date": "2028-04-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chakri Memorial Day",
+        "ko": "Chakri Memorial Day"
+      }
+    },
+    {
+      "name": "Songkran Festival",
+      "date": "2028-04-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival",
+        "ko": "Songkran Festival"
+      }
+    },
+    {
+      "name": "Songkran Festival",
+      "date": "2028-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival",
+        "ko": "Songkran Festival"
+      }
+    },
+    {
+      "name": "Songkran Festival",
+      "date": "2028-04-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival",
+        "ko": "Songkran Festival"
+      }
+    },
+    {
+      "name": "Songkran Festival (in lieu)",
+      "date": "2028-04-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Songkran Festival (in lieu)",
+        "ko": "Songkran Festival (in lieu)"
+      }
+    },
+    {
+      "name": "National Labor Day",
+      "date": "2028-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Labor Day",
+        "ko": "National Labor Day"
+      }
+    },
+    {
+      "name": "Coronation Day",
+      "date": "2028-05-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coronation Day",
+        "ko": "Coronation Day"
+      }
+    },
+    {
+      "name": "Visakha Bucha",
+      "date": "2028-05-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Visakha Bucha",
+        "ko": "Visakha Bucha"
+      }
+    },
+    {
+      "name": "HM Queen Suthida's Birthday",
+      "date": "2028-06-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM Queen Suthida's Birthday",
+        "ko": "HM Queen Suthida's Birthday"
+      }
+    },
+    {
+      "name": "HM Queen Suthida's Birthday (in lieu)",
+      "date": "2028-06-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM Queen Suthida's Birthday (in lieu)",
+        "ko": "HM Queen Suthida's Birthday (in lieu)"
+      }
+    },
+    {
+      "name": "Asarnha Bucha",
+      "date": "2028-07-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Asarnha Bucha",
+        "ko": "Asarnha Bucha"
+      }
+    },
+    {
+      "name": "Buddhist Lent Day",
+      "date": "2028-07-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Buddhist Lent Day",
+        "ko": "Buddhist Lent Day"
+      }
+    },
+    {
+      "name": "HM King Maha Vajiralongkorn's Birthday",
+      "date": "2028-07-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Maha Vajiralongkorn's Birthday",
+        "ko": "HM King Maha Vajiralongkorn's Birthday"
+      }
+    },
+    {
+      "name": "HM Queen Sirikit The Queen Mother's Birthday; National Mother's Day",
+      "date": "2028-08-12",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM Queen Sirikit The Queen Mother's Birthday; National Mother's Day",
+        "ko": "HM Queen Sirikit The Queen Mother's Birthday; National Mother's Day"
+      }
+    },
+    {
+      "name": "HM Queen Sirikit The Queen Mother's Birthday (in lieu); National Mother's Day (in lieu)",
+      "date": "2028-08-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM Queen Sirikit The Queen Mother's Birthday (in lieu); National Mother's Day (in lieu)",
+        "ko": "HM Queen Sirikit The Queen Mother's Birthday (in lieu); National Mother's Day (in lieu)"
+      }
+    },
+    {
+      "name": "HM King Bhumibol Adulyadej Memorial Day",
+      "date": "2028-10-13",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Bhumibol Adulyadej Memorial Day",
+        "ko": "HM King Bhumibol Adulyadej Memorial Day"
+      }
+    },
+    {
+      "name": "HM King Chulalongkorn Memorial Day",
+      "date": "2028-10-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Chulalongkorn Memorial Day",
+        "ko": "HM King Chulalongkorn Memorial Day"
+      }
+    },
+    {
+      "name": "HM King Bhumibol Adulyadej the Great's Birthday; National Day; National Father's Day",
+      "date": "2028-12-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "HM King Bhumibol Adulyadej the Great's Birthday; National Day; National Father's Day",
+        "ko": "HM King Bhumibol Adulyadej the Great's Birthday; National Day; National Father's Day"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2028-12-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "Constitution Day"
+      }
+    },
+    {
+      "name": "Constitution Day (in lieu)",
+      "date": "2028-12-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day (in lieu)",
+        "ko": "Constitution Day (in lieu)"
+      }
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "2028-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Eve",
+        "ko": "New Year's Eve"
       }
     }
   ]

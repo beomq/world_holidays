@@ -1,9 +1,15 @@
 {
   "country": "JP",
   "countryName": "Japan",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 57,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 90,
   "holidays": [
     {
       "name": "New Year's Day",
@@ -38,7 +44,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "National Foundation Day (Observed)",
-        "ko": "건국기념의 날 대체휴일"
+        "ko": "건국기념의 날 대체 휴일"
       }
     },
     {
@@ -101,7 +107,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Children's Day (Observed)",
-        "ko": "어린이날 대체휴일"
+        "ko": "어린이날 대체 휴일"
       }
     },
     {
@@ -119,7 +125,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Mountain Day (Observed)",
-        "ko": "산의 날 대체휴일"
+        "ko": "산의 날 대체 휴일"
       }
     },
     {
@@ -146,7 +152,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Autumn Equinox (Observed)",
-        "ko": "추분의 날 대체휴일"
+        "ko": "추분의 날 대체 휴일"
       }
     },
     {
@@ -173,7 +179,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Culture Day (Observed)",
-        "ko": "문화의 날 대체휴일"
+        "ko": "문화의 날 대체 휴일"
       }
     },
     {
@@ -227,7 +233,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Emperor's Birthday (Observed)",
-        "ko": "천황 생일 대체휴일"
+        "ko": "천황 생일 대체 휴일"
       }
     },
     {
@@ -281,7 +287,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Greenery Day (Observed)",
-        "ko": "녹색의 날 대체휴일"
+        "ko": "녹색의 날 대체 휴일"
       }
     },
     {
@@ -353,7 +359,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Labor Thanksgiving Day (Observed)",
-        "ko": "근로감사의 날 대체휴일"
+        "ko": "근로감사의 날 대체 휴일"
       }
     },
     {
@@ -443,7 +449,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Constitution Memorial Day (Observed)",
-        "ko": "헌법기념일 대체휴일"
+        "ko": "헌법기념일 대체 휴일"
       }
     },
     {
@@ -516,6 +522,303 @@
       "description": {
         "en": "Labor Thanksgiving Day",
         "ko": "근로감사의 날"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "Coming of Age Day",
+      "date": "2027-01-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coming of Age Day",
+        "ko": "Coming of Age Day"
+      }
+    },
+    {
+      "name": "Foundation Day",
+      "date": "2027-02-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Foundation Day",
+        "ko": "Foundation Day"
+      }
+    },
+    {
+      "name": "Emperor's Birthday",
+      "date": "2027-02-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Emperor's Birthday",
+        "ko": "Emperor's Birthday"
+      }
+    },
+    {
+      "name": "Vernal Equinox Day",
+      "date": "2027-03-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Vernal Equinox Day",
+        "ko": "Vernal Equinox Day"
+      }
+    },
+    {
+      "name": "Substitute Holiday",
+      "date": "2027-03-22",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Substitute Holiday",
+        "ko": "Substitute Holiday"
+      }
+    },
+    {
+      "name": "Showa Day",
+      "date": "2027-04-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Showa Day",
+        "ko": "Showa Day"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2027-05-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "Constitution Day"
+      }
+    },
+    {
+      "name": "Greenery Day",
+      "date": "2027-05-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Greenery Day",
+        "ko": "Greenery Day"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2027-05-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "Children's Day"
+      }
+    },
+    {
+      "name": "Marine Day",
+      "date": "2027-07-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Marine Day",
+        "ko": "Marine Day"
+      }
+    },
+    {
+      "name": "Mountain Day",
+      "date": "2027-08-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mountain Day",
+        "ko": "Mountain Day"
+      }
+    },
+    {
+      "name": "Respect for the Aged Day",
+      "date": "2027-09-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Respect for the Aged Day",
+        "ko": "Respect for the Aged Day"
+      }
+    },
+    {
+      "name": "Autumnal Equinox Day",
+      "date": "2027-09-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Autumnal Equinox Day",
+        "ko": "Autumnal Equinox Day"
+      }
+    },
+    {
+      "name": "Sports Day",
+      "date": "2027-10-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Sports Day",
+        "ko": "Sports Day"
+      }
+    },
+    {
+      "name": "Culture Day",
+      "date": "2027-11-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Culture Day",
+        "ko": "Culture Day"
+      }
+    },
+    {
+      "name": "Labor Thanksgiving Day",
+      "date": "2027-11-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Thanksgiving Day",
+        "ko": "Labor Thanksgiving Day"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "Coming of Age Day",
+      "date": "2028-01-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Coming of Age Day",
+        "ko": "Coming of Age Day"
+      }
+    },
+    {
+      "name": "Foundation Day",
+      "date": "2028-02-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Foundation Day",
+        "ko": "Foundation Day"
+      }
+    },
+    {
+      "name": "Emperor's Birthday",
+      "date": "2028-02-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Emperor's Birthday",
+        "ko": "Emperor's Birthday"
+      }
+    },
+    {
+      "name": "Vernal Equinox Day",
+      "date": "2028-03-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Vernal Equinox Day",
+        "ko": "Vernal Equinox Day"
+      }
+    },
+    {
+      "name": "Showa Day",
+      "date": "2028-04-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Showa Day",
+        "ko": "Showa Day"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2028-05-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "Constitution Day"
+      }
+    },
+    {
+      "name": "Greenery Day",
+      "date": "2028-05-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Greenery Day",
+        "ko": "Greenery Day"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2028-05-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "Children's Day"
+      }
+    },
+    {
+      "name": "Marine Day",
+      "date": "2028-07-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Marine Day",
+        "ko": "Marine Day"
+      }
+    },
+    {
+      "name": "Mountain Day",
+      "date": "2028-08-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mountain Day",
+        "ko": "Mountain Day"
+      }
+    },
+    {
+      "name": "Respect for the Aged Day",
+      "date": "2028-09-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Respect for the Aged Day",
+        "ko": "Respect for the Aged Day"
+      }
+    },
+    {
+      "name": "Autumnal Equinox Day",
+      "date": "2028-09-22",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Autumnal Equinox Day",
+        "ko": "Autumnal Equinox Day"
+      }
+    },
+    {
+      "name": "Sports Day",
+      "date": "2028-10-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Sports Day",
+        "ko": "Sports Day"
+      }
+    },
+    {
+      "name": "Culture Day",
+      "date": "2028-11-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Culture Day",
+        "ko": "Culture Day"
+      }
+    },
+    {
+      "name": "Labor Thanksgiving Day",
+      "date": "2028-11-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Thanksgiving Day",
+        "ko": "Labor Thanksgiving Day"
       }
     }
   ]

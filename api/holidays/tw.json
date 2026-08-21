@@ -1,9 +1,15 @@
 {
   "country": "TW",
   "countryName": "Taiwan",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 58,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 98,
   "holidays": [
     {
       "name": "Republic Day",
@@ -290,7 +296,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Day off for Teachers' Day",
-        "ko": "스승의 날 대체휴일"
+        "ko": "스승의 날 대체 휴일"
       }
     },
     {
@@ -317,7 +323,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Day off for Taiwan's Retrocession Day",
-        "ko": "대만 광복절 대체휴일"
+        "ko": "대만 광복절 대체 휴일"
       }
     },
     {
@@ -425,7 +431,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Peace Memorial Day (Observed)",
-        "ko": "평화기념일 대체휴일"
+        "ko": "평화기념일 대체 휴일"
       }
     },
     {
@@ -434,7 +440,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Children's Day (Observed)",
-        "ko": "어린이날 대체휴일"
+        "ko": "어린이날 대체 휴일"
       }
     },
     {
@@ -497,7 +503,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "National Day (Observed)",
-        "ko": "국경일 대체휴일"
+        "ko": "국경일 대체 휴일"
       }
     },
     {
@@ -506,7 +512,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Day off for Taiwan's Retrocession Day",
-        "ko": "대만 광복절 대체휴일"
+        "ko": "대만 광복절 대체 휴일"
       }
     },
     {
@@ -516,6 +522,375 @@
       "description": {
         "en": "Constitution Day",
         "ko": "헌법기념일"
+      }
+    },
+    {
+      "name": "Founding Day of the Republic of China",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Founding Day of the Republic of China",
+        "ko": "Founding Day of the Republic of China"
+      }
+    },
+    {
+      "name": "Chinese New Year's Eve",
+      "date": "2027-02-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year's Eve",
+        "ko": "Chinese New Year's Eve"
+      }
+    },
+    {
+      "name": "Chinese New Year's Eve",
+      "date": "2027-02-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year's Eve",
+        "ko": "Chinese New Year's Eve"
+      }
+    },
+    {
+      "name": "Chinese New Year",
+      "date": "2027-02-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year",
+        "ko": "Chinese New Year"
+      }
+    },
+    {
+      "name": "Chinese New Year",
+      "date": "2027-02-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year",
+        "ko": "Chinese New Year"
+      }
+    },
+    {
+      "name": "Chinese New Year",
+      "date": "2027-02-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year",
+        "ko": "Chinese New Year"
+      }
+    },
+    {
+      "name": "Chinese New Year (observed)",
+      "date": "2027-02-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (observed)",
+        "ko": "Chinese New Year (observed)"
+      }
+    },
+    {
+      "name": "Chinese New Year (observed)",
+      "date": "2027-02-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (observed)",
+        "ko": "Chinese New Year (observed)"
+      }
+    },
+    {
+      "name": "Peace Memorial Day",
+      "date": "2027-02-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Peace Memorial Day",
+        "ko": "Peace Memorial Day"
+      }
+    },
+    {
+      "name": "Peace Memorial Day (observed)",
+      "date": "2027-03-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Peace Memorial Day (observed)",
+        "ko": "Peace Memorial Day (observed)"
+      }
+    },
+    {
+      "name": "Children's Day",
+      "date": "2027-04-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day",
+        "ko": "Children's Day"
+      }
+    },
+    {
+      "name": "Tomb-Sweeping Day",
+      "date": "2027-04-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Tomb-Sweeping Day",
+        "ko": "Tomb-Sweeping Day"
+      }
+    },
+    {
+      "name": "Children's Day (observed)",
+      "date": "2027-04-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day (observed)",
+        "ko": "Children's Day (observed)"
+      }
+    },
+    {
+      "name": "Labor Day (observed)",
+      "date": "2027-04-30",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day (observed)",
+        "ko": "Labor Day (observed)"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2027-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival",
+      "date": "2027-06-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival",
+        "ko": "Dragon Boat Festival"
+      }
+    },
+    {
+      "name": "Mid-Autumn Festival",
+      "date": "2027-09-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mid-Autumn Festival",
+        "ko": "Mid-Autumn Festival"
+      }
+    },
+    {
+      "name": "Confucius' Birthday",
+      "date": "2027-09-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Confucius' Birthday",
+        "ko": "Confucius' Birthday"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2027-10-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "National Day (observed)",
+      "date": "2027-10-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day (observed)",
+        "ko": "National Day (observed)"
+      }
+    },
+    {
+      "name": "Taiwan Restoration and Guningtou Victory Memorial Day",
+      "date": "2027-10-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Taiwan Restoration and Guningtou Victory Memorial Day",
+        "ko": "Taiwan Restoration and Guningtou Victory Memorial Day"
+      }
+    },
+    {
+      "name": "Constitution Day (observed)",
+      "date": "2027-12-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day (observed)",
+        "ko": "Constitution Day (observed)"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2027-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "Constitution Day"
+      }
+    },
+    {
+      "name": "Founding Day of the Republic of China (observed)",
+      "date": "2027-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Founding Day of the Republic of China (observed)",
+        "ko": "Founding Day of the Republic of China (observed)"
+      }
+    },
+    {
+      "name": "Founding Day of the Republic of China",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Founding Day of the Republic of China",
+        "ko": "Founding Day of the Republic of China"
+      }
+    },
+    {
+      "name": "Chinese New Year's Eve",
+      "date": "2028-01-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year's Eve",
+        "ko": "Chinese New Year's Eve"
+      }
+    },
+    {
+      "name": "Chinese New Year's Eve",
+      "date": "2028-01-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year's Eve",
+        "ko": "Chinese New Year's Eve"
+      }
+    },
+    {
+      "name": "Chinese New Year",
+      "date": "2028-01-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year",
+        "ko": "Chinese New Year"
+      }
+    },
+    {
+      "name": "Chinese New Year",
+      "date": "2028-01-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year",
+        "ko": "Chinese New Year"
+      }
+    },
+    {
+      "name": "Chinese New Year",
+      "date": "2028-01-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year",
+        "ko": "Chinese New Year"
+      }
+    },
+    {
+      "name": "Peace Memorial Day",
+      "date": "2028-02-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Peace Memorial Day",
+        "ko": "Peace Memorial Day"
+      }
+    },
+    {
+      "name": "Children's Day (observed)",
+      "date": "2028-04-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day (observed)",
+        "ko": "Children's Day (observed)"
+      }
+    },
+    {
+      "name": "Children's Day; Tomb-Sweeping Day",
+      "date": "2028-04-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Children's Day; Tomb-Sweeping Day",
+        "ko": "Children's Day; Tomb-Sweeping Day"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2028-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival",
+      "date": "2028-05-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival",
+        "ko": "Dragon Boat Festival"
+      }
+    },
+    {
+      "name": "Dragon Boat Festival (observed)",
+      "date": "2028-05-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Dragon Boat Festival (observed)",
+        "ko": "Dragon Boat Festival (observed)"
+      }
+    },
+    {
+      "name": "Confucius' Birthday",
+      "date": "2028-09-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Confucius' Birthday",
+        "ko": "Confucius' Birthday"
+      }
+    },
+    {
+      "name": "Mid-Autumn Festival",
+      "date": "2028-10-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Mid-Autumn Festival",
+        "ko": "Mid-Autumn Festival"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2028-10-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "Taiwan Restoration and Guningtou Victory Memorial Day",
+      "date": "2028-10-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Taiwan Restoration and Guningtou Victory Memorial Day",
+        "ko": "Taiwan Restoration and Guningtou Victory Memorial Day"
+      }
+    },
+    {
+      "name": "Constitution Day",
+      "date": "2028-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Constitution Day",
+        "ko": "Constitution Day"
       }
     }
   ]

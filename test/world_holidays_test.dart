@@ -1,21 +1,25 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:world_holidays/world_holidays.dart';
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   group('WorldHolidays', () {
     late WorldHolidays worldHolidays;
 
     setUp(() {
+      SharedPreferences.setMockInitialValues({});
       worldHolidays = WorldHolidays();
     });
 
     test('should return supported countries', () {
       final countries = worldHolidays.getSupportedCountries();
-      expect(countries, contains('KR'));
-      expect(countries, contains('US'));
-      expect(countries, contains('JP'));
-      expect(countries, contains('DE'));
-      expect(countries.length, equals(4));
+      expect(
+        countries,
+        equals(['KR', 'US', 'JP', 'CN', 'VN', 'MY', 'TH', 'CA', 'BR', 'TW']),
+      );
+      expect(() => countries.clear(), throwsUnsupportedError);
     });
 
     test('should return supported years', () {
@@ -23,7 +27,9 @@ void main() {
       expect(years, contains(2024));
       expect(years, contains(2025));
       expect(years, contains(2026));
-      expect(years.length, equals(3));
+      expect(years, contains(2027));
+      expect(years, contains(2028));
+      expect(() => years.clear(), throwsUnsupportedError);
     });
 
     test('should get Korean holidays', () async {
@@ -57,7 +63,8 @@ void main() {
 
       // Check if New Year's Day is included
       final newYear = holidays.firstWhere(
-        (h) => h.name == '元日' && h.date.month == 1 && h.date.day == 1,
+        (h) =>
+            h.name == "New Year's Day" && h.date.month == 1 && h.date.day == 1,
       );
       expect(newYear.type, equals(HolidayType.national));
     });
@@ -65,6 +72,7 @@ void main() {
     test('should filter holidays by year', () async {
       final holidays2024 = await worldHolidays.getHolidays('KR', year: 2024);
       expect(holidays2024.every((h) => h.year == 2024), isTrue);
+      expect(() => holidays2024.clear(), throwsUnsupportedError);
     });
 
     test('should check if date is holiday', () {
@@ -87,20 +95,16 @@ void main() {
       expect(nextHoliday!.date.isAfter(DateTime(2024, 1, 1)), isTrue);
     });
 
-    test('should get German holidays', () async {
-      final holidays = await worldHolidays.getHolidays('DE');
-      expect(holidays, isNotEmpty);
-
-      // Check if New Year's Day is included
-      final newYear = holidays.firstWhere(
-        (h) => h.name == 'Neujahrstag' && h.date.month == 1 && h.date.day == 1,
-      );
-      expect(newYear.type, equals(HolidayType.national));
-    });
-
     test('should handle invalid country code', () async {
       final holidays = await worldHolidays.getHolidays('INVALID');
       expect(holidays, isEmpty);
+    });
+
+    test('should not expose mutable bundled data', () async {
+      final holidays = await worldHolidays.getHolidays('KR');
+
+      expect(() => holidays.clear(), throwsUnsupportedError);
+      expect(await worldHolidays.getHolidays('KR'), isNotEmpty);
     });
   });
 
@@ -117,7 +121,7 @@ void main() {
       expect(holiday.name, equals('Test Holiday'));
       expect(holiday.date, equals(DateTime(2024, 1, 1)));
       expect(holiday.type, equals(HolidayType.national));
-      expect(holiday.description, equals('Test description'));
+      expect(holiday.description, equals({'en': 'Test description'}));
     });
 
     test('should convert holiday to JSON', () {
@@ -125,14 +129,14 @@ void main() {
         name: 'Test Holiday',
         date: DateTime(2024, 1, 1),
         type: HolidayType.national,
-        description: 'Test description',
+        description: const {'en': 'Test description'},
       );
 
       final json = holiday.toJson();
       expect(json['name'], equals('Test Holiday'));
       expect(json['date'], equals('2024-01-01'));
       expect(json['type'], equals('NATIONAL'));
-      expect(json['description'], equals('Test description'));
+      expect(json['description'], equals({'en': 'Test description'}));
     });
 
     test('should check if holiday is on specific date', () {
@@ -145,20 +149,42 @@ void main() {
       expect(holiday.isOnDate(DateTime(2024, 1, 1)), isTrue);
       expect(holiday.isOnDate(DateTime(2024, 1, 2)), isFalse);
     });
+
+    test('should not expose mutable description maps', () {
+      final holiday = Holiday.fromJson({
+        'name': 'Test Holiday',
+        'date': '2024-01-01',
+        'type': 'NATIONAL',
+        'description': {'en': 'Original', 'ko': '원본'},
+      });
+
+      expect(
+        () => holiday.description!['en'] = 'Changed',
+        throwsUnsupportedError,
+      );
+
+      final json = holiday.toJson();
+      (json['description'] as Map<String, String>)['en'] = 'Changed';
+      expect(holiday.descriptionEn, 'Original');
+    });
   });
 
   group('HolidayType', () {
     test('should create from string', () {
       expect(HolidayType.fromString('NATIONAL'), equals(HolidayType.national));
       expect(
-          HolidayType.fromString('RELIGIOUS'), equals(HolidayType.religious));
+        HolidayType.fromString('RELIGIOUS'),
+        equals(HolidayType.religious),
+      );
       expect(
-          HolidayType.fromString('OBSERVANCE'), equals(HolidayType.observance));
+        HolidayType.fromString('OBSERVANCE'),
+        equals(HolidayType.observance),
+      );
       expect(HolidayType.fromString('REGIONAL'), equals(HolidayType.regional));
     });
 
-    test('should default to national for invalid string', () {
-      expect(HolidayType.fromString('INVALID'), equals(HolidayType.national));
+    test('should reject invalid string', () {
+      expect(() => HolidayType.fromString('INVALID'), throwsFormatException);
     });
   });
 }

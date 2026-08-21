@@ -1,9 +1,15 @@
 {
   "country": "US",
   "countryName": "United States",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 32,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 62,
   "holidays": [
     {
       "name": "New Year's Day",
@@ -272,7 +278,7 @@
       "type": "NATIONAL",
       "description": {
         "en": "Independence Day (Observed)",
-        "ko": "독립기념일 대체휴일"
+        "ko": "독립기념일 대체 휴일"
       }
     },
     {
@@ -318,6 +324,249 @@
       "description": {
         "en": "Christmas Day",
         "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "Martin Luther King Jr. Day",
+      "date": "2027-01-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Martin Luther King Jr. Day",
+        "ko": "Martin Luther King Jr. Day"
+      }
+    },
+    {
+      "name": "Washington's Birthday",
+      "date": "2027-02-15",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Washington's Birthday",
+        "ko": "Washington's Birthday"
+      }
+    },
+    {
+      "name": "Memorial Day",
+      "date": "2027-05-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Memorial Day",
+        "ko": "Memorial Day"
+      }
+    },
+    {
+      "name": "Juneteenth National Independence Day (observed)",
+      "date": "2027-06-18",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Juneteenth National Independence Day (observed)",
+        "ko": "Juneteenth National Independence Day (observed)"
+      }
+    },
+    {
+      "name": "Juneteenth National Independence Day",
+      "date": "2027-06-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Juneteenth National Independence Day",
+        "ko": "Juneteenth National Independence Day"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2027-07-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "Independence Day"
+      }
+    },
+    {
+      "name": "Independence Day (observed)",
+      "date": "2027-07-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day (observed)",
+        "ko": "Independence Day (observed)"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2027-09-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Columbus Day",
+      "date": "2027-10-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Columbus Day",
+        "ko": "Columbus Day"
+      }
+    },
+    {
+      "name": "Veterans Day",
+      "date": "2027-11-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Veterans Day",
+        "ko": "Veterans Day"
+      }
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2027-11-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Thanksgiving Day",
+        "ko": "Thanksgiving Day"
+      }
+    },
+    {
+      "name": "Christmas Day (observed)",
+      "date": "2027-12-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day (observed)",
+        "ko": "Christmas Day (observed)"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2027-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
+      }
+    },
+    {
+      "name": "New Year's Day (observed)",
+      "date": "2027-12-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day (observed)",
+        "ko": "New Year's Day (observed)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "Martin Luther King Jr. Day",
+      "date": "2028-01-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Martin Luther King Jr. Day",
+        "ko": "Martin Luther King Jr. Day"
+      }
+    },
+    {
+      "name": "Washington's Birthday",
+      "date": "2028-02-21",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Washington's Birthday",
+        "ko": "Washington's Birthday"
+      }
+    },
+    {
+      "name": "Memorial Day",
+      "date": "2028-05-29",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Memorial Day",
+        "ko": "Memorial Day"
+      }
+    },
+    {
+      "name": "Juneteenth National Independence Day",
+      "date": "2028-06-19",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Juneteenth National Independence Day",
+        "ko": "Juneteenth National Independence Day"
+      }
+    },
+    {
+      "name": "Independence Day",
+      "date": "2028-07-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Independence Day",
+        "ko": "Independence Day"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2028-09-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Columbus Day",
+      "date": "2028-10-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Columbus Day",
+        "ko": "Columbus Day"
+      }
+    },
+    {
+      "name": "Veterans Day (observed)",
+      "date": "2028-11-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Veterans Day (observed)",
+        "ko": "Veterans Day (observed)"
+      }
+    },
+    {
+      "name": "Veterans Day",
+      "date": "2028-11-11",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Veterans Day",
+        "ko": "Veterans Day"
+      }
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "2028-11-23",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Thanksgiving Day",
+        "ko": "Thanksgiving Day"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2028-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
       }
     }
   ]

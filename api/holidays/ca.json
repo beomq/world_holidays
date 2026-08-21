@@ -1,9 +1,15 @@
 {
   "country": "CA",
   "countryName": "Canada",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 36,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 45,
   "holidays": [
     {
       "name": "New Year's Day",
@@ -300,6 +306,114 @@
       "description": {
         "en": "Boxing Day (Many regions)",
         "ko": "박싱데이 (대부분 지역)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2027-03-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "Good Friday"
+      }
+    },
+    {
+      "name": "Canada Day",
+      "date": "2027-07-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Canada Day",
+        "ko": "Canada Day"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2027-09-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2027-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
+      }
+    },
+    {
+      "name": "Christmas Day (observed)",
+      "date": "2027-12-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day (observed)",
+        "ko": "Christmas Day (observed)"
+      }
+    },
+    {
+      "name": "New Year's Day",
+      "date": "2028-01-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day",
+        "ko": "New Year's Day"
+      }
+    },
+    {
+      "name": "New Year's Day (observed)",
+      "date": "2028-01-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "New Year's Day (observed)",
+        "ko": "New Year's Day (observed)"
+      }
+    },
+    {
+      "name": "Good Friday",
+      "date": "2028-04-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Good Friday",
+        "ko": "Good Friday"
+      }
+    },
+    {
+      "name": "Canada Day",
+      "date": "2028-07-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Canada Day",
+        "ko": "Canada Day"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2028-09-04",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2028-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
       }
     }
   ]

@@ -1,28 +1,17 @@
-/// 🌍 World Holidays - A comprehensive Flutter package for holiday information
+/// World Holidays package for generated holiday information.
 ///
-/// Provides holiday data for multiple countries (2024-2026) with offline-first
-/// support and optional online updates.
+/// Provides generated data for 10 countries (2024-2028), offline-first lookup,
+/// a seven-day cache, and explicit hosted updates.
 ///
-/// Supported countries:
-/// - 🇰🇷 South Korea (KR) - 48 holidays
-/// - 🇺🇸 United States (US) - 31 holidays
-/// - 🇯🇵 Japan (JP) - 54 holidays
-///
-/// ## Usage
+/// Supported country codes: KR, US, JP, CN, VN, MY, TH, CA, BR, and TW.
 ///
 /// ```dart
 /// import 'package:world_holidays/world_holidays.dart';
 ///
 /// final worldHolidays = WorldHolidays();
-///
-/// // Get holidays for South Korea
-/// final holidays = await worldHolidays.getHolidays('KR');
-///
-/// // Update with latest data (optional)
-/// await worldHolidays.updateHolidays(countryCode: 'KR');
-///
-/// // Check if today is a holiday
-/// final isToday = worldHolidays.isTodayHoliday('KR');
+/// final holidays = await worldHolidays.getHolidays('KR', year: 2027);
+/// final update = await worldHolidays.updateCountryHolidays('KR');
+/// final isToday = await worldHolidays.isTodayHolidayAsync('KR');
 /// ```
 library;
 
@@ -30,3 +19,4 @@ export 'src/world_holidays.dart';
 export 'src/models/holiday.dart';
 export 'src/models/holiday_type.dart';
 export 'src/models/country_info.dart';
+export 'src/models/update_outcome.dart';

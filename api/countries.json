@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-05T00:00:00.000Z",
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
   "totalCountries": 10,
   "supportedCountries": [
     "KR",
@@ -13,16 +13,25 @@
     "BR",
     "TW"
   ],
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 508,
-  "supportedLanguages": ["en", "ko"],
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 841,
+  "supportedLanguages": [
+    "en",
+    "ko"
+  ],
   "defaultLanguage": "en",
   "countries": [
     {
       "code": "KR",
       "name": "South Korea",
       "flag": "🇰🇷",
-      "totalHolidays": 41,
+      "totalHolidays": 98,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json",
       "names": {
         "en": "South Korea",
@@ -33,7 +42,7 @@
       "code": "US",
       "name": "United States",
       "flag": "🇺🇸",
-      "totalHolidays": 32,
+      "totalHolidays": 62,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/us.json",
       "names": {
         "en": "United States",
@@ -44,7 +53,7 @@
       "code": "JP",
       "name": "Japan",
       "flag": "🇯🇵",
-      "totalHolidays": 57,
+      "totalHolidays": 90,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/jp.json",
       "names": {
         "en": "Japan",
@@ -55,7 +64,7 @@
       "code": "CN",
       "name": "China",
       "flag": "🇨🇳",
-      "totalHolidays": 72,
+      "totalHolidays": 120,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/cn.json",
       "names": {
         "en": "China",
@@ -66,7 +75,7 @@
       "code": "VN",
       "name": "Vietnam",
       "flag": "🇻🇳",
-      "totalHolidays": 44,
+      "totalHolidays": 73,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/vn.json",
       "names": {
         "en": "Vietnam",
@@ -77,7 +86,7 @@
       "code": "MY",
       "name": "Malaysia",
       "flag": "🇲🇾",
-      "totalHolidays": 44,
+      "totalHolidays": 73,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/my.json",
       "names": {
         "en": "Malaysia",
@@ -88,7 +97,7 @@
       "code": "TH",
       "name": "Thailand",
       "flag": "🇹🇭",
-      "totalHolidays": 54,
+      "totalHolidays": 111,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/th.json",
       "names": {
         "en": "Thailand",
@@ -99,7 +108,7 @@
       "code": "CA",
       "name": "Canada",
       "flag": "🇨🇦",
-      "totalHolidays": 36,
+      "totalHolidays": 45,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/ca.json",
       "names": {
         "en": "Canada",
@@ -110,7 +119,7 @@
       "code": "BR",
       "name": "Brazil",
       "flag": "🇧🇷",
-      "totalHolidays": 51,
+      "totalHolidays": 71,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/br.json",
       "names": {
         "en": "Brazil",
@@ -121,7 +130,7 @@
       "code": "TW",
       "name": "Taiwan",
       "flag": "🇹🇼",
-      "totalHolidays": 57,
+      "totalHolidays": 98,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/tw.json",
       "names": {
         "en": "Taiwan",

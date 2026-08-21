@@ -1,9 +1,15 @@
 {
   "country": "MY",
   "countryName": "Malaysia",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 44,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "totalHolidays": 73,
   "holidays": [
     {
       "name": "Chinese New Year's Day",
@@ -399,6 +405,267 @@
       "description": {
         "en": "Christmas Day",
         "ko": "크리스마스"
+      }
+    },
+    {
+      "name": "Chinese New Year (estimated)",
+      "date": "2027-02-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (estimated)",
+        "ko": "Chinese New Year (estimated)"
+      }
+    },
+    {
+      "name": "Chinese New Year (Second Day) (estimated)",
+      "date": "2027-02-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (Second Day) (estimated)",
+        "ko": "Chinese New Year (Second Day) (estimated)"
+      }
+    },
+    {
+      "name": "Chinese New Year (Second Day) (observed, estimated)",
+      "date": "2027-02-08",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (Second Day) (observed, estimated)",
+        "ko": "Chinese New Year (Second Day) (observed, estimated)"
+      }
+    },
+    {
+      "name": "Eid al-Fitr (estimated)",
+      "date": "2027-03-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Fitr (estimated)",
+        "ko": "Eid al-Fitr (estimated)"
+      }
+    },
+    {
+      "name": "Eid al-Fitr (Second Day) (estimated)",
+      "date": "2027-03-10",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Fitr (Second Day) (estimated)",
+        "ko": "Eid al-Fitr (Second Day) (estimated)"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2027-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Eid al-Adha (estimated)",
+      "date": "2027-05-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Adha (estimated)",
+        "ko": "Eid al-Adha (estimated)"
+      }
+    },
+    {
+      "name": "Eid al-Adha (observed, estimated)",
+      "date": "2027-05-17",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Adha (observed, estimated)",
+        "ko": "Eid al-Adha (observed, estimated)"
+      }
+    },
+    {
+      "name": "Vesak Day (estimated)",
+      "date": "2027-05-20",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Vesak Day (estimated)",
+        "ko": "Vesak Day (estimated)"
+      }
+    },
+    {
+      "name": "Islamic New Year (estimated)",
+      "date": "2027-06-06",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Islamic New Year (estimated)",
+        "ko": "Islamic New Year (estimated)"
+      }
+    },
+    {
+      "name": "Birthday of HM Yang di-Pertuan Agong",
+      "date": "2027-06-07",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Birthday of HM Yang di-Pertuan Agong",
+        "ko": "Birthday of HM Yang di-Pertuan Agong"
+      }
+    },
+    {
+      "name": "Prophet Muhammad's Birthday (estimated)",
+      "date": "2027-08-14",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Prophet Muhammad's Birthday (estimated)",
+        "ko": "Prophet Muhammad's Birthday (estimated)"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2027-08-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "Malaysia Day",
+      "date": "2027-09-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Malaysia Day",
+        "ko": "Malaysia Day"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2027-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
+      }
+    },
+    {
+      "name": "Chinese New Year (estimated)",
+      "date": "2028-01-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (estimated)",
+        "ko": "Chinese New Year (estimated)"
+      }
+    },
+    {
+      "name": "Chinese New Year (Second Day) (estimated)",
+      "date": "2028-01-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Chinese New Year (Second Day) (estimated)",
+        "ko": "Chinese New Year (Second Day) (estimated)"
+      }
+    },
+    {
+      "name": "Eid al-Fitr (estimated)",
+      "date": "2028-02-26",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Fitr (estimated)",
+        "ko": "Eid al-Fitr (estimated)"
+      }
+    },
+    {
+      "name": "Eid al-Fitr (Second Day) (estimated)",
+      "date": "2028-02-27",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Fitr (Second Day) (estimated)",
+        "ko": "Eid al-Fitr (Second Day) (estimated)"
+      }
+    },
+    {
+      "name": "Eid al-Fitr (Second Day) (observed, estimated)",
+      "date": "2028-02-28",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Fitr (Second Day) (observed, estimated)",
+        "ko": "Eid al-Fitr (Second Day) (observed, estimated)"
+      }
+    },
+    {
+      "name": "Labor Day",
+      "date": "2028-05-01",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Labor Day",
+        "ko": "Labor Day"
+      }
+    },
+    {
+      "name": "Eid al-Adha (estimated)",
+      "date": "2028-05-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Eid al-Adha (estimated)",
+        "ko": "Eid al-Adha (estimated)"
+      }
+    },
+    {
+      "name": "Vesak Day (estimated)",
+      "date": "2028-05-09",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Vesak Day (estimated)",
+        "ko": "Vesak Day (estimated)"
+      }
+    },
+    {
+      "name": "Islamic New Year (estimated)",
+      "date": "2028-05-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Islamic New Year (estimated)",
+        "ko": "Islamic New Year (estimated)"
+      }
+    },
+    {
+      "name": "Birthday of HM Yang di-Pertuan Agong",
+      "date": "2028-06-05",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Birthday of HM Yang di-Pertuan Agong",
+        "ko": "Birthday of HM Yang di-Pertuan Agong"
+      }
+    },
+    {
+      "name": "Prophet Muhammad's Birthday (estimated)",
+      "date": "2028-08-03",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Prophet Muhammad's Birthday (estimated)",
+        "ko": "Prophet Muhammad's Birthday (estimated)"
+      }
+    },
+    {
+      "name": "National Day",
+      "date": "2028-08-31",
+      "type": "NATIONAL",
+      "description": {
+        "en": "National Day",
+        "ko": "National Day"
+      }
+    },
+    {
+      "name": "Malaysia Day",
+      "date": "2028-09-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Malaysia Day",
+        "ko": "Malaysia Day"
+      }
+    },
+    {
+      "name": "Christmas Day",
+      "date": "2028-12-25",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Christmas Day",
+        "ko": "Christmas Day"
       }
     }
   ]
