@@ -5,7 +5,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.1] - 2025-01-XX
+## [2.1.0] - 2026-08-21
+
+### Added
+
+- Generated 2027-2028 public holidays, extending bundled coverage to
+  2024-2028 with 841 records across 10 countries.
+- Added the local `python-holidays` synchronization pipeline, reviewed
+  overrides, deterministic tests, and synchronized hosted/Dart outputs.
+- Added `updateCountryHolidays()` and `updateAllHolidays()` with structured
+  source, success, fallback, and error results.
+- Added cache-aware `isHolidayAsync()`, `isTodayHolidayAsync()`, and
+  `getNextHolidayAsync()` methods.
+- Added the inclusive `getHolidaysInRange()` query.
+
+### Changed
+
+- Unknown holiday type values now throw `FormatException` instead of silently
+  decoding as `NATIONAL`.
+- Package-produced lists and decoded description maps are immutable.
+- `updateHolidays()` now delegates to structured update methods and preserves
+  successful countries when another country fails.
+- Documentation now distinguishes bundled synchronous queries from
+  cache-aware asynchronous queries and explicit networking.
+
+### Fixed
+
+- Recomputed all hosted payload, country, and aggregate holiday counts.
+- Made hosted JSON and bundled Dart data deterministic generated outputs.
+- Updated GitHub Pages metadata, examples, and year labels for 2024-2028.
+- Updated stale country tests, multilingual description tests, and the Flutter
+  example to compile against the 2.x description model.
+
+### Migration
+
+- Use `descriptionEn`, `descriptionKo`, or `getDescription()` instead of
+  treating `Holiday.description` as a string.
+- Catch `FormatException` when decoding untrusted type values.
+- Prefer structured update methods when callers need partial-failure details.
+
+## [2.0.1] - 2025-12-05
 
 ### Fixed
 

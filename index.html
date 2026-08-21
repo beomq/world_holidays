@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🌍 World Holidays API</title>
+    <title>World Holidays API | 10 Countries, 2024-2028</title>
+    <meta
+      name="description"
+      content="Free public holiday data for 10 countries with 841 records covering 2024-2028, available as a Flutter package and hosted JSON API."
+    />
+    <link rel="canonical" href="https://beomq.github.io/world_holidays/" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23667eea'/%3E%3Cpath d='M2 32h60M32 2c12 12 12 48 0 60M32 2C20 14 20 50 32 62' fill='none' stroke='white' stroke-width='4'/%3E%3C/svg%3E"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="World Holidays API" />
+    <meta
+      property="og:description"
+      content="841 public holiday records for 10 countries covering 2024-2028."
+    />
+    <meta
+      property="og:url"
+      content="https://beomq.github.io/world_holidays/"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="World Holidays API" />
+    <meta
+      name="twitter:description"
+      content="841 public holiday records for 10 countries covering 2024-2028."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "World Holidays API",
+        "description": "Public holiday data for 10 countries with 841 records covering 2024-2028.",
+        "url": "https://beomq.github.io/world_holidays/",
+        "license": "https://opensource.org/licenses/MIT",
+        "temporalCoverage": "2024/2028",
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://beomq.github.io/world_holidays/api/countries.json"
+        }
+      }
+    </script>
     <style>
       * {
         margin: 0;
@@ -41,6 +82,8 @@
       .header p {
         font-size: 1.2rem;
         opacity: 0.9;
+        word-break: keep-all;
+        overflow-wrap: break-word;
       }
 
       .card {
@@ -65,7 +108,10 @@
 
       .endpoints {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(min(300px, 100%), 1fr)
+        );
         gap: 1.5rem;
         margin-bottom: 2rem;
       }
@@ -83,7 +129,7 @@
       }
 
       .endpoint code {
-        background: #667eea;
+        background: #5a67d8;
         color: white;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -129,7 +175,7 @@
         margin: 1rem 0;
       }
 
-      .example h4 {
+      .example h3 {
         color: #667eea;
         margin-bottom: 0.5rem;
       }
@@ -186,7 +232,7 @@
       /* Calendar Styles */
       .calendar {
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(7, minmax(0, 1fr));
         gap: 1px;
         background: #ddd;
         border-radius: 10px;
@@ -231,7 +277,7 @@
 
       .calendar-day.other-month {
         background: #f8f8f8;
-        color: #ccc;
+        color: #5f6368;
       }
 
       .calendar-day.holiday {
@@ -272,7 +318,7 @@
       }
 
       .month-nav-btn {
-        background: #667eea;
+        background: #4c51bf;
         color: white;
         border: none;
         padding: 0.5rem 1rem;
@@ -283,18 +329,65 @@
       }
 
       .month-nav-btn:hover {
-        background: #5a67d8;
+        background: #434190;
       }
 
       .current-month {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #667eea;
+        color: #4c51bf;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 1rem;
+        }
+
+        .card {
+          padding: 1rem;
+        }
+
+        .month-nav-btn {
+          padding: 0.5rem 0.75rem;
+        }
+
+        .month-nav-label {
+          display: none;
+        }
+
+        .current-month {
+          font-size: 1rem;
+        }
+
+        .calendar-day-header {
+          padding: 0.35rem 0;
+          font-size: 0.7rem;
+        }
+
+        .calendar-day {
+          min-height: 48px;
+          padding: 0.25rem;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .endpoints {
+          min-height: 979px;
+        }
+
+        .countries-grid {
+          min-height: 698px;
+        }
+
+        #calendar-container {
+          min-height: 456px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <div class="header">
         <div
           style="
@@ -345,7 +438,7 @@
         </div>
         <div class="stat">
           <div class="stat-number">-</div>
-          <div class="stat-label">Years (2024-2026)</div>
+          <div class="stat-label">Years (2024-2028)</div>
         </div>
         <div class="stat">
           <div class="stat-number">0</div>
@@ -377,7 +470,7 @@
               display: block;
               margin-bottom: 0.5rem;
               font-weight: bold;
-              color: #667eea;
+              color: #4c51bf;
             "
           >
             🌍 Select Country:
@@ -440,9 +533,9 @@
             <div>
               <div
                 style="font-size: 1.5rem; font-weight: bold"
-                id="current-year"
+              id="current-year"
               >
-                2025
+                -
               </div>
               <div style="font-size: 0.9rem; opacity: 0.9">Current Year</div>
             </div>
@@ -468,9 +561,9 @@
             display: none;
           "
         >
-          <h4 style="color: #667eea; margin-bottom: 0.5rem">
+          <h3 style="color: #667eea; margin-bottom: 0.5rem">
             🎉 Holiday Information
-          </h4>
+          </h3>
           <div id="holiday-details"></div>
         </div>
       </div>
@@ -479,7 +572,7 @@
         <h2>💻 Usage Examples</h2>
 
         <div class="example">
-          <h4>📱 Flutter/Dart</h4>
+          <h3>📱 Flutter/Dart</h3>
           <pre><code>import 'package:world_holidays/world_holidays.dart';
 
 final worldHolidays = WorldHolidays();
@@ -488,7 +581,7 @@ print('Found ${holidays.length} Korean holidays');</code></pre>
         </div>
 
         <div class="example">
-          <h4>🌐 JavaScript/Web</h4>
+          <h3>🌐 JavaScript/Web</h3>
           <pre><code>fetch('https://beomq.github.io/world_holidays/api/holidays/kr.json')
   .then(response => response.json())
   .then(data => {
@@ -497,7 +590,7 @@ print('Found ${holidays.length} Korean holidays');</code></pre>
         </div>
 
         <div class="example">
-          <h4>🐍 Python</h4>
+          <h3>🐍 Python</h3>
           <pre><code>import requests
 
 url = 'https://beomq.github.io/world_holidays/api/holidays/kr.json'
@@ -507,7 +600,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         </div>
 
         <div class="example">
-          <h4>📦 cURL</h4>
+          <h3>📦 cURL</h3>
           <pre><code>curl -X GET "https://beomq.github.io/world_holidays/api/countries.json"</code></pre>
         </div>
       </div>
@@ -515,19 +608,19 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
       <div class="card">
         <h2>📊 Data Structure</h2>
         <div class="example">
-          <h4>🏛️ Countries Response</h4>
-          <pre><code>{
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
+          <h3>🏛️ Countries Response</h3>
+          <pre><code id="countries-response-example">{
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
   "totalCountries": 10,
   "supportedCountries": ["KR", "US", "JP", "CN", "VN", "MY", "TH", "CA", "BR", "TW"],
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 508,
+  "supportedYears": [2024, 2025, 2026, 2027, 2028],
+  "totalHolidays": 841,
   "countries": [
     {
       "code": "KR",
       "name": "South Korea",
       "flag": "🇰🇷",
-      "totalHolidays": 41,
+      "totalHolidays": 98,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/kr.json",
       "names": {
         "en": "South Korea",
@@ -539,13 +632,13 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         </div>
 
         <div class="example">
-          <h4>🎉 Holiday Response</h4>
-          <pre><code>{
+          <h3>🎉 Holiday Response</h3>
+          <pre><code id="holiday-response-example">{
   "country": "KR",
   "countryName": "South Korea",
-  "lastUpdated": "2025-09-12T00:00:00.000Z",
-  "supportedYears": [2024, 2025, 2026],
-  "totalHolidays": 41,
+  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "supportedYears": [2024, 2025, 2026, 2027, 2028],
+  "totalHolidays": 98,
   "holidays": [
     {
       "name": "신정",
@@ -602,7 +695,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         </p>
         <p>Free & Open Source • MIT License</p>
       </div>
-    </div>
+    </main>
 
     <script>
       class HolidayCalendar {
@@ -612,6 +705,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           this.currentYear = this.currentDate.getFullYear();
           this.selectedCountry = "kr";
           this.holidays = [];
+          this.holidayData = null;
           this.countriesData = null;
           this.currentLanguage = "en";
           this.monthNames = [
@@ -637,7 +731,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
                 "Free holiday data for South Korea, United States, Japan, China, Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan",
               countries: "Countries",
               totalHolidays: "Total Holidays",
-              years: "Years (2024-2026)",
+              years: "Years",
               cost: "Cost (Free!)",
               apiEndpoints: "API Endpoints",
               getCountries: "Get Countries",
@@ -661,7 +755,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
                 "한국, 미국, 일본, 중국, 베트남, 말레이시아, 태국, 캐나다, 브라질, 대만의 무료 공휴일 데이터",
               countries: "국가",
               totalHolidays: "총 공휴일",
-              years: "연도 (2024-2026)",
+              years: "연도",
               cost: "비용 (무료!)",
               apiEndpoints: "API 엔드포인트",
               getCountries: "국가 목록 조회",
@@ -695,9 +789,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
         async loadCountriesData() {
           try {
-            const response = await fetch(
-              "https://beomq.github.io/world_holidays/api/countries.json"
-            );
+            const response = await fetch("./api/countries.json");
             this.countriesData = await response.json();
           } catch (error) {
             console.error("Failed to load countries data:", error);
@@ -707,13 +799,23 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
         async loadHolidays() {
           try {
-            const response = await fetch(
-              `https://beomq.github.io/world_holidays/api/holidays/${this.selectedCountry}.json`
+            const selectedCountry = this.countriesData?.countries.find(
+              (country) =>
+                country.code.toLowerCase() === this.selectedCountry
             );
+            const relativeDataPath =
+              selectedCountry?.dataUrl.split("/api/")[1];
+            const dataUrl = relativeDataPath
+              ? `./api/${relativeDataPath}`
+              : `./api/holidays/${this.selectedCountry}.json`;
+            const response = await fetch(dataUrl);
             const data = await response.json();
+            this.holidayData = data;
             this.holidays = data.holidays || [];
+            this.updateExamples();
           } catch (error) {
             console.error("Failed to load holidays:", error);
+            this.holidayData = null;
             this.holidays = [];
           }
         }
@@ -797,6 +899,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
               option.textContent = `${country.flag} ${countryName}`;
               countrySelect.appendChild(option);
             });
+            countrySelect.value = this.selectedCountry;
           }
         }
 
@@ -812,14 +915,22 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           // Add countries endpoint first
           const countriesEndpoint = document.createElement("div");
           countriesEndpoint.className = "endpoint";
+          const countriesUrl = new URL(
+            "./api/countries.json",
+            window.location.href
+          ).href;
           countriesEndpoint.innerHTML = `
             <h3>📋 Get Countries</h3>
             <p>Get list of all supported countries</p>
-            <code>GET https://beomq.github.io/world_holidays/api/countries.json</code>
+            <code>GET ${countriesUrl}</code>
           `;
           endpointsContainer.appendChild(countriesEndpoint);
 
           // Add country-specific endpoints
+          const supportedYears = this.countriesData.supportedYears;
+          const yearRange = `${supportedYears[0]}-${
+            supportedYears[supportedYears.length - 1]
+          }`;
           this.countriesData.countries.forEach((country) => {
             const endpoint = document.createElement("div");
             endpoint.className = "endpoint";
@@ -829,13 +940,52 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
                 : country.name;
             endpoint.innerHTML = `
               <h3>${country.flag} ${countryName} Holidays</h3>
-              <p>Get all ${countryName} holidays (${this.countriesData.supportedYears.join(
-              "-"
-            )})</p>
-              <code>GET https://beomq.github.io/world_holidays/api/holidays/${country.code.toLowerCase()}.json</code>
+              <p>Get all ${countryName} holidays (${yearRange})</p>
+              <code>GET ${country.dataUrl}</code>
             `;
             endpointsContainer.appendChild(endpoint);
           });
+        }
+
+        updateExamples() {
+          if (!this.countriesData) return;
+
+          const exampleCountry = this.countriesData.countries[0];
+          const countriesExample = document.getElementById(
+            "countries-response-example"
+          );
+          if (countriesExample && exampleCountry) {
+            countriesExample.textContent = JSON.stringify(
+              {
+                lastUpdated: this.countriesData.lastUpdated,
+                totalCountries: this.countriesData.totalCountries,
+                supportedCountries: this.countriesData.supportedCountries,
+                supportedYears: this.countriesData.supportedYears,
+                totalHolidays: this.countriesData.totalHolidays,
+                countries: [exampleCountry],
+              },
+              null,
+              2
+            );
+          }
+
+          const holidayExample = document.getElementById(
+            "holiday-response-example"
+          );
+          if (holidayExample && this.holidayData) {
+            holidayExample.textContent = JSON.stringify(
+              {
+                country: this.holidayData.country,
+                countryName: this.holidayData.countryName,
+                lastUpdated: this.holidayData.lastUpdated,
+                supportedYears: this.holidayData.supportedYears,
+                totalHolidays: this.holidayData.totalHolidays,
+                holidays: this.holidayData.holidays.slice(0, 1),
+              },
+              null,
+              2
+            );
+          }
         }
 
         updateTranslations() {
@@ -851,9 +1001,16 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           // Update stat labels
           const statLabels = document.querySelectorAll(".stat-label");
           if (statLabels.length >= 4) {
+            const supportedYears = this.countriesData?.supportedYears || [];
+            const yearRange =
+              supportedYears.length > 0
+                ? ` (${supportedYears[0]}-${
+                    supportedYears[supportedYears.length - 1]
+                  })`
+                : "";
             statLabels[0].textContent = t.countries;
             statLabels[1].textContent = t.totalHolidays;
-            statLabels[2].textContent = t.years;
+            statLabels[2].textContent = `${t.years}${yearRange}`;
             statLabels[3].textContent = t.cost;
           }
 
@@ -901,7 +1058,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           }
 
           // Update holiday info header
-          const holidayInfoHeader = document.querySelector("#holiday-info h4");
+          const holidayInfoHeader = document.querySelector("#holiday-info h3");
           if (holidayInfoHeader) {
             holidayInfoHeader.textContent = `🎉 ${t.holidayInformation}`;
           }
@@ -950,7 +1107,9 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
           const prevBtn = document.createElement("button");
           prevBtn.className = "month-nav-btn";
-          prevBtn.textContent = "‹ Previous";
+          prevBtn.innerHTML =
+            '<span aria-hidden="true">‹</span><span class="month-nav-label"> Previous</span>';
+          prevBtn.setAttribute("aria-label", "Previous month");
           prevBtn.addEventListener("click", () => {
             this.currentMonth--;
             if (this.currentMonth < 0) {
@@ -968,7 +1127,9 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
           const nextBtn = document.createElement("button");
           nextBtn.className = "month-nav-btn";
-          nextBtn.textContent = "Next ›";
+          nextBtn.innerHTML =
+            '<span class="month-nav-label">Next </span><span aria-hidden="true">›</span>';
+          nextBtn.setAttribute("aria-label", "Next month");
           nextBtn.addEventListener("click", () => {
             this.currentMonth++;
             if (this.currentMonth > 11) {

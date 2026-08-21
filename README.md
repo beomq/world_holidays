@@ -1,241 +1,205 @@
-# 🌍 World Holidays
+# World Holidays
 
-A comprehensive Flutter package providing holiday information for multiple countries (2024-2026). Get holidays for South Korea, United States, Japan, China, Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan with automatic online updates and offline fallback support.
+Generated holiday data for Flutter applications, with bundled offline lookup and
+optional hosted updates.
 
 [![pub package](https://img.shields.io/pub/v/world_holidays.svg)](https://pub.dev/packages/world_holidays)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## ✨ Features
+[Live calendar and hosted API](https://beomq.github.io/world_holidays/) ·
+[API metadata](https://beomq.github.io/world_holidays/api/countries.json) ·
+[Issue tracker](https://github.com/beomq/world_holidays/issues)
 
-- 🆓 **Completely Free** - No API keys or costs required
-- 🌐 **Always Up-to-Date** - Automatically fetches latest holiday data online
-- 📱 **Offline Fallback** - Works without internet connection using local data
-- 🔄 **Smart Caching** - Efficient data storage and retrieval
-- 🏳️ **Multi-Country** - Support for 10 countries with 508 total holidays
-- 🌐 **Multilingual** - English and Korean descriptions for all holidays
-- 📅 **3-Year Coverage** - Holiday data for 2024, 2025, and 2026
-- ⚡ **Fast & Lightweight** - Minimal dependencies and optimized performance
+## Coverage
 
-## 🏳️ Supported Countries
+Version 2.1.0 contains 841 records for 2024-2028.
 
-| Country       | Code | Holidays    | Flag |
-| ------------- | ---- | ----------- | ---- |
-| South Korea   | `KR` | 41 holidays | 🇰🇷   |
-| United States | `US` | 32 holidays | 🇺🇸   |
-| Japan         | `JP` | 57 holidays | 🇯🇵   |
-| China         | `CN` | 72 holidays | 🇨🇳   |
-| Vietnam       | `VN` | 44 holidays | 🇻🇳   |
-| Malaysia      | `MY` | 44 holidays | 🇲🇾   |
-| Thailand      | `TH` | 61 holidays | 🇹🇭   |
-| Canada        | `CA` | 33 holidays | 🇨🇦   |
-| Brazil        | `BR` | 51 holidays | 🇧🇷   |
-| Taiwan        | `TW` | 57 holidays | 🇹🇼   |
+| Country | Code | Records |
+| --- | --- | ---: |
+| South Korea | `KR` | 98 |
+| United States | `US` | 62 |
+| Japan | `JP` | 90 |
+| China | `CN` | 120 |
+| Vietnam | `VN` | 73 |
+| Malaysia | `MY` | 73 |
+| Thailand | `TH` | 111 |
+| Canada | `CA` | 45 |
+| Brazil | `BR` | 71 |
+| Taiwan | `TW` | 98 |
 
-## 📦 Installation
+Future dates can change after government announcements. Treat generated future
+records as planning data and apply reviewed overrides for temporary or substitute
+holidays.
 
-Add this to your package's `pubspec.yaml` file:
+## Hosted API
+
+The same generated records are published through GitHub Pages:
+
+```text
+https://beomq.github.io/world_holidays/api/countries.json
+https://beomq.github.io/world_holidays/api/holidays/kr.json
+```
+
+Country metadata includes the canonical `dataUrl` for every supported payload.
+The [live calendar](https://beomq.github.io/world_holidays/) consumes these
+files directly.
+
+## Installation
 
 ```yaml
 dependencies:
-  world_holidays: ^2.0.0
+  world_holidays: ^2.1.0
 ```
-
-Then run:
-
-```bash
-flutter pub get
-```
-
-## 🚀 Quick Start
 
 ```dart
 import 'package:world_holidays/world_holidays.dart';
-
-void main() async {
-  final worldHolidays = WorldHolidays();
-
-  // Get holidays for South Korea (fetches latest data online)
-  final holidays = await worldHolidays.getHolidays('KR');
-  print('Found ${holidays.length} holidays');
-
-  // Check if today is a holiday
-  final isToday = worldHolidays.isTodayHoliday('KR');
-  print('Is today a holiday? $isToday');
-
-  // Get next upcoming holiday
-  final nextHoliday = worldHolidays.getNextHoliday('KR');
-  if (nextHoliday != null) {
-    print('Next holiday: ${nextHoliday.name} on ${nextHoliday.dateString}');
-  }
-}
 ```
 
-## 📖 Detailed Usage
-
-### Getting Holidays
+## Basic lookup
 
 ```dart
 final worldHolidays = WorldHolidays();
 
-// Get all holidays for a country (automatically fetches latest data online)
-final allHolidays = await worldHolidays.getHolidays('KR');
+// Fresh seven-day cache first, then bundled generated data.
+final koreanHolidays = await worldHolidays.getHolidays('KR', year: 2027);
 
-// Get holidays for a specific year (online data with offline fallback)
-final holidays2025 = await worldHolidays.getHolidays('KR', year: 2025);
-
-// Get holidays for different countries
-final usHolidays = await worldHolidays.getHolidays('US');
-final jpHolidays = await worldHolidays.getHolidays('JP');
-final cnHolidays = await worldHolidays.getHolidays('CN');
-final thHolidays = await worldHolidays.getHolidays('TH');
-final brHolidays = await worldHolidays.getHolidays('BR');
+final newYear = worldHolidays.isHoliday('KR', DateTime(2027, 1, 1));
+final nextBundled = worldHolidays.getNextHoliday('JP');
 ```
 
-### Manual Data Updates (Optional)
+`getHolidays()` does not make a network request automatically. Networking is
+always explicit through an update method.
 
-The library automatically fetches the latest data online. Use these methods only if you need to force updates:
+## Explicit hosted updates
+
+Use structured outcomes when the caller needs to distinguish remote success
+from bundled fallback.
 
 ```dart
-// Force update specific country (downloads 3-year data)
-await worldHolidays.updateHolidays(countryCode: 'KR');
+final outcome = await worldHolidays.updateCountryHolidays('KR');
 
-// Force update all supported countries
-await worldHolidays.updateHolidays();
+if (outcome.succeeded) {
+  print('Downloaded ${outcome.holidays.length} records');
+} else {
+  print('Using ${outcome.source}: ${outcome.error}');
+}
+
+final bulk = await worldHolidays.updateAllHolidays();
+print('Updated: ${bulk.successfulCountries}');
+print('Fallback: ${bulk.failedCountries}');
 ```
 
-### 📡 Online vs Offline Usage
+A bulk update attempts every supported country. One failed country no longer
+aborts later updates. `updateHolidays()` remains as a compatibility adapter that
+returns only the flattened holiday list.
 
-**Default Behavior (Online-First):**
+## Cache-aware queries
+
+The original synchronous query methods remain deterministic and use bundled
+data. Use their asynchronous counterparts after an online update.
 
 ```dart
-// Automatically fetches latest data from GitHub Pages API
-final holidays = await worldHolidays.getHolidays('KR');
+await worldHolidays.updateCountryHolidays('US');
+
+final isHoliday = await worldHolidays.isHolidayAsync(
+  'US',
+  DateTime(2027, 7, 5),
+);
+final next = await worldHolidays.getNextHolidayAsync('US');
+final today = await worldHolidays.isTodayHolidayAsync('US');
 ```
 
-**Offline-Only Usage:**
-If you want to use only local data without internet requests, disable automatic updates:
+Inclusive date ranges are also cache-aware:
 
 ```dart
-// For offline-only applications, use local fallback data
-// Note: This requires manual cache management
-await worldHolidays.clearCache(); // Clear any cached online data
-final offlineHolidays = await worldHolidays.getHolidays('KR');
-// Will use local hardcoded data when no internet/cache available
-```
-
-**Best Practice:** Let the library handle online/offline automatically - it will use online data when available and fall back to local data when offline.
-
-### Checking Holidays
-
-```dart
-// Check if a specific date is a holiday
-final isHoliday = worldHolidays.isHoliday('KR', DateTime(2024, 1, 1));
-
-// Check if today is a holiday
-final isTodayHoliday = worldHolidays.isTodayHoliday('US');
-
-// Get the next upcoming holiday
-final nextHoliday = worldHolidays.getNextHoliday('JP');
-
-// Get holidays in a date range
-final rangeHolidays = worldHolidays.getHolidaysInRange(
+final holidays = await worldHolidays.getHolidaysInRange(
   'KR',
-  DateTime(2024, 1, 1),
-  DateTime(2024, 12, 31),
+  DateTime(2027, 1, 1),
+  DateTime(2027, 12, 31),
 );
 ```
 
-### Multilingual Support
+Passing an end date before the start date throws `ArgumentError`.
 
-All holidays now include multilingual descriptions in English and Korean:
+## Holiday model
 
-```dart
-final holidays = await worldHolidays.getHolidays('KR');
-final holiday = holidays.first;
-
-// Get description in specific language
-print(holiday.getDescription('en')); // "New Year's Day"
-print(holiday.getDescription('ko')); // "신정"
-
-// Convenience getters
-print(holiday.descriptionEn); // "New Year's Day"
-print(holiday.descriptionKo); // "신정"
-
-// Access raw description object
-print(holiday.description); // {"en": "New Year's Day", "ko": "신정"}
-```
-
-### Utility Methods
+Descriptions use an English/Korean map:
 
 ```dart
-// Get supported countries
-final countries = worldHolidays.getSupportedCountries();
-print(countries); // ['BR', 'CA', 'CN', 'JP', 'KR', 'MY', 'TH', 'TW', 'US', 'VN']
-
-// Get supported years
-final years = worldHolidays.getSupportedYears();
-print(years); // [2024, 2025, 2026]
-
-// Clear cached data
-await worldHolidays.clearCache();
+final holiday = koreanHolidays.first;
+print(holiday.descriptionEn);
+print(holiday.descriptionKo);
+print(holiday.getDescription('ko'));
 ```
 
-## 📱 Example App
+Legacy JSON string descriptions still decode as English. Unknown holiday type
+wire values throw `FormatException` instead of silently becoming national
+holidays. Returned lists and descriptions decoded by the package are immutable.
 
-Check out the [example app](example/) for a complete Flutter application demonstrating all features.
+## Cache behavior
 
-## 🔧 Holiday Types
+- SharedPreferences key: `world_holidays_<lowercase-country-code>`
+- Expiry: seven days
+- Cached payload: complete country response; year/range filtering happens when read
+- Expired, malformed, or invalid-type cache entries fall back to bundled data
+- `clearCache()` removes all package cache entries
 
-The package categorizes holidays into different types:
+## Data generation
 
-- **NATIONAL** - Official national public holidays
-- **RELIGIOUS** - Religious observances and holidays
-- **REGIONAL** - Regional or state-specific holidays
-- **OBSERVANCE** - Cultural observances and commemorative days
+The project does not scrape or republish a third-party holiday portal. It runs
+the MIT-licensed [python-holidays](https://github.com/vacanza/holidays/) library
+locally and combines calculated years with reviewed project data.
 
-## 🌐 Data Source
+- `api/holidays/*.json`: hosted payloads and reviewed curated years
+- `data/overrides.json`: curated-year ownership, corrections, removals, upserts
+- `lib/src/generated/holiday_data.g.dart`: generated bundled lookup data
+- `api/countries.json`: generated counts and supported years
 
-Holiday data is sourced from:
+```bash
+# Generate previous year, current year, and the following two years.
+uv run --no-project tool/sync_holidays.py
 
-- **GitHub Pages API** - Real-time updates via `https://beomq.github.io/world_holidays/api/`
-- **Local Fallback** - Embedded data for offline usage (508 holidays across 10 countries)
-- **Official Sources** - Government and cultural organization websites
-- **Multilingual Support** - English and Korean descriptions for all holidays
+# Verify checked-in outputs without changing the repository.
+uv run --no-project tool/sync_holidays.py --check
 
-## 🔄 Update Strategy
+# Reproduce a specific horizon.
+uv run --no-project tool/sync_holidays.py --current-year 2026
+```
 
-- **API Updates** - Immediate for urgent holiday changes
-- **Library Updates** - Quarterly for new years and major changes
-- **Data Accuracy** - Verified against official government sources
+Existing curated historical years are retained. Non-curated years are rebuilt
+from the installed `python-holidays` version on every synchronization.
 
-## 🤝 Contributing
+Recommended operation:
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+- Monthly synchronization throughout the year
+- Weekly synchronization from September through December
+- Manual workflow dispatch after temporary-holiday announcements
+- Review every generated pull request before publishing
 
-### Adding New Countries
+## Development
 
-1. Research official holidays from government sources
-2. Create JSON data file with 3-year coverage
-3. Add local fallback data to the library
-4. Update tests and documentation
-5. Submit PR with detailed information
+```bash
+fvm flutter pub get
+fvm dart format --output=none --set-exit-if-changed \
+  lib/world_holidays.dart lib/src/models lib/src/world_holidays.dart test example
+fvm flutter analyze --no-pub
+fvm flutter test --no-pub
+uv run --no-project tool/sync_holidays.py --check
+fvm flutter pub publish --dry-run
+```
 
-## 📄 License
+## Migrating from 2.0.x
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- `Holiday.description` is `Map<String, String>?`; use `descriptionEn`,
+  `descriptionKo`, or `getDescription(language)`.
+- Invalid holiday type strings now throw `FormatException`.
+- `getHolidays()` remains cache-first and does not automatically access the network.
+- Use `updateCountryHolidays()` or `updateAllHolidays()` for source and failure details.
+- Use asynchronous query methods when cached remote updates must be visible.
+- Do not mutate returned lists or package-decoded description maps.
 
-## 🙏 Acknowledgments
+## License
 
-- Holiday data sourced from official government websites
-- Built with ❤️ for the Flutter community
-- Inspired by the need for accurate, free holiday data
-
-## 📞 Support
-
-- 📧 Issues: [GitHub Issues](https://github.com/beomq/world_holidays/issues)
-- 📖 Documentation: [GitHub Pages](https://beomq.github.io/world_holidays/)
-- 💬 Discussions: [GitHub Discussions](https://github.com/beomq/world_holidays/discussions)
-
----
-
-Made with 🌍 by [beomq](https://github.com/beomq)
+This package is released under the MIT License. Generated baseline dates use the
+MIT-licensed `python-holidays` project; reviewed corrections remain in this
+repository.
