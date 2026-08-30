@@ -1149,21 +1149,21 @@
       </div>
 
       <div class="card">
-        <h2>🚀 API Endpoints</h2>
+        <h2 data-section="apiEndpoints">API Endpoints</h2>
         <div class="endpoints">
           <!-- Endpoints will be loaded dynamically from countries.json -->
         </div>
       </div>
 
       <div class="card">
-        <h2>🏳️ Supported Countries</h2>
+        <h2 data-section="supportedCountries">Supported Countries</h2>
         <div class="countries-grid">
           <!-- Countries will be loaded dynamically from countries.json -->
         </div>
       </div>
 
       <div class="card">
-        <h2>📅 Interactive Holiday Calendar</h2>
+        <h2 data-section="interactiveCalendar">Interactive Holiday Calendar</h2>
 
         <div class="calendar-controls" style="margin-bottom: 1.5rem">
           <label
@@ -1175,7 +1175,7 @@
               color: #4c51bf;
             "
           >
-            🌍 Select Country:
+            Select Country:
           </label>
           <select
             id="country-select"
@@ -1250,7 +1250,7 @@
             id="calendar-loading"
             style="text-align: center; padding: 2rem; color: #667eea"
           >
-            📅 Loading calendar...
+            Loading calendar...
           </div>
         </div>
 
@@ -1265,17 +1265,17 @@
           "
         >
           <h3 style="color: #667eea; margin-bottom: 0.5rem">
-            🎉 Holiday Information
+            Holiday Information
           </h3>
           <div id="holiday-details"></div>
         </div>
       </div>
 
       <div class="card">
-        <h2>💻 Usage Examples</h2>
+        <h2 data-section="usageExamples">Usage Examples</h2>
 
         <div class="example">
-          <h3>📱 Flutter/Dart</h3>
+          <h3>Flutter/Dart</h3>
           <pre><code>import 'package:world_holidays/world_holidays.dart';
 
 final worldHolidays = WorldHolidays();
@@ -1284,7 +1284,7 @@ print('Found ${holidays.length} Korean holidays');</code></pre>
         </div>
 
         <div class="example">
-          <h3>🌐 JavaScript/Web</h3>
+          <h3>JavaScript/Web</h3>
           <pre><code>fetch('https://beomq.github.io/world_holidays/api/holidays/kr.json')
   .then(response => response.json())
   .then(data => {
@@ -1293,7 +1293,7 @@ print('Found ${holidays.length} Korean holidays');</code></pre>
         </div>
 
         <div class="example">
-          <h3>🐍 Python</h3>
+          <h3>Python</h3>
           <pre><code>import requests
 
 url = 'https://beomq.github.io/world_holidays/api/holidays/kr.json'
@@ -1303,15 +1303,15 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         </div>
 
         <div class="example">
-          <h3>📦 cURL</h3>
+          <h3>cURL</h3>
           <pre><code>curl -X GET "https://beomq.github.io/world_holidays/api/countries.json"</code></pre>
         </div>
       </div>
 
       <div class="card">
-        <h2>📊 Data Structure</h2>
+        <h2 data-section="dataStructure">Data Structure</h2>
         <div class="example">
-          <h3>🏛️ Countries Response</h3>
+          <h3>Countries Response</h3>
           <pre><code id="countries-response-example">{
   "lastUpdated": "2026-08-21T00:00:00.000Z",
   "totalCountries": 10,
@@ -1335,7 +1335,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
         </div>
 
         <div class="example">
-          <h3>🎉 Holiday Response</h3>
+          <h3>Holiday Response</h3>
           <pre><code id="holiday-response-example">{
   "country": "KR",
   "countryName": "South Korea",
@@ -1358,22 +1358,19 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
       </div>
 
       <div class="card">
-        <h2>🔗 Links</h2>
+        <h2 data-section="links">Links</h2>
         <ul style="list-style: none; padding: 0">
           <li style="margin: 0.5rem 0">
-            📦
             <a href="https://pub.dev/packages/world_holidays" target="_blank"
               >pub.dev Package</a
             >
           </li>
           <li style="margin: 0.5rem 0">
-            💻
             <a href="https://github.com/beomq/world_holidays" target="_blank"
               >GitHub Repository</a
             >
           </li>
           <li style="margin: 0.5rem 0">
-            📖
             <a
               href="https://github.com/beomq/world_holidays/blob/main/README.md"
               target="_blank"
@@ -1381,7 +1378,6 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             >
           </li>
           <li style="margin: 0.5rem 0">
-            🐛
             <a
               href="https://github.com/beomq/world_holidays/issues"
               target="_blank"
@@ -1393,7 +1389,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
       <div class="footer">
         <p>
-          Made with 🌍 by
+          Made by
           <a href="https://github.com/beomq" target="_blank">beomq</a>
         </p>
         <p>Free & Open Source • MIT License</p>
@@ -1643,7 +1639,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             window.location.href
           ).href;
           countriesEndpoint.innerHTML = `
-            <h3>📋 ${t.getCountries}</h3>
+            <h3>${t.getCountries}</h3>
             <p>${t.getCountriesDesc}</p>
             <code>GET ${countriesUrl}</code>
           `;
@@ -1724,7 +1720,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             "language-select-label"
           );
           if (languageSelectLabel) {
-            languageSelectLabel.textContent = `🌐 ${t.language}`;
+            languageSelectLabel.textContent = t.language;
           }
 
           // Update header description
@@ -1750,20 +1746,9 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           }
 
           // Update section headers
-          const sectionHeaders = document.querySelectorAll(".card h2");
-          sectionHeaders.forEach((header, index) => {
-            const text = header.textContent;
-            if (text.includes("🚀"))
-              header.textContent = `🚀 ${t.apiEndpoints}`;
-            else if (text.includes("🏳️"))
-              header.textContent = `🏳️ ${t.supportedCountries}`;
-            else if (text.includes("📅"))
-              header.textContent = `📅 ${t.interactiveCalendar}`;
-            else if (text.includes("💻"))
-              header.textContent = `💻 ${t.usageExamples}`;
-            else if (text.includes("📊"))
-              header.textContent = `📊 ${t.dataStructure}`;
-            else if (text.includes("🔗")) header.textContent = `🔗 ${t.links}`;
+          const sectionHeaders = document.querySelectorAll("[data-section]");
+          sectionHeaders.forEach((header) => {
+            header.textContent = t[header.dataset.section];
           });
 
           // Update country select label
@@ -1771,7 +1756,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             'label[for="country-select"]'
           );
           if (countrySelectLabel) {
-            countrySelectLabel.textContent = `🌍 ${t.selectCountry}`;
+            countrySelectLabel.textContent = t.selectCountry;
           }
 
           // Update calendar stats labels
@@ -1795,7 +1780,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
           // Update holiday info header
           const holidayInfoHeader = document.querySelector("#holiday-info h3");
           if (holidayInfoHeader) {
-            holidayInfoHeader.textContent = `🎉 ${t.holidayInformation}`;
+            holidayInfoHeader.textContent = t.holidayInformation;
           }
 
           // Update footer
@@ -2059,9 +2044,9 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
           detailsDiv.innerHTML = `
             <strong>${holidayLabel}</strong><br>
-            📅 ${t.date}: ${holiday.date}<br>
-            🏷️ ${t.type}: ${holidayType}<br>
-            📝 ${t.description}: ${description}
+            ${t.date}: ${holiday.date}<br>
+            ${t.type}: ${holidayType}<br>
+            ${t.description}: ${description}
           `;
 
           infoDiv.style.display = "block";
