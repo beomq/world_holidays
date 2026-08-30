@@ -385,47 +385,748 @@
         }
       }
     </style>
+    <style>
+      :root {
+        --ink: #e9f1ff;
+        --muted: #8ea1bd;
+        --surface: rgba(10, 18, 32, 0.78);
+        --surface-solid: #0b1424;
+        --line: rgba(143, 177, 218, 0.17);
+        --cyan: #52e5ff;
+        --blue: #4b7dff;
+        --lime: #b5f759;
+        --coral: #ff7b72;
+        --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: var(--ink);
+        background:
+          radial-gradient(circle at var(--pointer-x, 72%) var(--pointer-y, 12%), rgba(75, 125, 255, 0.2), transparent 28rem),
+          linear-gradient(180deg, #050a12 0%, #08111e 42%, #050a12 100%);
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        background-image:
+          linear-gradient(rgba(84, 112, 150, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(84, 112, 150, 0.08) 1px, transparent 1px);
+        background-size: 46px 46px;
+        mask-image: linear-gradient(to bottom, black, transparent 82%);
+        content: "";
+      }
+
+      body::after {
+        position: fixed;
+        top: -12rem;
+        right: -10rem;
+        z-index: -3;
+        width: 44rem;
+        height: 44rem;
+        border: 1px solid rgba(82, 229, 255, 0.14);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 8rem rgba(75, 125, 255, 0.025),
+          0 0 0 16rem rgba(82, 229, 255, 0.018);
+        content: "";
+        animation: orbit 24s linear infinite;
+      }
+
+      a {
+        color: var(--cyan);
+      }
+
+      .container {
+        width: min(calc(100% - 2rem), 1180px);
+        max-width: none;
+        padding: 1.5rem 0 3rem;
+      }
+
+      .header {
+        position: relative;
+        min-height: 74vh;
+        margin-bottom: 1.5rem;
+        padding: 0 0 3rem;
+        color: var(--ink);
+        text-align: left;
+        display: grid;
+        align-content: center;
+      }
+
+      .topbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.65rem 0 1rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        color: var(--ink);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .brand-mark {
+        position: relative;
+        width: 1.7rem;
+        height: 1.7rem;
+        border: 1px solid var(--cyan);
+        border-radius: 50%;
+        box-shadow: inset 0 0 14px rgba(82, 229, 255, 0.35);
+      }
+
+      .brand-mark::before,
+      .brand-mark::after {
+        position: absolute;
+        inset: 50% auto auto 50%;
+        background: var(--cyan);
+        content: "";
+        transform: translate(-50%, -50%);
+      }
+
+      .brand-mark::before {
+        width: 70%;
+        height: 1px;
+      }
+
+      .brand-mark::after {
+        width: 1px;
+        height: 70%;
+      }
+
+      .language-control {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      #language-select-label {
+        color: var(--muted) !important;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      select,
+      #language-select,
+      #country-select {
+        min-height: 2.65rem;
+        border: 1px solid var(--line) !important;
+        border-radius: 0.45rem !important;
+        color: var(--ink);
+        background: #101c2f !important;
+        font: inherit;
+        outline: none;
+      }
+
+      select:focus-visible,
+      button:focus-visible,
+      a:focus-visible,
+      .calendar-day:focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 3px;
+      }
+
+      .hero-content {
+        max-width: 920px;
+        padding-top: 5rem;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        margin-bottom: 1.4rem;
+        color: var(--lime);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 1.6rem;
+        height: 1px;
+        background: currentColor;
+        content: "";
+      }
+
+      .header h1 {
+        max-width: 850px;
+        margin-bottom: 1.5rem;
+        font-size: clamp(3.4rem, 9vw, 7.7rem);
+        font-weight: 760;
+        line-height: 0.86;
+        letter-spacing: -0.075em;
+        text-shadow: none;
+      }
+
+      .header h1 span {
+        display: block;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(233, 241, 255, 0.46);
+      }
+
+      .header p {
+        max-width: 680px;
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.75;
+        word-break: normal;
+        overflow-wrap: anywhere;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 2rem;
+      }
+
+      .meta-chip {
+        padding: 0.48rem 0.7rem;
+        border: 1px solid var(--line);
+        color: #b7c6da;
+        background: rgba(8, 17, 30, 0.66);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.05em;
+      }
+
+      .meta-chip:first-child::before {
+        display: inline-block;
+        width: 0.42rem;
+        height: 0.42rem;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        background: var(--lime);
+        box-shadow: 0 0 12px var(--lime);
+        content: "";
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        margin: 0 0 1.5rem;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .stat {
+        position: relative;
+        min-width: 0;
+        padding: 1.5rem;
+        overflow: hidden;
+        border-radius: 0;
+        background: rgba(8, 17, 30, 0.94);
+        box-shadow: none;
+        text-align: left;
+      }
+
+      .stat::after {
+        position: absolute;
+        right: -1rem;
+        bottom: -2.8rem;
+        color: rgba(82, 229, 255, 0.04);
+        font-size: 6rem;
+        font-weight: 800;
+        content: "0" counter(stat);
+        counter-increment: stat;
+      }
+
+      .stats {
+        counter-reset: stat;
+      }
+
+      .stat-number {
+        color: var(--ink);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: clamp(1.8rem, 4vw, 2.7rem);
+        font-weight: 500;
+        letter-spacing: -0.06em;
+      }
+
+      .stat-label {
+        margin-top: 0.35rem;
+        color: var(--muted);
+        font-size: 0.73rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .card {
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 0.2rem;
+        color: var(--ink);
+        background:
+          linear-gradient(135deg, rgba(14, 25, 43, 0.95), rgba(7, 14, 25, 0.94));
+        box-shadow: var(--shadow);
+        transition:
+          border-color 250ms ease,
+          transform 250ms ease;
+      }
+
+      .card::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3.5rem;
+        height: 1px;
+        background: var(--cyan);
+        box-shadow: 0 0 14px var(--cyan);
+        content: "";
+      }
+
+      .card:hover {
+        border-color: rgba(82, 229, 255, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .card h2 {
+        margin-bottom: 1.7rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--line);
+        color: var(--ink);
+        font-size: clamp(1.25rem, 3vw, 1.7rem);
+        letter-spacing: -0.03em;
+      }
+
+      .endpoints {
+        min-height: 0 !important;
+        grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
+        gap: 0.8rem;
+      }
+
+      .endpoint {
+        position: relative;
+        padding: 1.25rem;
+        border: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+        border-radius: 0.25rem;
+        background: rgba(4, 10, 18, 0.56);
+        transition:
+          background 180ms ease,
+          border-color 180ms ease,
+          transform 180ms ease;
+      }
+
+      .endpoint:hover {
+        border-color: rgba(82, 229, 255, 0.38);
+        background: rgba(10, 25, 40, 0.9);
+        transform: translateX(4px);
+      }
+
+      .endpoint h3,
+      .example h3 {
+        color: var(--cyan);
+        font-size: 0.95rem;
+      }
+
+      .endpoint p {
+        min-height: 3rem;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .endpoint code {
+        padding: 0.8rem;
+        border: 1px solid rgba(181, 247, 89, 0.15);
+        border-radius: 0.2rem;
+        color: var(--lime);
+        background: #050b13;
+        font-size: 0.72rem;
+      }
+
+      .countries-grid {
+        min-height: 0 !important;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .country-card {
+        position: relative;
+        padding: 1.35rem;
+        overflow: hidden;
+        border-radius: 0;
+        background: #0a1423;
+        text-align: left;
+        transition:
+          background 200ms ease,
+          transform 200ms ease;
+      }
+
+      .country-card::after {
+        position: absolute;
+        right: -1.2rem;
+        bottom: -2rem;
+        color: rgba(233, 241, 255, 0.035);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 5rem;
+        font-weight: 800;
+        content: attr(data-code);
+      }
+
+      .country-card:hover {
+        z-index: 1;
+        background: #10213a;
+        transform: none;
+      }
+
+      .country-card .flag {
+        font-size: 2rem;
+        filter: saturate(0.78);
+      }
+
+      .country-card h3 {
+        font-size: 1rem;
+      }
+
+      .country-card p {
+        position: relative;
+        z-index: 1;
+        color: var(--muted);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.68rem;
+      }
+
+      .example {
+        border: 1px solid var(--line);
+        border-radius: 0.25rem;
+        background: rgba(4, 10, 18, 0.56);
+      }
+
+      .example pre {
+        border: 1px solid rgba(82, 229, 255, 0.1);
+        border-radius: 0.2rem;
+        color: #c6d5e9;
+        background: #030810;
+        font-size: 0.8rem;
+        line-height: 1.7;
+      }
+
+      .month-navigation {
+        padding: 0.8rem;
+        border: 1px solid var(--line);
+        background: rgba(4, 10, 18, 0.56);
+      }
+
+      .month-nav-btn {
+        border: 1px solid var(--line);
+        border-radius: 0.2rem;
+        color: var(--ink);
+        background: #101c2f;
+      }
+
+      .month-nav-btn:hover {
+        border-color: var(--cyan);
+        background: #162945;
+      }
+
+      .current-month {
+        color: var(--ink);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        letter-spacing: -0.03em;
+      }
+
+      .calendar {
+        min-width: 620px;
+        border: 1px solid var(--line);
+        border-radius: 0.2rem;
+        background: var(--line);
+      }
+
+      #calendar-container {
+        min-height: 0 !important;
+        overflow-x: auto;
+      }
+
+      .calendar-day-header {
+        padding: 0.7rem;
+        color: var(--muted);
+        background: #0b1728;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .calendar-day {
+        min-height: 76px;
+        align-items: flex-start;
+        border: 0;
+        color: #bfcee2;
+        background: #091321;
+      }
+
+      .calendar-day:hover {
+        background: #10213a;
+      }
+
+      .calendar-day.other-month {
+        color: #45556b;
+        background: #070e19;
+      }
+
+      .calendar-day.holiday {
+        color: #061018;
+        background:
+          linear-gradient(135deg, rgba(181, 247, 89, 0.96), rgba(82, 229, 255, 0.9));
+      }
+
+      .calendar-day.holiday:hover {
+        background:
+          linear-gradient(135deg, #c9ff7e, #7decff);
+      }
+
+      .calendar-day.today {
+        border: 1px solid var(--cyan);
+        box-shadow: inset 0 0 18px rgba(82, 229, 255, 0.1);
+      }
+
+      .holiday-indicator {
+        max-width: 100%;
+        margin-top: auto;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.63rem;
+      }
+
+      #holiday-info {
+        border: 1px solid rgba(181, 247, 89, 0.28);
+        border-radius: 0.2rem !important;
+        color: var(--ink);
+        background: rgba(181, 247, 89, 0.06) !important;
+      }
+
+      #holiday-info h3 {
+        color: var(--lime) !important;
+      }
+
+      .calendar-controls {
+        margin-bottom: 1.5rem !important;
+      }
+
+      .calendar-controls label {
+        color: var(--cyan) !important;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.76rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .calendar-stats {
+        margin-bottom: 1.5rem !important;
+        border: 1px solid var(--line);
+        border-radius: 0.2rem !important;
+        background:
+          linear-gradient(90deg, rgba(75, 125, 255, 0.14), rgba(82, 229, 255, 0.04)) !important;
+        text-align: left !important;
+      }
+
+      .calendar-stats > div > div {
+        flex: 1;
+        min-width: 150px;
+        text-align: left;
+      }
+
+      .calendar-stats [id] {
+        color: var(--lime);
+        font-family: "SFMono-Regular", Consolas, monospace;
+      }
+
+      .card > ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.7rem;
+      }
+
+      .card > ul li {
+        margin: 0 !important;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        background: rgba(4, 10, 18, 0.56);
+      }
+
+      .card > ul a {
+        text-decoration: none;
+      }
+
+      .footer {
+        padding: 2rem 0 1rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.75rem;
+      }
+
+      .footer a {
+        color: var(--cyan);
+        text-decoration: none;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+        transition:
+          opacity 600ms ease,
+          transform 600ms cubic-bezier(0.2, 0.75, 0.25, 1);
+      }
+
+      @keyframes orbit {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media (max-width: 720px) {
+        .container {
+          width: calc(100% - 1.2rem);
+          padding-top: 0.75rem;
+        }
+
+        .header {
+          min-height: 650px;
+        }
+
+        .brand {
+          font-size: 0.66rem;
+        }
+
+        .language-control {
+          gap: 0;
+        }
+
+        #language-select {
+          width: 6.8rem;
+          min-height: 2.35rem;
+          font-size: 0.82rem;
+        }
+
+        #language-select-label {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+        }
+
+        .header h1 {
+          font-size: clamp(3.3rem, 17vw, 5rem);
+        }
+
+        .hero-meta {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, max-content));
+        }
+
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .stat {
+          padding: 1.1rem;
+        }
+
+        .card {
+          padding: 1.1rem;
+        }
+
+        .card > ul {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <main class="container">
       <div class="header">
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-          "
-        >
-          <div></div>
-          <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="topbar">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            WH / DATA SYSTEM
+          </div>
+          <div class="language-control">
             <label
               id="language-select-label"
               for="language-select"
-              style="color: white; font-weight: bold"
             >
-              🌐 Language:
+              Language:
             </label>
             <select
               id="language-select"
-              style="
-                padding: 0.5rem;
-                border-radius: 5px;
-                border: 1px solid #ddd;
-                font-size: 1rem;
-                background: white;
-              "
             >
               <option value="en">English</option>
               <option value="ko">한국어</option>
             </select>
           </div>
         </div>
-        <h1>🌍 World Holidays API</h1>
-        <p id="header-description">
-          Free holiday data for South Korea, United States, Japan, China,
-          Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan
-        </p>
+        <div class="hero-content">
+          <div class="eyebrow">Open holiday intelligence</div>
+          <h1>WORLD <span>HOLIDAYS</span></h1>
+          <p id="header-description">
+            Free holiday data for South Korea, United States, Japan, China,
+            Vietnam, Malaysia, Thailand, Canada, Brazil, and Taiwan
+          </p>
+          <div class="hero-meta" aria-label="API status">
+            <span class="meta-chip">API ONLINE</span>
+            <span class="meta-chip">JSON / REST</span>
+            <span class="meta-chip">2024—2028</span>
+            <span class="meta-chip">MIT LICENSE</span>
+          </div>
+        </div>
       </div>
 
       <div class="stats">
@@ -464,7 +1165,7 @@
       <div class="card">
         <h2>📅 Interactive Holiday Calendar</h2>
 
-        <div style="margin-bottom: 1.5rem">
+        <div class="calendar-controls" style="margin-bottom: 1.5rem">
           <label
             for="country-select"
             style="
@@ -491,6 +1192,7 @@
         </div>
 
         <div
+          class="calendar-stats"
           style="
             margin-bottom: 1.5rem;
             padding: 1rem;
@@ -885,6 +1587,7 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
             this.countriesData.countries.forEach((country) => {
               const countryCard = document.createElement("div");
               countryCard.className = "country-card";
+              countryCard.dataset.code = country.code;
               const countryName =
                 country.names && country.names[this.currentLanguage]
                   ? country.names[this.currentLanguage]
@@ -1284,9 +1987,15 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
           if (holiday && !isOtherMonth) {
             dayElement.classList.add("holiday");
+            dayElement.tabIndex = 0;
+            dayElement.setAttribute("role", "button");
             const holidayIndicator = document.createElement("div");
             holidayIndicator.className = "holiday-indicator";
             const holidayLabel = this.getHolidayLabel(holiday);
+            dayElement.setAttribute(
+              "aria-label",
+              `${holiday.date}: ${holidayLabel}`
+            );
             holidayIndicator.textContent =
               holidayLabel.length > 10
                 ? holidayLabel.substring(0, 8) + "..."
@@ -1296,6 +2005,12 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
 
             dayElement.addEventListener("click", () => {
               this.showHolidayInfo(holiday);
+            });
+            dayElement.addEventListener("keydown", (event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                this.showHolidayInfo(holiday);
+              }
             });
           } else {
             dayElement.appendChild(dayNumber);
@@ -1383,6 +2098,47 @@ print(f"Found {len(data['holidays'])} holidays")</code></pre>
       document.addEventListener("DOMContentLoaded", () => {
         const calendar = new HolidayCalendar();
         calendar.init();
+
+        const reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+        const revealTargets = document.querySelectorAll(".stats, .card");
+        if (reduceMotion || !("IntersectionObserver" in window)) {
+          revealTargets.forEach((element) =>
+            element.classList.add("is-visible")
+          );
+        } else {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.08 }
+          );
+          revealTargets.forEach((element) => {
+            element.classList.add("reveal");
+            observer.observe(element);
+          });
+
+          window.addEventListener(
+            "pointermove",
+            (event) => {
+              document.body.style.setProperty(
+                "--pointer-x",
+                `${(event.clientX / window.innerWidth) * 100}%`
+              );
+              document.body.style.setProperty(
+                "--pointer-y",
+                `${(event.clientY / window.innerHeight) * 100}%`
+              );
+            },
+            { passive: true }
+          );
+        }
       });
     </script>
   </body>
