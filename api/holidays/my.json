@@ -1,7 +1,7 @@
 {
   "country": "MY",
   "countryName": "Malaysia",
-  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "lastUpdated": "2026-09-21T00:00:00.000Z",
   "supportedYears": [
     2024,
     2025,
@@ -436,7 +436,7 @@
     },
     {
       "name": "Eid al-Fitr (estimated)",
-      "date": "2027-03-09",
+      "date": "2027-03-10",
       "type": "NATIONAL",
       "description": {
         "en": "Eid al-Fitr (estimated)",
@@ -445,7 +445,7 @@
     },
     {
       "name": "Eid al-Fitr (Second Day) (estimated)",
-      "date": "2027-03-10",
+      "date": "2027-03-11",
       "type": "NATIONAL",
       "description": {
         "en": "Eid al-Fitr (Second Day) (estimated)",
@@ -463,20 +463,11 @@
     },
     {
       "name": "Eid al-Adha (estimated)",
-      "date": "2027-05-16",
+      "date": "2027-05-17",
       "type": "NATIONAL",
       "description": {
         "en": "Eid al-Adha (estimated)",
         "ko": "Eid al-Adha (estimated)"
-      }
-    },
-    {
-      "name": "Eid al-Adha (observed, estimated)",
-      "date": "2027-05-17",
-      "type": "NATIONAL",
-      "description": {
-        "en": "Eid al-Adha (observed, estimated)",
-        "ko": "Eid al-Adha (observed, estimated)"
       }
     },
     {
@@ -508,11 +499,20 @@
     },
     {
       "name": "Prophet Muhammad's Birthday (estimated)",
-      "date": "2027-08-14",
+      "date": "2027-08-15",
       "type": "NATIONAL",
       "description": {
         "en": "Prophet Muhammad's Birthday (estimated)",
         "ko": "Prophet Muhammad's Birthday (estimated)"
+      }
+    },
+    {
+      "name": "Prophet Muhammad's Birthday (observed, estimated)",
+      "date": "2027-08-16",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Prophet Muhammad's Birthday (observed, estimated)",
+        "ko": "Prophet Muhammad's Birthday (observed, estimated)"
       }
     },
     {
@@ -562,7 +562,7 @@
     },
     {
       "name": "Eid al-Fitr (estimated)",
-      "date": "2028-02-26",
+      "date": "2028-02-27",
       "type": "NATIONAL",
       "description": {
         "en": "Eid al-Fitr (estimated)",
@@ -571,7 +571,7 @@
     },
     {
       "name": "Eid al-Fitr (Second Day) (estimated)",
-      "date": "2028-02-27",
+      "date": "2028-02-28",
       "type": "NATIONAL",
       "description": {
         "en": "Eid al-Fitr (Second Day) (estimated)",
@@ -579,12 +579,12 @@
       }
     },
     {
-      "name": "Eid al-Fitr (Second Day) (observed, estimated)",
-      "date": "2028-02-28",
+      "name": "Eid al-Fitr (observed, estimated)",
+      "date": "2028-02-29",
       "type": "NATIONAL",
       "description": {
-        "en": "Eid al-Fitr (Second Day) (observed, estimated)",
-        "ko": "Eid al-Fitr (Second Day) (observed, estimated)"
+        "en": "Eid al-Fitr (observed, estimated)",
+        "ko": "Eid al-Fitr (observed, estimated)"
       }
     },
     {
@@ -616,7 +616,7 @@
     },
     {
       "name": "Islamic New Year (estimated)",
-      "date": "2028-05-25",
+      "date": "2028-05-26",
       "type": "NATIONAL",
       "description": {
         "en": "Islamic New Year (estimated)",
@@ -634,7 +634,7 @@
     },
     {
       "name": "Prophet Muhammad's Birthday (estimated)",
-      "date": "2028-08-03",
+      "date": "2028-08-04",
       "type": "NATIONAL",
       "description": {
         "en": "Prophet Muhammad's Birthday (estimated)",
