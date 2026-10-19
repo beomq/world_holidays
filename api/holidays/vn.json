@@ -1,7 +1,7 @@
 {
   "country": "VN",
   "countryName": "Vietnam",
-  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "lastUpdated": "2026-10-19T00:00:00.000Z",
   "supportedYears": [
     2024,
     2025,
@@ -9,7 +9,7 @@
     2027,
     2028
   ],
-  "totalHolidays": 73,
+  "totalHolidays": 75,
   "holidays": [
     {
       "name": "International New Year's Day",
@@ -534,6 +534,15 @@
       }
     },
     {
+      "name": "Vietnam Cultural Day",
+      "date": "2027-11-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Vietnam Cultural Day",
+        "ko": "Vietnam Cultural Day"
+      }
+    },
+    {
       "name": "New Year's Day",
       "date": "2028-01-01",
       "type": "NATIONAL",
@@ -666,6 +675,15 @@
       "description": {
         "en": "National Day (observed)",
         "ko": "National Day (observed)"
+      }
+    },
+    {
+      "name": "Vietnam Cultural Day",
+      "date": "2028-11-24",
+      "type": "NATIONAL",
+      "description": {
+        "en": "Vietnam Cultural Day",
+        "ko": "Vietnam Cultural Day"
       }
     }
   ]

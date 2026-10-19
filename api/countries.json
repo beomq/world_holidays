@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T00:00:00.000Z",
+  "lastUpdated": "2026-10-19T00:00:00.000Z",
   "totalCountries": 10,
   "supportedCountries": [
     "KR",
@@ -20,7 +20,7 @@
     2027,
     2028
   ],
-  "totalHolidays": 842,
+  "totalHolidays": 844,
   "supportedLanguages": [
     "en",
     "ko"
@@ -75,7 +75,7 @@
       "code": "VN",
       "name": "Vietnam",
       "flag": "🇻🇳",
-      "totalHolidays": 73,
+      "totalHolidays": 75,
       "dataUrl": "https://beomq.github.io/world_holidays/api/holidays/vn.json",
       "names": {
         "en": "Vietnam",

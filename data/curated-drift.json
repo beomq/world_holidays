@@ -244,12 +244,36 @@
     {
       "country": "VN",
       "holiday": {
+        "name": "Day off (substituted from 08/22/2026)",
+        "date": "2026-08-31",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Day off (substituted from 08/22/2026)",
+          "ko": "Day off (substituted from 08/22/2026)"
+        }
+      }
+    },
+    {
+      "country": "VN",
+      "holiday": {
         "name": "National Day",
         "date": "2026-09-01",
         "type": "NATIONAL",
         "description": {
           "en": "National Day",
           "ko": "National Day"
+        }
+      }
+    },
+    {
+      "country": "VN",
+      "holiday": {
+        "name": "Vietnam Cultural Day",
+        "date": "2026-11-24",
+        "type": "NATIONAL",
+        "description": {
+          "en": "Vietnam Cultural Day",
+          "ko": "Vietnam Cultural Day"
         }
       }
     },

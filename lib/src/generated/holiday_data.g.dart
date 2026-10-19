@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND.
-// Source: python-holidays 0.103 plus data/overrides.json.
+// Source: python-holidays 0.106 plus data/overrides.json.
 
 import '../models/holiday.dart';
 import '../models/holiday_type.dart';
@@ -3878,6 +3878,15 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
+      name: 'Vietnam Cultural Day',
+      date: DateTime(2027, 11, 24),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Vietnam Cultural Day',
+        'ko': 'Vietnam Cultural Day',
+      },
+    ),
+    Holiday(
       name: 'New Year\'s Day',
       date: DateTime(2028, 1, 1),
       type: HolidayType.national,
@@ -4010,6 +4019,15 @@ final bundledHolidayData = <String, List<Holiday>>{
       description: <String, String>{
         'en': 'National Day (observed)',
         'ko': 'National Day (observed)',
+      },
+    ),
+    Holiday(
+      name: 'Vietnam Cultural Day',
+      date: DateTime(2028, 11, 24),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Vietnam Cultural Day',
+        'ko': 'Vietnam Cultural Day',
       },
     ),
   ],
@@ -4411,48 +4429,48 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
-      name: 'Chinese New Year (estimated)',
+      name: 'Chinese New Year',
       date: DateTime(2027, 2, 6),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Chinese New Year (estimated)',
-        'ko': 'Chinese New Year (estimated)',
+        'en': 'Chinese New Year',
+        'ko': 'Chinese New Year',
       },
     ),
     Holiday(
-      name: 'Chinese New Year (Second Day) (estimated)',
+      name: 'Chinese New Year (Second Day)',
       date: DateTime(2027, 2, 7),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Chinese New Year (Second Day) (estimated)',
-        'ko': 'Chinese New Year (Second Day) (estimated)',
+        'en': 'Chinese New Year (Second Day)',
+        'ko': 'Chinese New Year (Second Day)',
       },
     ),
     Holiday(
-      name: 'Chinese New Year (Second Day) (observed, estimated)',
+      name: 'Chinese New Year (Second Day) (observed)',
       date: DateTime(2027, 2, 8),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Chinese New Year (Second Day) (observed, estimated)',
-        'ko': 'Chinese New Year (Second Day) (observed, estimated)',
+        'en': 'Chinese New Year (Second Day) (observed)',
+        'ko': 'Chinese New Year (Second Day) (observed)',
       },
     ),
     Holiday(
-      name: 'Eid al-Fitr (estimated)',
-      date: DateTime(2027, 3, 9),
-      type: HolidayType.national,
-      description: <String, String>{
-        'en': 'Eid al-Fitr (estimated)',
-        'ko': 'Eid al-Fitr (estimated)',
-      },
-    ),
-    Holiday(
-      name: 'Eid al-Fitr (Second Day) (estimated)',
+      name: 'Eid al-Fitr',
       date: DateTime(2027, 3, 10),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Eid al-Fitr (Second Day) (estimated)',
-        'ko': 'Eid al-Fitr (Second Day) (estimated)',
+        'en': 'Eid al-Fitr',
+        'ko': 'Eid al-Fitr',
+      },
+    ),
+    Holiday(
+      name: 'Eid al-Fitr (Second Day)',
+      date: DateTime(2027, 3, 11),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Eid al-Fitr (Second Day)',
+        'ko': 'Eid al-Fitr (Second Day)',
       },
     ),
     Holiday(
@@ -4465,39 +4483,30 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
-      name: 'Eid al-Adha (estimated)',
-      date: DateTime(2027, 5, 16),
-      type: HolidayType.national,
-      description: <String, String>{
-        'en': 'Eid al-Adha (estimated)',
-        'ko': 'Eid al-Adha (estimated)',
-      },
-    ),
-    Holiday(
-      name: 'Eid al-Adha (observed, estimated)',
+      name: 'Eid al-Adha',
       date: DateTime(2027, 5, 17),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Eid al-Adha (observed, estimated)',
-        'ko': 'Eid al-Adha (observed, estimated)',
+        'en': 'Eid al-Adha',
+        'ko': 'Eid al-Adha',
       },
     ),
     Holiday(
-      name: 'Vesak Day (estimated)',
+      name: 'Vesak Day',
       date: DateTime(2027, 5, 20),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Vesak Day (estimated)',
-        'ko': 'Vesak Day (estimated)',
+        'en': 'Vesak Day',
+        'ko': 'Vesak Day',
       },
     ),
     Holiday(
-      name: 'Islamic New Year (estimated)',
+      name: 'Islamic New Year',
       date: DateTime(2027, 6, 6),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Islamic New Year (estimated)',
-        'ko': 'Islamic New Year (estimated)',
+        'en': 'Islamic New Year',
+        'ko': 'Islamic New Year',
       },
     ),
     Holiday(
@@ -4510,12 +4519,21 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
-      name: 'Prophet Muhammad\'s Birthday (estimated)',
-      date: DateTime(2027, 8, 14),
+      name: 'Prophet Muhammad\'s Birthday',
+      date: DateTime(2027, 8, 15),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Prophet Muhammad\'s Birthday (estimated)',
-        'ko': 'Prophet Muhammad\'s Birthday (estimated)',
+        'en': 'Prophet Muhammad\'s Birthday',
+        'ko': 'Prophet Muhammad\'s Birthday',
+      },
+    ),
+    Holiday(
+      name: 'Prophet Muhammad\'s Birthday (observed)',
+      date: DateTime(2027, 8, 16),
+      type: HolidayType.national,
+      description: <String, String>{
+        'en': 'Prophet Muhammad\'s Birthday (observed)',
+        'ko': 'Prophet Muhammad\'s Birthday (observed)',
       },
     ),
     Holiday(
@@ -4565,7 +4583,7 @@ final bundledHolidayData = <String, List<Holiday>>{
     ),
     Holiday(
       name: 'Eid al-Fitr (estimated)',
-      date: DateTime(2028, 2, 26),
+      date: DateTime(2028, 2, 27),
       type: HolidayType.national,
       description: <String, String>{
         'en': 'Eid al-Fitr (estimated)',
@@ -4574,7 +4592,7 @@ final bundledHolidayData = <String, List<Holiday>>{
     ),
     Holiday(
       name: 'Eid al-Fitr (Second Day) (estimated)',
-      date: DateTime(2028, 2, 27),
+      date: DateTime(2028, 2, 28),
       type: HolidayType.national,
       description: <String, String>{
         'en': 'Eid al-Fitr (Second Day) (estimated)',
@@ -4582,12 +4600,12 @@ final bundledHolidayData = <String, List<Holiday>>{
       },
     ),
     Holiday(
-      name: 'Eid al-Fitr (Second Day) (observed, estimated)',
-      date: DateTime(2028, 2, 28),
+      name: 'Eid al-Fitr (observed, estimated)',
+      date: DateTime(2028, 2, 29),
       type: HolidayType.national,
       description: <String, String>{
-        'en': 'Eid al-Fitr (Second Day) (observed, estimated)',
-        'ko': 'Eid al-Fitr (Second Day) (observed, estimated)',
+        'en': 'Eid al-Fitr (observed, estimated)',
+        'ko': 'Eid al-Fitr (observed, estimated)',
       },
     ),
     Holiday(
@@ -4619,7 +4637,7 @@ final bundledHolidayData = <String, List<Holiday>>{
     ),
     Holiday(
       name: 'Islamic New Year (estimated)',
-      date: DateTime(2028, 5, 25),
+      date: DateTime(2028, 5, 26),
       type: HolidayType.national,
       description: <String, String>{
         'en': 'Islamic New Year (estimated)',
@@ -4637,7 +4655,7 @@ final bundledHolidayData = <String, List<Holiday>>{
     ),
     Holiday(
       name: 'Prophet Muhammad\'s Birthday (estimated)',
-      date: DateTime(2028, 8, 3),
+      date: DateTime(2028, 8, 4),
       type: HolidayType.national,
       description: <String, String>{
         'en': 'Prophet Muhammad\'s Birthday (estimated)',
